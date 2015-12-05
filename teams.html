@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tracktics | Teams</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="js/teams.js"></script>
+
+    <style>
+
+
+        .slick-slide {
+            display: block;
+            width: 1039px;
+            outline: none;
+            margin-right: 79px;
+        }
+
+        .slick-slide.slick-cloned {
+            display: none;
+        }
+
+        .slick-slide img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            display: block;
+            max-width: 100%;
+        }
+
+        .slick-next {
+            right: 60px;
+            z-index: 100;
+        }
+
+        .slick-prev {
+            left: 60px;
+            z-index: 100;
+        }
+
+        .slick-prev:before, .slick-next:before { font-family: FontAwesome; font-size: 40px; line-height: 1; color: #ccc; opacity: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+        .slick-prev:before { content: "\f053"; }
+        [dir="rtl"] .slick-prev:before { content: "\f054"; }
+
+        [dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
+        .slick-next:before { content: "\f054"; }
+        [dir="rtl"] .slick-next:before { content: "\f053"; }
+
+        .slick-dots li button:before{font-family: FontAwesome; font-size: 10px; color: #fff; opacity: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+        .slick-dots li button:before{content:'\f111'}
+
+        .slick-dots li.slick-active button:before{
+            color: #ff2300;
+        }
+
+        .slick-slide h3{
+            font-weight:bold;
+            width: 552px;
+            margin: 0 auto 10px auto;
+            text-align: left;
+        }
+        .slick-slide p{
+            font-size: 14px;
+            width: 552px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .slick-prev, .slick-next{
+            width: auto;
+            height: auto;
+        }
+
+        .slick-prev, .slick-next{
+            top: 40%;
+        }
+
+        .slick-dots {
+            bottom: -98px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top navbar-default">
+    <div class="main-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/Logo.png" alt="Logo" class="img-responsive" width="270"  height="48"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="teams.html">Teams</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="#buy_section" class="btn menu-btn">Go to Shop</a></li>
+                <li>
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+                            <span data-bind="label"><span class="english"><img src="img/english.png" alt=""></span>English</span>&nbsp;<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="teams_de.html"><span class="english"><img src="img/german.png" alt=""></span>German</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</nav>
+
+<section class="team-head">
+    <div class="main-container">
+        <div class="clearfix">
+            <div class="one-column">
+                <img src="img/teams-ipad.png" class="img-responsive" alt="" width="742" height="503">
+            </div>
+            <div class="two-column">
+                <h1>See the data <br> your team <br> generates</h1>
+                <p>Use the first affordable tracking system for <br> the football pitch and unleash your potential </p>
+                <a href="#buy_section" class="btn custom-btn">Go to Shop</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="team-second">
+        <div class="main-container">
+            <div class="clearfix secondary-container">
+                <div class="team-features">
+                    <ul class="clearfix list-inline">
+                        <li>
+                            <div class="circle" style="padding: 44px;">
+                                <img src="img/team-1.png" alt="" class="img-responsive"  >
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/arrow.png" alt="" class="img-responsive"width="103" height="33" style="margin-top: 79.5px;">
+                        </li>
+
+                        <li>
+                            <div class="circle" style="padding: 28px;">
+                                <img src="img/team-2.png" alt="" class="img-responsive" style="margin-top: 14px; margin-left: 5px;" >
+                            </div>
+                        </li>
+
+                        <li>
+                            <img src="img/arrow.png" alt="" class="img-responsive" width="103" height="33"  style="margin-top: 79.5px;margin-left: 19px;">
+                        </li>
+                        <li>
+                            <div class="circle" style="padding: 37px;">
+                                <img src="img/team-3.png" alt="" class="img-responsive"  >
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="clearfix">
+                    <div class="one-column" style="right: 77px">
+                        <div class="description">
+                            <h3>Play + Track</h3>
+                            <p>Comprehensive visualisations of load parameters, like distance or number of accelerations</p>
+                        </div>
+                    </div>
+                    <div class="one-column">
+                        <div class="description">
+                            <h3>Analyse</h3>
+                            <p>Comprehensive visualisations of load parameters, like distance or number of accelerations</p>
+                        </div>
+                    </div>
+                    <div class="one-column" style="left: 77px">
+                        <div class="description">
+                            <h3>Manage</h3>
+                            <p>Comprehensive visualisations of load parameters, like distance or number of accelerations</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</section>
+
+<section class="team-third">
+
+    <div class="container-fluid">
+        <div class="your-class">
+            <div>
+                <img src="img/carousel-ipad.png" alt="">
+                <div class="hidden-xs" style="margin-top: 10px">
+                    <h3>See what you do in full detail</h3>
+                    <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>
+                </div>
+                <div class="visible-xs small-carousel">
+                    <h2>See all you players <br> organized and ranked</h2>
+                </div>
+            </div>
+            <div>
+                <img src="img/carousel-ipad.png" alt="">
+                <div class="hidden-xs" style="margin-top: 10px">
+                    <h3>See what you do in full detail</h3>
+                    <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>                </div>
+                <div class="visible-xs small-carousel">
+                    <h2>See all you players <br> organized and ranked</h2>
+                </div>
+            </div>
+            <div>
+                <img src="img/carousel-ipad.png" alt="">
+                <div class="hidden-xs" style="margin-top: 10px">
+                    <h3>See what you do in full detail</h3>
+                    <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>                </div>
+                <div class="visible-xs small-carousel">
+                    <h2>See all you players <br> organized and ranked</h2>
+                </div>
+            </div>
+            <div>
+                <img src="img/carousel-ipad.png" alt="">
+                <div class="hidden-xs" style="margin-top: 10px">
+                    <h3>See what you do in full detail</h3>
+                    <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>                </div>
+                <div class="visible-xs small-carousel">
+                    <h2>See all you players <br> organized and ranked</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<div class="team-items">
+    <section class="team-performance">
+        <div class="main-container">
+            <div class="clearfix">
+                <div class="one-column">
+                    <img src="img/performance.png" alt="" class="img-responsive" width="804" height="295">
+                </div>
+                <div class="two-column">
+                    <h3>Performance data and development</h3>
+                    <p>How to evaluate the athletic performance of your team? TRACKTICS enables you to gather objective data on the athletic performance of each of your players. You can monitor the development throughout each single session and over time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-motivate">
+        <div class="main-container">
+            <div class="clearfix">
+                <div class="one-column" style="width: 640px;margin-top: 42px;margin-left: 61px;">
+                    <h3>Motivate</h3>
+                    <p style="margin-bottom: 43px;">Supporting your subjectivity with objective performance data will facilitate your coaching and allow to give profound, individual data based feedback.</p>
+                    <p>This will assist you motivating and inspiring your players to unleash their potential.</p>
+                </div>
+                <div class="two-column" style="margin-right: 35px;">
+                    <img src="img/motivate_new.png" alt="" class="img-responsive" width="443" height="382">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team-balance">
+        <div class="main-container">
+            <div class="clearfix">
+                <div class="one-column">
+                    <img src="img/balance_new.png" alt="" class="img-responsive" width="396" height="393">
+                </div>
+                <div class="two-column">
+                    <h3>The balance between load and recovery</h3>
+                    <p class="hidden-xs">Comprehensive visualisations of load parameters, like distance of number of accelerations & decelerations, after every session will help you to balance load and recovery on a players level. During the recovery period of a player, you can monitor his athletic performance KPIs and compare with pre-injury data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team-planning">
+        <div class="main-container">
+            <div class="clearfix">
+                <div class="one-column">
+                    <h3 style="font-size: 35px;">Improved planning & decision making</h3>
+                    <p class="hidden-xs">Choose consciously the types of training based on objective performance data. High and low performers to be quickly identified and addressed. Support your decisions with objective data. Use the insights you gain from the TRACKTICS data when making tough decisions as a coach.</p>
+                </div>
+                <div class="two-column">
+                    <img src="img/Planing.png" alt="" class="img-responsive" width="719" height="178">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team-comparison">
+        <div class="main-container">
+            <div class="clearfix">
+                <div class="one-column">
+                    <img src="img/comparison.png" alt="" class="img-responsive" width="453" height="340">
+                </div>
+                <div class="two-column">
+                    <h3 style="font-weight: bold">Comparison - putting your <br> data into perspective</h3>
+                    <p class="hidden-xs">Compare your players and identify individual strengths and weaknesses. The TRACKTICS app will highlight who outperformed or underperformed when it really mattered. The possibility of comparing your players with external benchmarks will add another perpective when analysing their performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="team-shop" id="buy_section">
+    <div class="main-container">
+        <div class="clearfix">
+            <div class="one-column" style="margin-left: 68px;">
+                <img src="img/sale.png" alt="" class="img-responsive" width="652" height="491">
+            </div>
+            <div class="two-column" style="width:384px;right: 149px;top: -5px;padding-right: 27px;">
+                <h2>EARLY BIRD</h2>
+                <h2 style="    margin-bottom: 38px">Starter Paket</h2>
+                <p style="margin-bottom: 49px;">Get a set of 3 Trackers and <br> Belts for the football pitch and unleash your potential.</p>
+                <div class="clearfix" style="    margin-bottom: 17px;">
+                    <p style="display: inline-block;">Quantity</p>
+                    <p  style="float: right;width: 157px;height: 61px;bottom: 17px;line-height: 46px;position: relative;display: inline-block;background: #c8c8c8;padding: 8px 11px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"><span class="plus" style="cursor: pointer;margin-right: 10px; display: inline-block; width:15px;">+</span><span class="minus" style="cursor: pointer; display: inline-block; width:15px;">-</span> <span class="increase pull-right">01</span></p>
+                </div>
+                <p class="price" style="font-weight: bold; font-size: 30px;    margin-bottom: 34px;">279. - <i class="fa fa-euro"></i></p>
+                <a href="buyProduct.html" class="btn custom-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="main-container">
+        <div class="clearfix secondary-container">
+            <div class="social">
+                <div class="hiring">
+                    <p>info@Tracktics.zone</p>
+                    <a href="openPos.html" class="btn myBtn">We are hiring!</a>
+                </div>
+                <div class="social-icons">
+                    <p>Follow us!</p>
+                    <ul class="list-inline">
+                        <li><a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <p>We always write back!</p>
+                    <a href="contact.html" class="btn myBtn">Contact us</a>
+                </div>
+            </div>
+
+            <div class="info-list clearfix">
+                <div style="display: inline-block;width: 100px; float: left;">
+                    <p>+49 123 45 67</p>
+                </div>
+                <ul style="display: inline-block" class="list-inline">
+                    <li><p>TRACKTICS GmbH</p></li>
+                    <li><p>Elisabethenstrasse 105</p></li>
+                    <li><p>719 Hofheim a.T.</p></li>
+                    <li><p>Germany</p></li>
+                </ul>
+                <div style="display: inline-block;width: 100px; float: right;">
+                    <p>Impressum</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
