@@ -44,36 +44,35 @@
 </head>
 <body>
 
-<nav class="navbar navbar-fixed-top navbar-default">
+<nav class="navigation">
     <div class="main-container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="img/Logo.png" alt="Logo" class="img-responsive" width="270"  height="48"></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav pull-right">
+        <div class="clearfix">
+            <div class="logo">
+                <div class="navbar_image_wrapper">
+                    <img src="img/Logo.png" alt="Logo" class="img-responsive">
+                </div>
+            </div>
+            <ul class="list-inline">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="teams.html">Teams</a></li>
                 <li><a href="players.html">Players</a></li>
-                <li><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
-                <li>
-                    <div class="btn-group">
-                        <button type="button" class="dropdown-toggle" data-toggle="dropdown">
-                            <span data-bind="label"><span class="english"><img src="img/english.png" alt=""></span>English</span>&nbsp;<span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="teams.html"><span class="english"><img src="img/german.png" alt=""></span>German</a></li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+                <li class="language">
+                    <div class="toggle_language">
+                        <a href="#" class="english_toggle">
+                            <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul id="changeLanguage">
+                            <li class="german_drop">
+                                <a href="#">
+                                    <span class="english"><img src="img/german.png" alt=""></span>German
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </li>
             </ul>
         </div>
-    </div>
     </div>
 </nav>
 

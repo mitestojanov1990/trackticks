@@ -387,8 +387,9 @@ button .caret {
   background: #191919;
   padding: 25px 0;
   position: fixed;
-  width: 100%;
-  z-index: 10000;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 .navigation .logo{
@@ -406,7 +407,7 @@ button .caret {
 .navigation ul.list-inline > li{
   margin-left: 40px;
   padding: 0;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 .navigation ul.list-inline > li a{
@@ -435,10 +436,15 @@ button .caret {
 
 .toggle_language:hover a{
     background-color: #323232;
-    padding: 9px 0 10px 0;
+    padding: 9px 0 8px 0;
 }
 
-/* line 211, ../sass/style.scss */
+.language{
+  position: relative;
+  right:10px;
+}
+
+  /* line 211, ../sass/style.scss */
 .language .english{
     background: none;
     color: #4B4B4B;
@@ -478,7 +484,7 @@ button .caret {
     background-color: #323232;
     position: absolute;
     width: 130px;
-    margin-top: 4px;
+    margin-top: -3px;
     display:none;
 }
 #changeLanguage li{
@@ -530,13 +536,11 @@ button .caret {
   padding: 249px 0 150px 0;
   background-position: 63% 48%;
   text-align: left;
-  padding: 249px 0 150px 0;
+  padding: 299px 0 150px 0;
   background-size: 259% auto;
 }
 
-.header-section .one-column{
-  margin-top: 50px;
-}
+
 
   /* line 304, ../sass/style.scss */
 .header-section h1 {
@@ -834,6 +838,10 @@ button .caret {
   font-weight: bold;
 }
 
+.display_block{
+  display: block!important;
+}
+
 /* line 530, ../sass/style.scss */
 .newsletter {
   background: url("../img/Locker%20Rooms%20Landingpage.jpg") no-repeat center center;
@@ -876,6 +884,11 @@ button .caret {
 /* line 565, ../sass/style.scss */
 .email .myBtn {
   float: right;
+  background: #fff;
+  color: #ff2300;
+}
+
+.email .myBtn:hover{
   background: #fff;
   color: #ff2300;
 }
@@ -948,17 +961,17 @@ button .caret {
 .partner-img .image_wrapper.partner-1{
     width:127px;
     height: 40px;
-    margin-top: 45px;
+    margin: 45px auto;
 }
 .partner-img .image_wrapper.partner-2{
     width:152px;
     height: 56px;
-    margin-top: 37px;
+    margin: 37px auto;
 }
 .partner-img .image_wrapper.partner-3{
     width:101px;
     height: 45px;
-    margin-top: 42.5px;
+    margin: 42.5px auto;
 }
 .sponsor-img .image_wrapper.sponsor-1{
     width:120px;
@@ -1148,7 +1161,7 @@ button .caret {
   background-position: 50% 90%;
   position: relative;
   height: 870px;
-  padding: 204px 0 150px 0;
+  padding: 254px 0 150px 0;
   text-align: left;
 }
 
@@ -1522,7 +1535,7 @@ button .caret {
   background-position: 50% 90%;
   position: relative;
   height: 870px;
-  padding: 108px 0 109px 0;
+  padding: 158px 0 109px 0;
   text-align: left;
 }
 
@@ -1689,7 +1702,7 @@ button .caret {
 
 /* line 1147, ../sass/style.scss */
 .buy-first .one-column {
-  margin-left: 108px;
+  margin-left: 146px;
 }
 
 /* line 1151, ../sass/style.scss */
@@ -1706,7 +1719,7 @@ button .caret {
 .buy-first .image_wrapper.buy-image-header{
   width: 710px;
   height: 383px;
-  margin-right: -61px;
+  margin-right: -92px;
   margin-top: 44px;
 }
 
@@ -1779,7 +1792,7 @@ button .caret {
 
 /* line 1217, ../sass/style.scss */
 .buy-third .one-column {
-  margin-left: 67px;
+  margin-left: 40px;
 }
 
 .buy-third .image_wrapper.buy-section-image{
@@ -1791,7 +1804,7 @@ button .caret {
 .buy-third .two-column {
   width: 389px;
   height: 169px;
-  margin-right: 139px;
+  margin-right: 106px;
   margin-top: 161px;
 }
 
