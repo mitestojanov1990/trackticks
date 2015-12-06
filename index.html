@@ -14,8 +14,11 @@
     <script src="./js/general.js"></script>
 
     <link rel="stylesheet/less" type="text/css" href="css/variables.less" />
-    <link rel="stylesheet/less" type="text/css" href="css/medias.less" />
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/medias.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/mobile1.less" />
+    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css" />
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -24,11 +27,11 @@
         var tmpWidth = effectiveDeviceWidth();
         var tmpHeight = effectiveDeviceHeight();
 
-        if (tmpWidth < tmpHeight) {
-            var tmp = tmpWidth;
-            tmpWidth = tmpHeight;
-            tmpHeight = tmp;
-        }
+        //if (tmpWidth < tmpHeight) {
+        //    var tmp = tmpWidth;
+        //    tmpWidth = tmpHeight;
+        //    tmpHeight = tmp;
+        //}
         less = {
             env: "development",
             async: false,
@@ -43,6 +46,8 @@
         };
     </script>
     <script src="js/less.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
 
@@ -102,10 +107,12 @@
             <div class="clearfix secondary-container">
                 <div class="custom_row margin_botton_49 clearfix">
                     <div class="one-column">
-                        <img src="img/Tracker%20Metrics%20Landingpage.png" alt="" class="img-responsive" width="655" height="333">
+                        <div class="image_wrapper tracker_landingpage">
+                            <img src="img/Tracker_Metrics_Landingpage.png" alt="" class="img-responsive">
+                        </div>
                     </div>
                     <div class="two-column">
-                        <h2>Make better <br> decisions <br> on the field <br> with data</h2>
+                        <h2>Make better <br> decisions <br class="mobile_hidden"> on the field <br> with data</h2>
                     </div>
                 </div>
                 <div class="features">
@@ -247,6 +254,45 @@
                     </div>
                 </div>
             </div>
+
+            <div class="index_slick">
+                <div>
+                    <div class="quote_item">
+                        <div class="user">
+                            <div class="image_wrapper tim">
+                                <img src="img/tim.png" alt="" class="img-responsive">
+                            </div>
+                            <h4>Tim Simmons</h4>
+                            <p style="margin-bottom: 38px; font-style: italic">Coach Bayern Nüchtern</p>
+                            <p>I’m seriously happy about buying these trackers from Tracktics. The powerful features and the easy setup totally convinced my full team</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="quote_item">
+                        <div class="user">
+                            <div class="image_wrapper barbara">
+                                <img src="img/barbara.png" alt="" class="img-responsive">
+                            </div>
+                            <h4>Barbara Rhabarber</h4>
+                            <p style="margin-bottom: 38px; font-style: italic">Goalkeeper, Ireland</p>
+                            <p>As a goalkeeper you get ignored most of the time by the trainer. Now you can see your own stats constantly and improve your fitness and game.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="quote_item">
+                        <div class="user">
+                            <div class="image_wrapper grinch">
+                                <img src="img/grinch.png" alt="" class="img-responsive">
+                            </div>
+                            <h4>The Grinch</h4>
+                            <p style="margin-bottom: 38px; font-style: italic">Coach and Player</p>
+                            <p>From both the perspective of a coach and a player the Tracker by Tracktics changed the way I play football, for the better. I don’t have to keep guessing how today’s training was.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -267,11 +313,13 @@
 
         <div class="main-container">
             <div class="clearfix secondary-container">
-                <h2>Our Partners help us innovate</h2>
+                <h2>Our Partners <br class="mobile_visible hidden"/>help us innovate</h2>
                 <div class="partner-container clearfix">
                     <div class="partner-div">
                         <div class="partner-img">
-                            <img src="img/ESF_Logo.png" alt="" class="img-responsive" width="127" height="40" style="margin-top: 45px;">
+                            <div class="image_wrapper partner-1">
+                                <img src="img/ESF_Logo.png" alt="" class="img-responsive">
+                            </div>
                         </div>
                         <h3>ESF</h3>
                         <p>Europäischer Sozialfonds für Deutschland</p>
@@ -279,7 +327,9 @@
 
                     <div class="partner-div">
                         <div class="partner-img">
-                            <img src="img/partner-2.png" alt="" class="img-responsive" width="152" height="56" style="margin-top:37px;">
+                            <div class="image_wrapper partner-2">
+                                <img src="img/partner-2.png" alt="" class="img-responsive">
+                            </div>
                         </div>
                         <h3>esa</h3>
                         <p>European Space Agency</p>
@@ -287,7 +337,9 @@
 
                     <div class="partner-div">
                         <div class="partner-img">
-                            <img src="img/europe.png" alt="" class="img-responsive" width="101" height="45" style="margin-top: 42.5px;">
+                            <div class="image_wrapper partner-3">
+                                <img src="img/europe.png" alt="" class="img-responsive">
+                            </div>
                         </div>
                         <h3>Startup Europe</h3>
                         <p>Startupfund by the European Commission</p>
@@ -298,13 +350,19 @@
 
                     <div class="sponsor-div">
                         <div class="sponsor-img">
-                            <img src="img/sponsor-1.png" alt="" class="img-responsive" width="120" height="76">
+                            <div class="image_wrapper sponsor-1">
+                                <img src="img/sponsor-1.png" alt="" class="img-responsive">
+                            </div>
                         </div>
                         <div class="sponsor-img">
-                            <img src="img/sponsor-2.png" alt="" class="img-responsive" width="175" height="79">
+                            <div class="image_wrapper sponsor-2">
+                                <img src="img/sponsor-2.png" alt="" class="img-responsive">
+                            </div>
                         </div>
                         <div class="sponsor-img">
-                            <img src="img/INVEST_Badge_no_bg.png" alt="" class="img-responsive" width="99" height="100">
+                            <div class="image_wrapper sponsor-3">
+                                <img src="img/INVEST_Badge_no_bg.png" alt="" class="img-responsive">
+                            </div>
                         </div>
                     </div>
 
@@ -350,7 +408,15 @@
                         <p>Impressum</p>
                     </div>
                 </div>
-
+                <div class="mobile_hiring mobile_visible hidden">
+                    <p>+49 123 45 67 - info@Tracktics.zone</p>
+                    <div class="mobile_footer_buttons">
+                        <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                        <a href="contact.html" class="btn myBtn">Contact us</a>
+                    </div>
+                    <p class="left">TRACKTICS GmbH</p>
+                    <p class="right">Impressum</p>
+                </div>
             </div>
         </div>
     </footer>
