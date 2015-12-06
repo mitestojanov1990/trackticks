@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
+
+
+
     <script src="./js/general.js"></script>
 
     <link rel="stylesheet/less" type="text/css" href="css/variables.less" />
+
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
     <link rel="stylesheet/less" type="text/css" href="css/medias.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/mobile1.less" />
     <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
 
@@ -104,11 +109,11 @@
         var tmpWidth = effectiveDeviceWidth();
         var tmpHeight = effectiveDeviceHeight();
 
-        if (tmpWidth < tmpHeight) {
-            var tmp = tmpWidth;
-            tmpWidth = tmpHeight;
-            tmpHeight = tmp;
-        }
+        //if (tmpWidth < tmpHeight) {
+        //    var tmp = tmpWidth;
+        //    tmpWidth = tmpHeight;
+        //    tmpHeight = tmp;
+        //}
         less = {
             env: "development",
             async: false,
@@ -169,7 +174,7 @@
             </div>
             <div class="two-column">
                 <div class="text-container">
-                    <h1>See the data <br> your team <br> generates</h1>
+                    <h1>See the data <br class="mobile_hidden"> your team <br> generates</h1>
                     <p>Use the first affordable tracking system for <br> the football pitch and unleash your potential </p>
                     <a href="#buy_section" class="btn custom-btn">Go to Shop</a>
                 </div>
@@ -383,46 +388,55 @@
     </div>
 </section>
 
-<footer class="footer">
-    <div class="main-container">
-        <div class="clearfix secondary-container">
-            <div class="social">
-                <div class="hiring">
-                    <p>info@Tracktics.zone</p>
-                    <a href="openPos.html" class="btn myBtn">We are hiring!</a>
+    <footer class="footer">
+        <div class="main-container">
+            <div class="clearfix secondary-container">
+                <div class="social">
+                    <div class="hiring">
+                        <p>info@Tracktics.zone</p>
+                        <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                    </div>
+                    <div class="social-icons">
+                        <p>Follow us!</p>
+                        <ul class="list-inline">
+                            <li><a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <p>We always write back!</p>
+                        <a href="contact.html" class="btn myBtn">Contact us</a>
+                    </div>
                 </div>
-                <div class="social-icons">
-                    <p>Follow us!</p>
-                    <ul class="list-inline">
-                        <li><a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a></li>
+
+                <div class="info-list clearfix">
+                    <div style="display: inline-block;width: 100px; float: left;">
+                        <p>+49 123 45 67</p>
+                    </div>
+                    <ul style="display: inline-block" class="list-inline">
+                        <li><p>TRACKTICS GmbH</p></li>
+                        <li><p>Elisabethenstrasse 105</p></li>
+                        <li><p>719 Hofheim a.T.</p></li>
+                        <li><p>Germany</p></li>
                     </ul>
+                    <div style="display: inline-block;width: 100px; float: right;">
+                        <p>Impressum</p>
+                    </div>
                 </div>
-                <div class="contact">
-                    <p>We always write back!</p>
-                    <a href="contact.html" class="btn myBtn">Contact us</a>
+                <div class="mobile_hiring mobile_visible hidden">
+                    <p>+49 123 45 67 - info@Tracktics.zone</p>
+                    <div class="mobile_footer_buttons">
+                        <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                        <a href="contact.html" class="btn myBtn">Contact us</a>
+                    </div>
+                    <p class="left">TRACKTICS GmbH</p>
+                    <p class="right">Impressum</p>
                 </div>
-            </div>
 
-            <div class="info-list clearfix">
-                <div style="display: inline-block;width: 100px; float: left;">
-                    <p>+49 123 45 67</p>
-                </div>
-                <ul style="display: inline-block" class="list-inline">
-                    <li><p>TRACKTICS GmbH</p></li>
-                    <li><p>Elisabethenstrasse 105</p></li>
-                    <li><p>719 Hofheim a.T.</p></li>
-                    <li><p>Germany</p></li>
-                </ul>
-                <div style="display: inline-block;width: 100px; float: right;">
-                    <p>Impressum</p>
-                </div>
             </div>
-
         </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>
