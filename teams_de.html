@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/general.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="css/variables.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/medias.less" />
     <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
 
@@ -95,6 +99,30 @@
 
 
     </style>
+
+    <script>
+        var tmpWidth = effectiveDeviceWidth();
+        var tmpHeight = effectiveDeviceHeight();
+
+        if (tmpWidth < tmpHeight) {
+            var tmp = tmpWidth;
+            tmpWidth = tmpHeight;
+            tmpHeight = tmp;
+        }
+        less = {
+            env: "development",
+            async: false,
+            fileAsync: false,
+            poll: 1000,
+            functions: {},
+            dumpLineNumbers: "comments",
+            globalVars: {
+                sw: tmpWidth + "px",
+                sh: tmpHeight + "px"
+            },
+        };
+    </script>
+    <script src="js/less.min.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -135,12 +163,16 @@
     <div class="main-container">
         <div class="clearfix">
             <div class="one-column">
-                <img src="img/teams-ipad.png" class="img-responsive" alt="" width="742" height="503">
+                <div class="image_wrapper teams_ipad">
+                    <img src="img/teams-ipad.png" class="img-responsive" alt="">
+                </div>
             </div>
             <div class="two-column">
-                <h1>See the data <br> your team <br> generates</h1>
-                <p>Use the first affordable tracking system for <br> the football pitch and unleash your potential </p>
-                <a href="#buy_section" class="btn custom-btn">Go to Shop</a>
+                <div class="text-container">
+                    <h1>See the data <br> your team <br> generates</h1>
+                    <p>Use the first affordable tracking system for <br> the football pitch and unleash your potential </p>
+                    <a href="#buy_section" class="btn custom-btn">Go to Shop</a>
+                </div>
             </div>
         </div>
 
@@ -149,56 +181,51 @@
 
 <section class="team-second">
     <div class="main-container">
-        <div class="clearfix secondary-container">
+        <div class="clearfix">
             <div class="team-features">
                 <ul class="clearfix list-inline">
                     <li>
                         <div class="circle" style="padding: 44px;">
                             <img src="img/team-1.png" alt="" class="img-responsive"  >
                         </div>
+                        <div class="description">
+                            <h3>Play + Track</h3>
+                            <p>Comprehensive visualisations of load parameters, like distance or number of accelerations</p>
+                        </div>
                     </li>
                     <li>
-                        <img src="img/arrow.png" alt="" class="img-responsive"width="103" height="33" style="margin-top: 79.5px;">
+                        <div class="image_wrapper arrows">
+                            <img src="img/arrow.png" alt="" class="img-responsive">
+
+                        </div>
                     </li>
 
                     <li>
                         <div class="circle" style="padding: 28px;">
                             <img src="img/team-2.png" alt="" class="img-responsive" style="margin-top: 14px; margin-left: 5px;" >
                         </div>
+                        <div class="description">
+                            <h3>Analyse</h3>
+                            <p>Comprehensive visualisations of load parameters, like distance or number of accelerations</p>
+                        </div>
                     </li>
 
                     <li>
-                        <img src="img/arrow.png" alt="" class="img-responsive" width="103" height="33"  style="margin-top: 79.5px;margin-left: 19px;">
+                        <div class="image_wrapper arrows second-arrow">
+                            <img src="img/arrow.png" alt="" class="img-responsive">
+                        </div>
                     </li>
                     <li>
                         <div class="circle" style="padding: 37px;">
                             <img src="img/team-3.png" alt="" class="img-responsive"  >
                         </div>
+                        <div class="description">
+                            <h3>Manage</h3>
+                            <p>Comprehensive visualisations of load parameters, like distance or number of accelerations</p>
+                        </div>
                     </li>
                 </ul>
             </div>
-
-            <div class="clearfix">
-                <div class="one-column" style="right: 77px">
-                    <div class="description">
-                        <h3>Play + Track</h3>
-                        <p>Comprehensive visualisations of load parameters, like distance or number of accelerations</p>
-                    </div>
-                </div>
-                <div class="one-column">
-                    <div class="description">
-                        <h3>Analyse</h3>
-                        <p>Comprehensive visualisations of load parameters, like distance or number of accelerations</p>
-                    </div>
-                </div>
-                <div class="one-column" style="left: 77px">
-                    <div class="description">
-                        <h3>Manage</h3>
-                        <p>Comprehensive visualisations of load parameters, like distance or number of accelerations</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
@@ -255,11 +282,15 @@
         <div class="main-container">
             <div class="clearfix">
                 <div class="one-column">
-                    <img src="img/performance.png" alt="" class="img-responsive" width="804" height="295">
+                    <div class="image_wrapper image-performance">
+                        <img src="img/performance.png" alt="" class="img-responsive">
+                    </div>
                 </div>
                 <div class="two-column">
-                    <h3>Objektive Leistungsdaten und deren Entwicklung.</h3>
-                    <p>How to evaluate the athletic performance of your team? TRACKTICS enables you to gather objective data on the athletic performance of each of your players. You can monitor the development throughout each single session and over time.</p>
+                    <div class="section-text">
+                        <h3>Objektive Leistungsdaten und deren Entwicklung.</h3>
+                        <p>How to evaluate the athletic performance of your team? TRACKTICS enables you to gather objective data on the athletic performance of each of your players. You can monitor the development throughout each single session and over time.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -268,13 +299,17 @@
     <section class="team-motivate">
         <div class="main-container">
             <div class="clearfix">
-                <div class="one-column" style="width: 640px;margin-top: 42px;margin-left: 61px;">
-                    <h3>Motiviere und inspiriere deine Mannschaft</h3>
-                    <p style="margin-bottom: 43px;">Supporting your subjectivity with objective performance data will facilitate your coaching and allow to give profound, individual data based feedback.</p>
-                    <p>This will assist you motivating and inspiring your players to unleash their potential.</p>
+                <div class="one-column" >
+                    <div class="section-text">
+                        <h3>Motiviere und inspiriere deine Mannschaft</h3>
+                        <p style="margin-bottom: 43px;">Supporting your subjectivity with objective performance data will facilitate your coaching and allow to give profound, individual data based feedback.</p>
+                        <p>This will assist you motivating and inspiring your players to unleash their potential.</p>
+                    </div>
                 </div>
-                <div class="two-column" style="margin-right: 35px;">
-                    <img src="img/motivate_new.png" alt="" class="img-responsive" width="443" height="382">
+                <div class="two-column">
+                    <div class="image_wrapper motivate-image">
+                        <img src="img/motivate_new.png" alt="" class="img-responsive" >
+                    </div>
                 </div>
             </div>
         </div>
@@ -283,11 +318,15 @@
         <div class="main-container">
             <div class="clearfix">
                 <div class="one-column">
-                    <img src="img/balance_new.png" alt="" class="img-responsive" width="396" height="393">
+                    <div class="image_wrapper balance-image">
+                        <img src="img/balance_new.png" alt="" class="img-responsive">
+                    </div>
                 </div>
                 <div class="two-column">
-                    <h3>Die Balance zwischen Belastung und Erholung</h3>
-                    <p class="hidden-xs">Comprehensive visualisations of load parameters, like distance of number of accelerations & decelerations, after every session will help you to balance load and recovery on a players level. During the recovery period of a player, you can monitor his athletic performance KPIs and compare with pre-injury data.</p>
+                    <div class="section-text">
+                        <h3>Die Balance zwischen Belastung und Erholung</h3>
+                        <p>Comprehensive visualisations of load parameters, like distance of number of accelerations & decelerations, after every session will help you to balance load and recovery on a players level. During the recovery period of a player, you can monitor his athletic performance KPIs and compare with pre-injury data.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -296,11 +335,15 @@
         <div class="main-container">
             <div class="clearfix">
                 <div class="one-column">
-                    <h3 style="font-size: 35px;">Unterstützte Planung und Entscheidungen</h3>
-                    <p class="hidden-xs">Choose consciously the types of training based on objective performance data. High and low performers to be quickly identified and addressed. Support your decisions with objective data. Use the insights you gain from the TRACKTICS data when making tough decisions as a coach.</p>
+                    <div class="section-text">
+                        <h3>Unterstützte Planung und Entscheidungen</h3>
+                        <p>Choose consciously the types of training based on objective performance data. High and low performers to be quickly identified and addressed. Support your decisions with objective data. Use the insights you gain from the TRACKTICS data when making tough decisions as a coach.</p>
+                    </div>
                 </div>
                 <div class="two-column">
-                    <img src="img/Planing.png" alt="" class="img-responsive" width="719" height="178">
+                    <div class="image_wrapper planing-image">
+                        <img src="img/Planing.png" alt="" class="img-responsive" >
+                    </div>
                 </div>
             </div>
         </div>
@@ -309,11 +352,15 @@
         <div class="main-container">
             <div class="clearfix">
                 <div class="one-column">
-                    <img src="img/comparison.png" alt="" class="img-responsive" width="453" height="340">
+                    <div class="image_wrapper comparison-image">
+                        <img src="img/comparison.png" alt="" class="img-responsive">
+                    </div>
                 </div>
                 <div class="two-column">
-                    <h3 style="font-weight: bold">Vergleiche – Daten im Kontext</h3>
-                    <p class="hidden-xs">Compare your players and identify individual strengths and weaknesses. The TRACKTICS app will highlight who outperformed or underperformed when it really mattered. The possibility of comparing your players with external benchmarks will add another perpective when analysing their performance.</p>
+                    <div class="section-text">
+                        <h3 style="font-weight: bold">Vergleiche – Daten im Kontext</h3>
+                        <p>Compare your players and identify individual strengths and weaknesses. The TRACKTICS app will highlight who outperformed or underperformed when it really mattered. The possibility of comparing your players with external benchmarks will add another perpective when analysing their performance.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -323,19 +370,23 @@
 <section class="team-shop" id="buy_section">
     <div class="main-container">
         <div class="clearfix">
-            <div class="one-column" style="margin-left: 68px;">
-                <img src="img/sale.png" alt="" class="img-responsive" width="652" height="491">
-            </div>
-            <div class="two-column" style="width:384px;right: 149px;top: -5px;padding-right: 27px;">
-                <h2>EARLY BIRD</h2>
-                <h2 style="    margin-bottom: 38px">Starter Paket</h2>
-                <p style="margin-bottom: 49px;">Get a set of 3 Trackers and <br> Belts for the football pitch and unleash your potential.</p>
-                <div class="clearfix" style="    margin-bottom: 17px;">
-                    <p style="display: inline-block;">Quantity</p>
-                    <p  style="float: right;width: 157px;height: 61px;bottom: 17px;line-height: 46px;position: relative;display: inline-block;background: #c8c8c8;padding: 8px 11px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;"><span class="plus" style="cursor: pointer;margin-right: 10px; display: inline-block; width:15px;">+</span><span class="minus" style="cursor: pointer; display: inline-block; width:15px;">-</span> <span class="increase pull-right">01</span></p>
+            <div class="one-column" style="margin-left: 40px;">
+                <div class="image_wrapper buy-image">
+                    <img src="img/sale.png" alt="" class="img-responsive">
                 </div>
-                <p class="price" style="font-weight: bold; font-size: 30px;    margin-bottom: 34px;">279. - <i class="fa fa-euro"></i></p>
-                <a href="buyProduct.html" class="btn custom-btn">Buy Now</a>
+            </div>
+            <div class="two-column">
+                <div class="section-text">
+                    <h2>EARLY BIRD</h2>
+                    <h2 style="    margin-bottom: 38px">Starter Paket</h2>
+                    <p style="margin-bottom: 49px;">Get a set of 3 Trackers and <br> Belts for the football pitch and unleash your potential.</p>
+                    <div class="clearfix quantity">
+                        <p>Quantity</p>
+                        <p  ><span class="plus">+</span><span class="minus">-</span> <span class="increase pull-right">01</span></p>
+                    </div>
+                    <p class="price">279. - <i class="fa fa-euro"></i></p>
+                    <a href="buyProduct.html" class="btn custom-btn">Buy Now</a>
+                </div>
             </div>
         </div>
     </div>
@@ -381,7 +432,6 @@
         </div>
     </div>
 </footer>
-
 
 </body>
 </html>

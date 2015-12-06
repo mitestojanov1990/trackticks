@@ -8,13 +8,39 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
+
+    <script src="./js/general.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="css/variables.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/medias.less" />
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.js"></script>
+
+    <script>
+        var tmpWidth = effectiveDeviceWidth();
+        var tmpHeight = effectiveDeviceHeight();
+
+        if (tmpWidth < tmpHeight) {
+            var tmp = tmpWidth;
+            tmpWidth = tmpHeight;
+            tmpHeight = tmp;
+        }
+        less = {
+            env: "development",
+            async: false,
+            fileAsync: false,
+            poll: 1000,
+            functions: {},
+            dumpLineNumbers: "comments",
+            globalVars: {
+                sw: tmpWidth + "px",
+                sh: tmpHeight + "px"
+            },
+        };
+    </script>
+    <script src="js/less.min.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -49,19 +75,24 @@
             </ul>
         </div>
     </div>
+    </div>
 </nav>
 
 <section class="player">
-    <div class="main-container">
+    <div class="clearfix main-container">
         <div class="one-column">
-            <img src="img/iPhones_Mockup_App.png" class="img-responsive" alt="" width="517" height="648">
+            <div class="image_wrapper player-head">
+                <img src="img/iPhones_Mockup_App.png" class="img-responsive" alt="">
+            </div>
         </div>
         <div class="two-column">
-            <h1>Individueller Tracker</h1>
-            <p>Melde dich an und wir informieren dich als erster sobald dein persönlicher Tracker verfügbar ist.</p>
-            <div>
-                <input type="text" placeholder="Your Email">
-                <a href="#" class="btn myBtn">Notify Me!</a>
+            <div class="section-text">
+                <h1>Individueller Tracker</h1>
+                <p>Sign up now to get notified as soon as you can buy the first affordable personal football Tracker!</p>
+                <div>
+                    <input type="text" placeholder="Your Email">
+                    <a href="#" class="btn myBtn smaller">Notify Me!</a>
+                </div>
             </div>
         </div>
     </div>
@@ -107,6 +138,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>
