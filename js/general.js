@@ -16,20 +16,18 @@ function effectiveDeviceHeight() {
     return deviceHeight;
 }
 
-var curLang = 1;
+function ToggleReadMore(t) {
+    $(t).parent().find('p').toggle();
 
-$(document).ready(function () {
-
-});
-
-function ChangeLanguage() {
-    $('#changeLanguage').removeClass('hidden');
+    if ($(t).text() == "Read More") {
+        $(t).text('Close');
+    } else {
+        $(t).text('Read More');
+    }
 }
 
-function UpdateLanguagePanel() {
-    if (curLang == 1) {
-        $('.lang_text').text('English');
-    } else {
-        $('.lang_text').text('German');
-    }
+function NavigationToggle(t) {
+    $(t).children('.navbar_image_wrapper').toggleClass('hidden');
+
+    $('.list-inline.mobile').toggleClass('mobile_visible');
 }

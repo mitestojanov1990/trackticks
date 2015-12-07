@@ -17,7 +17,7 @@
 
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
     <link rel="stylesheet/less" type="text/css" href="css/medias.less" />
-    <link rel="stylesheet/less" type="text/css" href="css/mobile1.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/mobile3.less" />
     <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
 
@@ -25,85 +25,6 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.js"></script>
     <script src="js/teams.js"></script>
-
-    <style>
-
-
-        .slick-slide {
-            display: block;
-            width: 1039px;
-            outline: none;
-            margin-right: 79px;
-        }
-
-        .slick-slide.slick-cloned {
-            display: none;
-        }
-
-        .slick-slide img {
-            display: block;
-            margin: 0 auto;
-            width: 100%;
-            display: block;
-            max-width: 100%;
-        }
-
-        .slick-next {
-            right: 60px;
-            z-index: 100;
-        }
-
-        .slick-prev {
-            left: 60px;
-            z-index: 100;
-        }
-
-        .slick-prev:before, .slick-next:before { font-family: FontAwesome; font-size: 40px; line-height: 1; color: #ccc; opacity: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-
-        .slick-prev:before { content: "\f053"; }
-        [dir="rtl"] .slick-prev:before { content: "\f054"; }
-
-        [dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
-        .slick-next:before { content: "\f054"; }
-        [dir="rtl"] .slick-next:before { content: "\f053"; }
-
-        .slick-dots li button:before{font-family: FontAwesome; font-size: 10px; color: #fff; opacity: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-
-        .slick-dots li button:before{content:'\f111'}
-
-        .slick-dots li.slick-active button:before{
-            color: #ff2300;
-        }
-
-        .slick-slide h3{
-            font-weight:bold;
-            width: 552px;
-            margin: 0 auto 10px auto;
-            text-align: left;
-        }
-        .slick-slide p{
-            font-size: 14px;
-            width: 552px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .slick-prev, .slick-next{
-            width: auto;
-            height: auto;
-        }
-
-        .slick-prev, .slick-next{
-            top: 40%;
-        }
-
-        .slick-dots {
-            bottom: -98px;
-        }
-
-
-
-    </style>
 
     <script>
         var tmpWidth = effectiveDeviceWidth();
@@ -138,7 +59,15 @@
                     <img src="img/Logo.png" alt="Logo" class="img-responsive">
                 </div>
             </div>
-            <ul class="list-inline">
+            <div class="hidden mobile_visible nav_toggle" onclick="NavigationToggle(this)">
+                <div class="navbar_image_wrapper closed">
+                    <img src="img/nav_open.png" alt="Logo" class="img-responsive">
+                </div>
+                <div class="navbar_image_wrapper opened hidden">
+                    <img src="img/nav_close.png" alt="Logo" class="img-responsive">
+                </div>
+            </div>
+            <ul class="list-inline mobile_hidden">
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="teams.html">Teams</a></li>
                 <li><a href="players.html">Players</a></li>
@@ -157,6 +86,27 @@
                         </ul>
                     </div>
                 </li>
+            </ul>
+
+            <ul class="list-inline mobile">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="teams.html">Teams</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li class="language">
+                    <div class="toggle_language">
+                        <a href="#" class="english_toggle">
+                            <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul id="changeLanguage">
+                            <li class="german_drop">
+                                <a href="teams_de.html">
+                                    <span class="english"></span>German
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
             </ul>
         </div>
     </div>
@@ -189,7 +139,7 @@
                 <div class="team-features">
                     <ul class="clearfix list-inline">
                         <li>
-                            <div class="circle" style="padding: 44px;">
+                            <div class="circle">
                                 <img src="img/team-1.png" alt="" class="img-responsive"  >
                             </div>
                             <div class="description">
@@ -203,10 +153,9 @@
 
                             </div>
                         </li>
-
                         <li>
-                            <div class="circle" style="padding: 28px;">
-                                <img src="img/team-2.png" alt="" class="img-responsive" style="margin-top: 14px; margin-left: 5px;" >
+                            <div class="circle">
+                                <img src="img/team-2.png" alt="" class="img-responsive" >
                             </div>
                             <div class="description">
                                 <h3>Analyse</h3>
@@ -220,7 +169,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="circle" style="padding: 37px;">
+                            <div class="circle">
                                 <img src="img/team-3.png" alt="" class="img-responsive"  >
                             </div>
                             <div class="description">
@@ -240,35 +189,40 @@
         <div class="your-class">
             <div>
                 <img src="img/carousel-ipad.png" alt="">
-                <div class="hidden-xs" style="margin-top: 10px">
+                <div class="hidden-xs">
                     <h3>See what you do in full detail</h3>
                     <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>
                 </div>
             </div>
             <div>
                 <img src="img/carousel-ipad.png" alt="">
-                <div class="hidden-xs" style="margin-top: 10px">
+                <div class="hidden-xs">
                     <h3>See what you do in full detail</h3>
                     <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>
                 </div>
             </div>
             <div>
                 <img src="img/carousel-ipad.png" alt="">
-                <div class="hidden-xs" style="margin-top: 10px">
+                <div class="hidden-xs">
                     <h3>See what you do in full detail</h3>
                     <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>
                 </div>
             </div>
             <div>
                 <img src="img/carousel-ipad.png" alt="">
-                <div class="hidden-xs" style="margin-top: 10px">
+                <div class="hidden-xs">
                     <h3>See what you do in full detail</h3>
                     <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>
                 </div>
             </div>
         </div>
-    </div>
-
+        <div class="main-container">
+            <div class="clearfix">
+                <div class="hidden mobile_visible">
+                    <p>See all your players organized and ranked</p>
+                </div>
+            </div>
+        </div>
 </section>
 
 
@@ -285,6 +239,8 @@
                     <div class="section-text">
                         <h3>Performance data and development</h3>
                         <p>How to evaluate the athletic performance of your team? TRACKTICS enables you to gather objective data on the athletic performance of each of your players. You can monitor the development throughout each single session and over time.</p>
+
+                        <a href="#" class="btn custom-btn hidden mobile_visible" onclick="ToggleReadMore(this)">Read More</a>
                     </div>
                 </div>
             </div>
@@ -294,16 +250,18 @@
     <section class="team-motivate">
         <div class="main-container">
             <div class="clearfix">
-                <div class="one-column" >
+                <div class="one-column">
                     <div class="section-text">
                         <h3>Motivate</h3>
-                        <p style="margin-bottom: 43px;">Supporting your subjectivity with objective performance data will facilitate your coaching and allow to give profound, individual data based feedback.</p>
+                        <p>Supporting your subjectivity with objective performance data will facilitate your coaching and allow to give profound, individual data based feedback.</p>
                         <p>This will assist you motivating and inspiring your players to unleash their potential.</p>
+
+                        <a href="#" class="btn custom-btn hidden mobile_visible" onclick="ToggleReadMore(this)">Read More</a>
                     </div>
                 </div>
                 <div class="two-column">
                     <div class="image_wrapper motivate-image">
-                        <img src="img/motivate_new.png" alt="" class="img-responsive" >
+                        <img src="img/motivate_new.png" alt="" class="img-responsive">
                     </div>
                 </div>
             </div>
@@ -321,6 +279,8 @@
                     <div class="section-text">
                         <h3>The balance between load and recovery</h3>
                         <p>Comprehensive visualisations of load parameters, like distance of number of accelerations & decelerations, after every session will help you to balance load and recovery on a players level. During the recovery period of a player, you can monitor his athletic performance KPIs and compare with pre-injury data.</p>
+
+                        <a href="#" class="btn custom-btn hidden mobile_visible" onclick="ToggleReadMore(this)">Read More</a>
                     </div>
                 </div>
             </div>
@@ -333,11 +293,13 @@
                     <div class="section-text">
                         <h3>Improved planning & decision making</h3>
                         <p>Choose consciously the types of training based on objective performance data. High and low performers to be quickly identified and addressed. Support your decisions with objective data. Use the insights you gain from the TRACKTICS data when making tough decisions as a coach.</p>
+
+                        <a href="#" class="btn custom-btn hidden mobile_visible" onclick="ToggleReadMore(this)">Read More</a>
                     </div>
-                   </div>
+                </div>
                 <div class="two-column">
                     <div class="image_wrapper planing-image">
-                        <img src="img/Planing.png" alt="" class="img-responsive" >
+                        <img src="img/Planing.png" alt="" class="img-responsive">
                     </div>
                 </div>
             </div>
@@ -353,8 +315,10 @@
                 </div>
                 <div class="two-column">
                     <div class="section-text">
-                        <h3 style="font-weight: bold">Comparison - putting your <br> data into perspective</h3>
+                        <h3>Comparison - putting your <br> data into perspective</h3>
                         <p>Compare your players and identify individual strengths and weaknesses. The TRACKTICS app will highlight who outperformed or underperformed when it really mattered. The possibility of comparing your players with external benchmarks will add another perpective when analysing their performance.</p>
+
+                        <a href="#" class="btn custom-btn hidden mobile_visible" onclick="ToggleReadMore(this)">Read More</a>
                     </div>
                 </div>
             </div>
@@ -365,7 +329,7 @@
 <section class="team-shop" id="buy_section">
     <div class="main-container">
         <div class="clearfix">
-            <div class="one-column" style="margin-left: 40px;">
+            <div class="one-column">
                 <div class="image_wrapper buy-image">
                     <img src="img/sale.png" alt="" class="img-responsive">
                 </div>
@@ -373,8 +337,8 @@
             <div class="two-column">
                 <div class="section-text">
                     <h2>EARLY BIRD</h2>
-                    <h2 style="    margin-bottom: 38px">Starter Paket</h2>
-                    <p style="margin-bottom: 49px;">Get a set of 3 Trackers and <br> Belts for the football pitch and unleash your potential.</p>
+                    <h2 >Starter Paket</h2>
+                    <p>Get a set of 3 Trackers and <br> Belts for the football pitch and unleash your potential.</p>
                     <div class="clearfix quantity">
                         <p>Quantity</p>
                         <p  ><span class="plus">+</span><span class="minus">-</span> <span class="increase pull-right">01</span></p>
@@ -410,16 +374,16 @@
                 </div>
 
                 <div class="info-list clearfix">
-                    <div style="display: inline-block;width: 100px; float: left;">
+                    <div>
                         <p>+49 123 45 67</p>
                     </div>
-                    <ul style="display: inline-block" class="list-inline">
+                    <ul class="list-inline">
                         <li><p>TRACKTICS GmbH</p></li>
                         <li><p>Elisabethenstrasse 105</p></li>
                         <li><p>719 Hofheim a.T.</p></li>
                         <li><p>Germany</p></li>
                     </ul>
-                    <div style="display: inline-block;width: 100px; float: right;">
+                    <div>
                         <p>Impressum</p>
                     </div>
                 </div>

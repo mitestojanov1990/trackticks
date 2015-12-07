@@ -2022,3 +2022,75 @@ button .caret {
 .noPos p {
   font-size: 24px;
 }
+
+.slick-slide {
+    display: block;
+    width: 1039px;
+    outline: none;
+    margin-right: 79px;
+}
+
+.slick-slide.slick-cloned {
+    display: none;
+}
+
+.slick-slide img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+
+.slick-next {
+    right: 60px;
+    z-index: 100;
+}
+
+.slick-prev {
+    left: 60px;
+    z-index: 100;
+}
+
+.slick-prev:before, .slick-next:before { font-family: FontAwesome; font-size: 40px; line-height: 1; color: #ccc; opacity: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev:before { content: "\f053"; }
+[dir="rtl"] .slick-prev:before { content: "\f054"; }
+
+[dir="rtl"] .slick-next { left: -10px; top: 70px; right: auto; }
+.slick-next:before { content: "\f054"; }
+[dir="rtl"] .slick-next:before { content: "\f053"; }
+
+.slick-dots li button:before{font-family: FontAwesome; font-size: 10px; color: #fff; opacity: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.slick-dots li button:before{content:'\f111'}
+
+.slick-dots li.slick-active button:before{
+    color: #ff2300;
+}
+
+.slick-slide h3{
+    font-weight:bold;
+    width: 552px;
+    margin: 0 auto 10px auto;
+    text-align: left;
+}
+.slick-slide p{
+    font-size: 14px;
+    width: 552px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.slick-prev, .slick-next{
+    width: auto;
+    height: auto;
+}
+
+.slick-prev, .slick-next{
+    top: 40%;
+}
+
+.slick-dots {
+    bottom: -98px;
+}
