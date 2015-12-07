@@ -10,9 +10,12 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
 
     <script src="./js/general.js"></script>
+
     <link rel="stylesheet/less" type="text/css" href="css/variables.less" />
+
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
     <link rel="stylesheet/less" type="text/css" href="css/medias.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/mobile2.less" />
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -46,7 +49,7 @@
 <body>
 
 
-<nav class="navigation">
+<nav class="navigation hidden">
     <div class="main-container">
         <div class="clearfix">
             <div class="logo">
@@ -80,14 +83,17 @@
 
 <section class="player">
     <div class="clearfix main-container">
+        <h1 class="mobile_visible push_down">Personal Tracking: <br> Coming soon</h1>
         <div class="one-column">
+
+
             <div class="image_wrapper player-head">
                 <img src="img/iPhones_Mockup_App.png" class="img-responsive" alt="">
             </div>
         </div>
         <div class="two-column">
             <div class="section-text">
-                <h1>Personal Tracking: <br> Coming soon</h1>
+                <h1 class="mobile_hidden">Personal Tracking: <br> Coming soon</h1>
                 <p>Sign up now to get notified as soon as you can buy the first affordable personal football Tracker!</p>
                 <div>
                     <input type="text" placeholder="Your Email">
@@ -98,7 +104,7 @@
     </div>
 </section>
 
-<footer class="footer">
+<!--<footer class="footer">
     <div class="main-container">
         <div class="clearfix secondary-container">
             <div class="social">
@@ -137,6 +143,59 @@
 
         </div>
     </div>
+</footer>-->
+
+
+<footer class="footer">
+    <div class="main-container">
+        <div class="clearfix secondary-container">
+            <div class="social">
+                <div class="hiring">
+                    <p>info@Tracktics.zone</p>
+                    <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                </div>
+                <div class="social-icons">
+                    <p>Follow us!</p>
+                    <ul class="list-inline">
+                        <li><a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <p>We always write back!</p>
+                    <a href="contact.html" class="btn myBtn">Contact us</a>
+                </div>
+            </div>
+
+            <div class="info-list clearfix">
+                <div style="display: inline-block;width: 100px; float: left;">
+                    <p>+49 123 45 67</p>
+                </div>
+                <ul style="display: inline-block" class="list-inline">
+                    <li><p>TRACKTICS GmbH</p></li>
+                    <li><p>Elisabethenstrasse 105</p></li>
+                    <li><p>719 Hofheim a.T.</p></li>
+                    <li><p>Germany</p></li>
+                </ul>
+                <div style="display: inline-block;width: 100px; float: right;">
+                    <p>Impressum</p>
+                </div>
+            </div>
+            <div class="mobile_hiring mobile_visible hidden">
+                <p>+49 123 45 67 - info@Tracktics.zone</p>
+                <div class="mobile_footer_buttons">
+                    <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                    <a href="contact.html" class="btn myBtn">Contact us</a>
+                </div>
+                <p class="left">TRACKTICS GmbH</p>
+                <p class="right">Impressum</p>
+            </div>
+
+        </div>
+    </div>
 </footer>
+
+
 </body>
 </html>
