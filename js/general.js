@@ -31,3 +31,11 @@ function NavigationToggle(t) {
 
     $('.list-inline.mobile').toggleClass('mobile_visible');
 }
+
+$(document).ready(function () {
+
+    $('#check').hide();
+    $('#buy_button').click(function () {
+        $('#check').toggle();
+    });
+});

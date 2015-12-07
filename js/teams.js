@@ -87,10 +87,6 @@ $(document).ready(function(){
 
     });
 
-    $('#check').hide();
-    $('#buy_button').click(function () {
-        $('#check').toggle();
-    })
 
 
 
