@@ -51,196 +51,235 @@
     <script src="js/index.js"></script>
 </head>
 <body>
-    <nav class="navigation">
-        <div class="main-container">
-            <div class="clearfix">
-                <div class="logo">
-                    <div class="navbar_image_wrapper">
-                        <img src="img/Logo.png" alt="Logo" class="img-responsive">
-                    </div>
-                </div>
-                <div class="hidden mobile_visible nav_toggle" onclick="NavigationToggle(this)">
-                    <div class="navbar_image_wrapper closed">
-                        <img src="img/nav_open.png" alt="Logo" class="img-responsive">
-                    </div>
-                    <div class="navbar_image_wrapper opened hidden">
-                        <img src="img/nav_close.png" alt="Logo" class="img-responsive">
-                    </div>
-                </div>
-                <ul class="list-inline mobile_hidden">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="teams.html">Teams</a></li>
-                    <li><a href="players.html">Players</a></li>
-                    <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
-                    <li class="language">
-                        <div class="toggle_language">
-                            <a href="#" class="english_toggle">
-                                <span class="english add_margin"><img src="img/german.png" alt=""></span>German&nbsp;<span class="caret"></span>
-                            </a>
-                            <ul id="changeLanguage">
-                                <li class="german_drop">
-                                    <a href="index.html">
-                                        <span class="english"><img src="img/english.png" alt=""></span>English
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-
-                <ul class="list-inline mobile">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="teams.html">Teams</a></li>
-                    <li><a href="players.html">Players</a></li>
-                    <li class="language">
-                        <div class="toggle_language">
-                            <a href="#" class="english_toggle">
-                                <span class="english add_margin"><img src="img/german.png" alt=""></span>German&nbsp;<span class="caret"></span>
-                            </a>
-                            <ul id="changeLanguage">
-                                <li class="german_drop">
-                                    <a href="index.html">
-                                        <span class="english"></span>English
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section class="header-section">
-        <div class="clearfix main-container">
-            <div class="one-column">
-                <h1>Entfalte das <br> Potential auf dem <br> Platz</h1>
-                <p>Use the first affordable tracking system for <br> the football pitch and unleash your potential </p>
-                <div class="header-buttons clearfix">
-                    <a href="#" class="btn custom-btn"><span> <img src="img/player.png" class="img-responsive" alt=""></span>Start as player</a>
-                    <a href="#" class="btn custom-btn"><span><img src="img/coach.png" class="img-responsive" alt=""></span>Start as coach</a>
+<nav class="navigation">
+    <div class="main-container">
+        <div class="clearfix">
+            <div class="logo">
+                <div class="navbar_image_wrapper">
+                    <img src="img/Logo.png" alt="Logo" class="img-responsive">
                 </div>
             </div>
+            <div class="hidden mobile_visible nav_toggle" onclick="NavigationToggle(this)">
+                <div class="navbar_image_wrapper closed">
+                    <img src="img/nav_open.png" alt="Logo" class="img-responsive">
+                </div>
+                <div class="navbar_image_wrapper opened hidden">
+                    <img src="img/nav_close.png" alt="Logo" class="img-responsive">
+                </div>
+            </div>
+            <ul class="list-inline mobile_hidden">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+                <li class="language">
+                    <div class="toggle_language">
+                        <a href="#" class="english_toggle">
+                            <span class="english add_margin german"><img src="img/german.png" alt=""></span>German&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul id="changeLanguage">
+                            <li class="german_drop">
+                                <a href="index.html">
+                                    <span class="english"><img src="img/english.png" alt=""></span>English
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="list-inline mobile">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li class="language">
+                    <div class="toggle_language">
+                        <a href="#" class="english_toggle">
+                            <span class="english add_margin"><img src="img/german.png" alt=""></span>German&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul id="changeLanguage">
+                            <li class="german_drop">
+                                <a href="index.html">
+                                    <span class="english"></span>English
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+            </ul>
         </div>
-    </section>
+    </div>
+</nav>
 
-    <section class="metrics-section">
-        <div class="main-container">
-            <div class="clearfix secondary-container">
-                <div class="custom_row margin_botton_49 clearfix">
-                    <div class="one-column">
-                        <div class="image_wrapper tracker_landingpage">
-                            <img src="img/Tracker_Metrics_Landingpage.png" alt="" class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="two-column">
-                        <h2>Make better <br> decisions <br class="mobile_hidden"> on the field <br> with data</h2>
-                    </div>
-                </div>
-                <div class="features">
-                    <ul class="clearfix list-inline">
-                        <li class="li_only_right_margin">
-                            <div class="circle">
-                                <img src="img/1.png" alt="" class="img-responsive">
-                            </div>
-                            <p>Antritt</p>
-                        </li>
-                        <li class="li_margin">
-                            <div class="circle">
-                                <img src="img/deceleration.png" alt="" class="img-responsive" style="margin-top: 6px;">
-                            </div>
-                            <p>Deceleration</p>
-                        </li>
-                        <li class="li_margin">
-                            <div class="circle">
-                                <img src="img/3.png" alt="" class="img-responsive">
-                            </div>
-                            <p>Topspeed</p>
-                        </li>
-                        <li class="li_only_left_margin">
-                            <div class="circle">
-                                <img src="img/4.png" alt="" class="img-responsive" style="margin-top: 6px;">
-                            </div>
-                            <p>Heatmap</p>
-                        </li>
-                    </ul>
-                    <ul class="clearfix list-inline" style="margin-top: 62px;">
-                        <li class="li_only_right_margin">
-                            <div class="circle">
-                                <img src="img/Sprints.png" alt="" class="img-responsive" style="margin-top: 6px;">
-                            </div>
-                            <p>Sprints</p>
-                        </li>
-                        <li class="li_margin">
-                            <div class="circle">
-                                <img src="img/Speed.png" alt="" class="img-responsive">
-                            </div>
-                            <p>Speedzones</p>
-                        </li>
-                        <li class="li_margin">
-                            <div class="circle">
-                                <img src="img/activity.png" alt="" class="img-responsive" style="margin-top: 6px;">
-                            </div>
-                            <p>Activity</p>
-                        </li>
-                        <li class="li_only_left_margin">
-                            <div class="circle">
-                                <img src="img/distance.png" alt="" class="img-responsive" style="margin-top: 6px;">
-                            </div>
-                            <p>Distance</p>
-                        </li>
-                    </ul>
-                </div>
-
+<section class="header-section">
+    <div class="clearfix main-container">
+        <div class="one-column">
+            <h1>Entfalte das <br> Potential auf dem <br> Platz</h1>
+            <p>Use the first affordable tracking system for <br> the football pitch and unleash your potential </p>
+            <div class="header-buttons clearfix">
+                <a href="#" class="btn custom-btn"><span> <img src="img/player.png" class="img-responsive" alt=""></span>Start as player</a>
+                <a href="#" class="btn custom-btn"><span><img src="img/coach.png" class="img-responsive" alt=""></span>Start as coach</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="product-section">
-        <div class="main-container">
-            <div class="clearfix secondary-container">
+<section class="metrics-section">
+    <div class="main-container">
+        <div class="clearfix secondary-container">
+            <div class="custom_row margin_botton_49 clearfix">
                 <div class="one-column">
-                    <div class="image_wrapper ipad">
-                        <img src="img/iPad.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="align_center_container">
-                        <div class="product-title">
-                            <h3>Team Lösung</h3>
-                            <p>Get the most affordable professional tracking <br> system for your team!</p>
-                        </div>
-                    </div>
-                    <div class="buy-button">
-                        <a href="teams.html#buy_section" class="btn myBtn">Go to Shop</a>
+                    <div class="image_wrapper tracker_landingpage">
+                        <img src="img/Tracker_Metrics_Landingpage.png" alt="" class="img-responsive">
                     </div>
                 </div>
                 <div class="two-column">
-                    <div class="image_wrapper singleProduct1">
-                        <img src="img/singleProduct1.png" alt="" class="img-responsive">
-                    </div>
-                    <div class="align_center_container">
-                        <div class="product-title">
-                            <h3>Individueller Tracker</h3>
-                            <p>Improve your personal performance and <br> accelerate your progress with the help of data.</p>
+                    <h2>Make better <br> decisions <br class="mobile_hidden"> on the field <br> with data</h2>
+                </div>
+            </div>
+            <div class="features">
+                <ul class="clearfix list-inline">
+                    <li class="li_only_right_margin">
+                        <div class="circle">
+                            <img src="img/1.png" alt="" class="img-responsive">
                         </div>
+                        <p>Antritt</p>
+                    </li>
+                    <li class="li_margin">
+                        <div class="circle">
+                            <img src="img/deceleration.png" alt="" class="img-responsive" style="margin-top: 6px;">
+                        </div>
+                        <p>Deceleration</p>
+                    </li>
+                    <li class="li_margin">
+                        <div class="circle">
+                            <img src="img/3.png" alt="" class="img-responsive">
+                        </div>
+                        <p>Topspeed</p>
+                    </li>
+                    <li class="li_only_left_margin">
+                        <div class="circle">
+                            <img src="img/4.png" alt="" class="img-responsive" style="margin-top: 6px;">
+                        </div>
+                        <p>Heatmap</p>
+                    </li>
+                </ul>
+                <ul class="clearfix list-inline" style="margin-top: 62px;">
+                    <li class="li_only_right_margin">
+                        <div class="circle">
+                            <img src="img/Sprints.png" alt="" class="img-responsive" style="margin-top: 6px;">
+                        </div>
+                        <p>Sprints</p>
+                    </li>
+                    <li class="li_margin">
+                        <div class="circle">
+                            <img src="img/Speed.png" alt="" class="img-responsive">
+                        </div>
+                        <p>Speedzones</p>
+                    </li>
+                    <li class="li_margin">
+                        <div class="circle">
+                            <img src="img/activity.png" alt="" class="img-responsive" style="margin-top: 6px;">
+                        </div>
+                        <p>Activity</p>
+                    </li>
+                    <li class="li_only_left_margin">
+                        <div class="circle">
+                            <img src="img/distance.png" alt="" class="img-responsive" style="margin-top: 6px;">
+                        </div>
+                        <p>Distance</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="product-section">
+    <div class="main-container">
+        <div class="clearfix secondary-container">
+            <div class="one-column">
+                <div class="image_wrapper ipad">
+                    <img src="img/iPad.png" alt="" class="img-responsive">
+                </div>
+                <div class="align_center_container">
+                    <div class="product-title">
+                        <h3>Team Lösung</h3>
+                        <p>Get the most affordable professional tracking <br> system for your team!</p>
                     </div>
-                    <div class="buy-button">
-                        <a href="teams.html#buy_section" class="btn myBtn">Go to Shop</a>
+                </div>
+                <div class="buy-button">
+                    <a href="teams.html#buy_section" class="btn myBtn">Go to Shop</a>
+                </div>
+            </div>
+            <div class="two-column">
+                <div class="image_wrapper singleProduct1">
+                    <img src="img/singleProduct1.png" alt="" class="img-responsive">
+                </div>
+                <div class="align_center_container">
+                    <div class="product-title">
+                        <h3>Individueller Tracker</h3>
+                        <p>Improve your personal performance and <br> accelerate your progress with the help of data.</p>
                     </div>
+                </div>
+                <div class="buy-button">
+                    <a href="teams.html#buy_section" class="btn myBtn">Go to Shop</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="recommend-section">
-        <div class="main-container">
-            <h2>Ws sagen unsere Kunden?</h2>
-            <div class="quotes_container">
-                <div class="quote_img">
-                    <div class="image_wrapper quotes">
-                        <img src="img/quoteLeft.png" alt="" class="img-responsive">
-                    </div>
+<section class="recommend-section">
+    <div class="main-container">
+        <h2>Ws sagen unsere Kunden?</h2>
+        <div class="quotes_container">
+            <div class="quote_img">
+                <div class="image_wrapper quotes">
+                    <img src="img/quoteLeft.png" alt="" class="img-responsive">
                 </div>
+            </div>
+            <div class="quote_item">
+                <div class="user">
+                    <div class="image_wrapper tim">
+                        <img src="img/tim.png" alt="" class="img-responsive">
+                    </div>
+                    <h4>Tim Simmons</h4>
+                    <p style="margin-bottom: 38px; font-style: italic">Coach Bayern Nüchtern</p>
+                    <p>I’m seriously happy about buying these trackers from Tracktics. The powerful features and the easy setup totally convinced my full team</p>
+                </div>
+            </div>
+            <div class="quote_item">
+                <div class="user">
+                    <div class="image_wrapper barbara">
+                        <img src="img/barbara.png" alt="" class="img-responsive">
+                    </div>
+                    <h4>Barbara Rhabarber</h4>
+                    <p style="margin-bottom: 38px; font-style: italic">Goalkeeper, Ireland</p>
+                    <p>As a goalkeeper you get ignored most of the time by the trainer. Now you can see your own stats constantly and improve your fitness and game.</p>
+                </div>
+            </div>
+            <div class="quote_item">
+                <div class="user">
+                    <div class="image_wrapper grinch">
+                        <img src="img/grinch.png" alt="" class="img-responsive">
+                    </div>
+                    <h4>The Grinch</h4>
+                    <p style="margin-bottom: 38px; font-style: italic">Coach and Player</p>
+                    <p>From both the perspective of a coach and a player the Tracker by Tracktics changed the way I play football, for the better. I don’t have to keep guessing how today’s training was.</p>
+                </div>
+            </div>
+            <div class="quote_img">
+                <div class="image_wrapper quotes">
+                    <img src="img/quoteRight.png" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+
+        <div class="index_slick hidden  mobile_visible display_block ">
+            <div>
                 <div class="quote_item">
                     <div class="user">
                         <div class="image_wrapper tim">
@@ -251,6 +290,8 @@
                         <p>I’m seriously happy about buying these trackers from Tracktics. The powerful features and the easy setup totally convinced my full team</p>
                     </div>
                 </div>
+            </div>
+            <div>
                 <div class="quote_item">
                     <div class="user">
                         <div class="image_wrapper barbara">
@@ -261,6 +302,8 @@
                         <p>As a goalkeeper you get ignored most of the time by the trainer. Now you can see your own stats constantly and improve your fitness and game.</p>
                     </div>
                 </div>
+            </div>
+            <div>
                 <div class="quote_item">
                     <div class="user">
                         <div class="image_wrapper grinch">
@@ -271,178 +314,139 @@
                         <p>From both the perspective of a coach and a player the Tracker by Tracktics changed the way I play football, for the better. I don’t have to keep guessing how today’s training was.</p>
                     </div>
                 </div>
-                <div class="quote_img">
-                    <div class="image_wrapper quotes">
-                        <img src="img/quoteRight.png" alt="" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-
-            <div class="index_slick hidden  mobile_visible display_block ">
-                <div>
-                    <div class="quote_item">
-                        <div class="user">
-                            <div class="image_wrapper tim">
-                                <img src="img/tim.png" alt="" class="img-responsive">
-                            </div>
-                            <h4>Tim Simmons</h4>
-                            <p style="margin-bottom: 38px; font-style: italic">Coach Bayern Nüchtern</p>
-                            <p>I’m seriously happy about buying these trackers from Tracktics. The powerful features and the easy setup totally convinced my full team</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="quote_item">
-                        <div class="user">
-                            <div class="image_wrapper barbara">
-                                <img src="img/barbara.png" alt="" class="img-responsive">
-                            </div>
-                            <h4>Barbara Rhabarber</h4>
-                            <p style="margin-bottom: 38px; font-style: italic">Goalkeeper, Ireland</p>
-                            <p>As a goalkeeper you get ignored most of the time by the trainer. Now you can see your own stats constantly and improve your fitness and game.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="quote_item">
-                        <div class="user">
-                            <div class="image_wrapper grinch">
-                                <img src="img/grinch.png" alt="" class="img-responsive">
-                            </div>
-                            <h4>The Grinch</h4>
-                            <p style="margin-bottom: 38px; font-style: italic">Coach and Player</p>
-                            <p>From both the perspective of a coach and a player the Tracker by Tracktics changed the way I play football, for the better. I don’t have to keep guessing how today’s training was.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="newsletter">
-        <div class="main-container">
-            <div class="clearfix secondary-container">
-                <h2>Informiere deine Freunde über TRACKTICS</h2>
-                <div class="email clearfix">
-                    <input type="text" placeholder="Your Friend’s Email">
-                    <a href="#" class="btn myBtn">Tell him</a>
-                </div>
-                <a href="#" class="btn myBtn friend">+ Add a Friend</a>
+<section class="newsletter">
+    <div class="main-container">
+        <div class="clearfix secondary-container">
+            <h2>Informiere deine Freunde über TRACKTICS</h2>
+            <div class="email clearfix">
+                <input type="text" placeholder="Your Friend’s Email">
+                <a href="#" class="btn myBtn">Tell him</a>
             </div>
+            <a href="#" class="btn myBtn friend">+ Add a Friend</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="partners">
+<section class="partners">
 
-        <div class="main-container">
-            <div class="clearfix secondary-container">
-                <h2>Our Partners<br class="mobile_visible hidden" />help us innovate</h2>
-                <div class="partner-container clearfix">
-                    <div class="partner-div">
-                        <div class="partner-img">
-                            <div class="image_wrapper partner-1">
-                                <img src="img/ESF_Logo.png" alt="" class="img-responsive">
-                            </div>
+    <div class="main-container">
+        <div class="clearfix secondary-container">
+            <h2>Our Partners<br class="mobile_visible hidden" />help us innovate</h2>
+            <div class="partner-container clearfix">
+                <div class="partner-div">
+                    <div class="partner-img">
+                        <div class="image_wrapper partner-1">
+                            <img src="img/ESF_Logo.png" alt="" class="img-responsive">
                         </div>
-                        <h3>ESF</h3>
-                        <p>Europäischer Sozialfonds für Deutschland</p>
                     </div>
-
-                    <div class="partner-div">
-                        <div class="partner-img">
-                            <div class="image_wrapper partner-2">
-                                <img src="img/partner-2.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <h3>esa</h3>
-                        <p>European Space Agency</p>
-                    </div>
-
-                    <div class="partner-div">
-                        <div class="partner-img">
-                            <div class="image_wrapper partner-3">
-                                <img src="img/europe.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <h3>Startup Europe</h3>
-                        <p>Startupfund by the European Commission</p>
-                    </div>
+                    <h3>ESF</h3>
+                    <p>Europäischer Sozialfonds für Deutschland</p>
                 </div>
-                <div class="sponsor-container">
-                    <h3>Trusted and recommended by</h3>
 
-                    <div class="sponsor-div">
-                        <div class="sponsor-img">
-                            <div class="image_wrapper sponsor-1">
-                                <img src="img/sponsor-1.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="sponsor-img">
-                            <div class="image_wrapper sponsor-2">
-                                <img src="img/sponsor-2.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="sponsor-img">
-                            <div class="image_wrapper sponsor-3">
-                                <img src="img/INVEST_Badge_no_bg.png" alt="" class="img-responsive">
-                            </div>
+                <div class="partner-div">
+                    <div class="partner-img">
+                        <div class="image_wrapper partner-2">
+                            <img src="img/partner-2.png" alt="" class="img-responsive">
                         </div>
                     </div>
+                    <h3>esa</h3>
+                    <p>European Space Agency</p>
+                </div>
 
+                <div class="partner-div">
+                    <div class="partner-img">
+                        <div class="image_wrapper partner-3">
+                            <img src="img/europe.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <h3>Startup Europe</h3>
+                    <p>Startupfund by the European Commission</p>
                 </div>
             </div>
-        </div>
+            <div class="sponsor-container">
+                <h3>Trusted and recommended by</h3>
 
-    </section>
-
-    <footer class="footer">
-        <div class="main-container">
-            <div class="clearfix secondary-container">
-                <div class="social">
-                    <div class="hiring">
-                        <p>info@Tracktics.zone</p>
-                        <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                <div class="sponsor-div">
+                    <div class="sponsor-img">
+                        <div class="image_wrapper sponsor-1">
+                            <img src="img/sponsor-1.png" alt="" class="img-responsive">
+                        </div>
                     </div>
-                    <div class="social-icons">
-                        <p>Follow us!</p>
-                        <ul class="list-inline">
-                            <li><a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                        </ul>
+                    <div class="sponsor-img">
+                        <div class="image_wrapper sponsor-2">
+                            <img src="img/sponsor-2.png" alt="" class="img-responsive">
+                        </div>
                     </div>
-                    <div class="contact">
-                        <p>We always write back!</p>
-                        <a href="contact.html" class="btn myBtn">Contact us</a>
+                    <div class="sponsor-img">
+                        <div class="image_wrapper sponsor-3">
+                            <img src="img/INVEST_Badge_no_bg.png" alt="" class="img-responsive">
+                        </div>
                     </div>
                 </div>
 
-                <div class="info-list clearfix">
-                    <div style="display: inline-block;width: 100px; float: left;">
-                        <p>+49 123 45 67</p>
-                    </div>
-                    <ul style="display: inline-block" class="list-inline">
-                        <li><p>TRACKTICS GmbH</p></li>
-                        <li><p>Elisabethenstrasse 105</p></li>
-                        <li><p>719 Hofheim a.T.</p></li>
-                        <li><p>Germany</p></li>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="main-container">
+        <div class="clearfix secondary-container">
+            <div class="social">
+                <div class="hiring">
+                    <p>info@Tracktics.zone</p>
+                    <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                </div>
+                <div class="social-icons">
+                    <p>Follow us!</p>
+                    <ul class="list-inline">
+                        <li><a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a></li>
                     </ul>
-                    <div style="display: inline-block;width: 100px; float: right;">
-                        <p>Impressum</p>
-                    </div>
                 </div>
-                <div class="mobile_hiring mobile_visible hidden">
-                    <p>+49 123 45 67 - info@Tracktics.zone</p>
-                    <div class="mobile_footer_buttons">
-                        <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
-                        <a href="contact.html" class="btn myBtn">Contact us</a>
-                    </div>
-                    <p class="left">TRACKTICS GmbH</p>
-                    <p class="right">Impressum</p>
+                <div class="contact">
+                    <p>We always write back!</p>
+                    <a href="contact.html" class="btn myBtn">Contact us</a>
                 </div>
-
             </div>
+
+            <div class="info-list clearfix">
+                <div style="display: inline-block;width: 100px; float: left;">
+                    <p>+49 123 45 67</p>
+                </div>
+                <ul style="display: inline-block" class="list-inline">
+                    <li><p>TRACKTICS GmbH</p></li>
+                    <li><p>Elisabethenstrasse 105</p></li>
+                    <li><p>719 Hofheim a.T.</p></li>
+                    <li><p>Germany</p></li>
+                </ul>
+                <div style="display: inline-block;width: 100px; float: right;">
+                    <p>Impressum</p>
+                </div>
+            </div>
+            <div class="mobile_hiring mobile_visible hidden">
+                <p>+49 123 45 67 - info@Tracktics.zone</p>
+                <div class="mobile_footer_buttons">
+                    <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                    <a href="contact.html" class="btn myBtn">Contact us</a>
+                </div>
+                <p class="left">TRACKTICS GmbH</p>
+                <p class="right">Impressum</p>
+            </div>
+
         </div>
-    </footer>
+    </div>
+</footer>
+
+
+
+
 </body>
 </html>
