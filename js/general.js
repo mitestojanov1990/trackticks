@@ -18,9 +18,9 @@ function effectiveDeviceHeight() {
 
 var curLang = 1;
 
-$(document).ready(function () {
+/*$(document).ready(function () {
 
-});
+});*/
 
 function ChangeLanguage() {
     $('#changeLanguage').removeClass('hidden');
@@ -33,3 +33,4 @@ function UpdateLanguagePanel() {
         $('.lang_text').text('German');
     }
 }
+
