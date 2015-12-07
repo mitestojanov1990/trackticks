@@ -627,7 +627,7 @@
         margin-bottom: 50px;
     }
 
-    .reorder-xs {
+    .buy-first .reorder-xs {
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
@@ -637,7 +637,7 @@
         /*direction: rtl;*/
     }
 
-    .reorder-xs > [class*="-column"] {
+    .buy-first .reorder-xs > [class*="-column"] {
         -webkit-transform: rotate(-180deg);
         -moz-transform: rotate(-180deg);
         -ms-transform: rotate(-180deg);
@@ -1171,7 +1171,7 @@
 
     .positions-header{
         height: 422px;
-
+        padding: 150px 0 50px 0;
     }
 
     .positions-header h1{
@@ -1229,7 +1229,25 @@
         margin-right: 20px;
     }
 
+    .positions .reorder-xs {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
 
+        /*direction: rtl;*/
+    }
+
+    .positions .reorder-xs > [class*="-column"] {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+
+        direction: ltr;
+    }
 
     .positions .image_wrapper.open-pos-image{
         width: 139px;
@@ -1287,7 +1305,7 @@
     }
 
     .noPos h3{
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
     }
 
@@ -1325,7 +1343,7 @@
         margin-bottom: 0;
     }
 
-    .positions .underline{
+    .noPos .underline{
         text-decoration: underline;
     }
 
