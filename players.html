@@ -25,11 +25,11 @@
         var tmpWidth = effectiveDeviceWidth();
         var tmpHeight = effectiveDeviceHeight();
 
-        if (tmpWidth < tmpHeight) {
-            var tmp = tmpWidth;
-            tmpWidth = tmpHeight;
-            tmpHeight = tmp;
-        }
+        //if (tmpWidth < tmpHeight) {
+        //    var tmp = tmpWidth;
+        //    tmpWidth = tmpHeight;
+        //    tmpHeight = tmp;
+        //}
         less = {
             env: "development",
             async: false,
@@ -48,38 +48,66 @@
 </head>
 <body>
 
-
-<nav class="navigation hidden">
-    <div class="main-container">
-        <div class="clearfix">
-            <div class="logo">
-                <div class="navbar_image_wrapper">
-                    <img src="img/Logo.png" alt="Logo" class="img-responsive">
-                </div>
-            </div>
-            <ul class="list-inline">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="teams.html">Teams</a></li>
-                <li class="active"><a href="players.html">Players</a></li>
-                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
-                <li class="language">
-                    <div class="toggle_language">
-                        <a href="#" class="english_toggle">
-                            <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
-                        </a>
-                        <ul id="changeLanguage">
-                            <li class="german_drop">
-                                <a href="players_de.html">
-                                    <span class="english"><img src="img/german.png" alt=""></span>German
-                                </a>
-                            </li>
-                        </ul>
+    <nav class="navigation">
+        <div class="main-container">
+            <div class="clearfix">
+                <div class="logo">
+                    <div class="navbar_image_wrapper">
+                        <img src="img/Logo.png" alt="Logo" class="img-responsive">
                     </div>
-                </li>
-            </ul>
+                </div>
+                <div class="hidden mobile_visible nav_toggle" onclick="NavigationToggle(this)">
+                    <div class="navbar_image_wrapper closed">
+                        <img src="img/nav_open.png" alt="Logo" class="img-responsive">
+                    </div>
+                    <div class="navbar_image_wrapper opened hidden">
+                        <img src="img/nav_close.png" alt="Logo" class="img-responsive">
+                    </div>
+                </div>
+                <ul class="list-inline mobile_hidden">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="teams.html">Teams</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+                    <li class="language">
+                        <div class="toggle_language">
+                            <a href="#" class="english_toggle">
+                                <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
+                            </a>
+                            <ul id="changeLanguage">
+                                <li class="german_drop">
+                                    <a href="teams_de.html">
+                                        <span class="english"><img src="img/german.png" alt=""></span>German
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="list-inline mobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="teams.html">Teams</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li class="language">
+                        <div class="toggle_language">
+                            <a href="#" class="english_toggle">
+                                <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
+                            </a>
+                            <ul id="changeLanguage">
+                                <li class="german_drop">
+                                    <a href="teams_de.html">
+                                        <span class="english"></span>German
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 <section class="player">
     <div class="clearfix main-container">

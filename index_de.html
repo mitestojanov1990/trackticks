@@ -17,7 +17,7 @@
 
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
     <link rel="stylesheet/less" type="text/css" href="css/medias.less" />
-    <link rel="stylesheet/less" type="text/css" href="css/mobile1.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/mobile2.less" />
     <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css" />
 
@@ -28,11 +28,11 @@
         var tmpWidth = effectiveDeviceWidth();
         var tmpHeight = effectiveDeviceHeight();
 
-        if (tmpWidth < tmpHeight) {
-            var tmp = tmpWidth;
-            tmpWidth = tmpHeight;
-            tmpHeight = tmp;
-        }
+        //if (tmpWidth < tmpHeight) {
+        //    var tmp = tmpWidth;
+        //    tmpWidth = tmpHeight;
+        //    tmpHeight = tmp;
+        //}
         less = {
             env: "development",
             async: false,
@@ -51,7 +51,6 @@
     <script src="js/index.js"></script>
 </head>
 <body>
-
     <nav class="navigation">
         <div class="main-container">
             <div class="clearfix">
@@ -60,19 +59,27 @@
                         <img src="img/Logo.png" alt="Logo" class="img-responsive">
                     </div>
                 </div>
-                <ul class="list-inline">
-                    <li class="active"><a href="index_de.html">Home</a></li>
-                    <li><a href="teams_de.html">Teams</a></li>
-                    <li><a href="players_de.html">Players</a></li>
+                <div class="hidden mobile_visible nav_toggle" onclick="NavigationToggle(this)">
+                    <div class="navbar_image_wrapper closed">
+                        <img src="img/nav_open.png" alt="Logo" class="img-responsive">
+                    </div>
+                    <div class="navbar_image_wrapper opened hidden">
+                        <img src="img/nav_close.png" alt="Logo" class="img-responsive">
+                    </div>
+                </div>
+                <ul class="list-inline mobile_hidden">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="teams.html">Teams</a></li>
+                    <li><a href="players.html">Players</a></li>
                     <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
                     <li class="language">
                         <div class="toggle_language">
                             <a href="#" class="english_toggle">
-                                <span class="english german add_margin"><img src="img/german.png" alt=""></span>German&nbsp;<span class="caret"></span>
+                                <span class="english add_margin"><img src="img/german.png" alt=""></span>German&nbsp;<span class="caret"></span>
                             </a>
                             <ul id="changeLanguage">
                                 <li class="german_drop">
-                                    <a href="index.html">
+                                    <a href="teams_de.html">
                                         <span class="english"><img src="img/english.png" alt=""></span>English
                                     </a>
                                 </li>
@@ -80,10 +87,30 @@
                         </div>
                     </li>
                 </ul>
+
+                <ul class="list-inline mobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="teams.html">Teams</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li class="language">
+                        <div class="toggle_language">
+                            <a href="#" class="english_toggle">
+                                <span class="english add_margin"><img src="img/german.png" alt=""></span>German&nbsp;<span class="caret"></span>
+                            </a>
+                            <ul id="changeLanguage">
+                                <li class="german_drop">
+                                    <a href="teams_de.html">
+                                        <span class="english"></span>English
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+                </ul>
             </div>
         </div>
     </nav>
-
 
 <section class="header-section">
     <div class="clearfix main-container">
