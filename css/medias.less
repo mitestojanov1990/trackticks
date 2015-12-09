@@ -69,6 +69,10 @@
         padding-left: 0;
     }
 
+    .team-features li{
+        margin-right: 0;
+    }
+
     /* line 858, ../sass/style.scss */
     .description {
         width: 249px;
@@ -99,6 +103,10 @@
         width: 45%;
     }
 
+    .cover {
+        width: 5%;
+    }
+
     /* line 909, ../sass/style.scss */
     .team-performance .two-column {
         width: 45%;
@@ -114,7 +122,7 @@
     .team-balance .two-column, .team-comparison .one-column, .team-comparison .two-column,
     .team-planning .one-column, .team-planning .two-column, .team-shop .one-column, .team-shop .two-column,
     .player .one-column, .buy-first .one-column, .buy-first .two-column,
-    .buy-third .one-column, .buy-third .two-column, .positions .one-column, .positions .two-column {
+    .buy-third .one-column, .buy-third .two-column, .positions .one-column, .positions .two-column, .team-shop.notify .one-column, .team-shop.notify .two-column {
         width: 45%;
         margin: 0!important;
         position: relative;
@@ -140,7 +148,7 @@
 
     .team-performance .image_wrapper.image-performance,.team-balance .image_wrapper.balance-image,.team-balance .image_wrapper.balance-image,
     .team-motivate .image_wrapper.motivate-image,.team-planning .image_wrapper.planing-image,.team-comparison .image_wrapper.comparison-image,
-    .team-shop .image_wrapper.buy-image, .buy-third .image_wrapper.buy-section-image{
+    .team-shop .image_wrapper.buy-image, .buy-third .image_wrapper.buy-section-image, .team-shop.notify .image_wrapper.buy-image{
         width:100%;
     }
 
@@ -152,6 +160,24 @@
     .team-shop .image_wrapper.buy-image img{
         height: auto;
     }
+
+    .team-shop.notify .two-column .section-text{
+        margin: 0;
+    }
+    .team-shop.notify{
+         padding: 225px 0;
+
+    }
+
+    .team-shop.notify h2{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .team-shop.notify input{
+        margin-bottom: 40px;
+    }
+
 
     /* line 917, ../sass/style.scss */
     .team-items .section-text p {

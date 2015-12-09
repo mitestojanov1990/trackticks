@@ -9,8 +9,8 @@ $(document).ready(function(){
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        centerMode: true,
-        variableWidth: true,
-        arrows: true
+/*
+        centerMode: true
+*/
     });
 });

@@ -10,7 +10,6 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
     <!--<link rel="stylesheet" href="css/style.css">-->
 
-    <script src="./js/general.js"></script>
 
     <link rel="stylesheet/less" type="text/css" href="css/variables.less" />
 
@@ -22,6 +21,7 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./js/general.js"></script>
 
     <script>
         var tmpWidth = effectiveDeviceWidth();
@@ -52,7 +52,7 @@
 <body>
 <nav class="navigation">
     <div class="main-container">
-        <div class="clearfix">
+        <div class="clearfix secondary-container">
             <div class="logo">
                 <div class="navbar_image_wrapper">
                     <img src="img/Logo.png" alt="Logo" class="img-responsive">
@@ -70,21 +70,7 @@
                 <li class="active"><a href="index_de.html">Home</a></li>
                 <li><a href="teams_de.html">Teams</a></li>
                 <li><a href="players_de.html">Players</a></li>
-                <li class="go_to_shop"><a href="teams_de.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
-                <li class="language">
-                    <div class="toggle_language">
-                        <a href="#" class="english_toggle">
-                            <span class="english add_margin german"><img src="img/german.png" alt=""></span>German&nbsp;<span class="caret"></span>
-                        </a>
-                        <ul id="changeLanguage">
-                            <li class="german_drop">
-                                <a href="index.html">
-                                    <span class="english"><img src="img/english.png" alt=""></span>English
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
             </ul>
 
             <ul class="list-inline mobile">
@@ -94,19 +80,28 @@
                 <li class="language">
                     <div class="toggle_language">
                         <a href="#" class="english_toggle">
-                            <span class="english add_margin"><img src="img/german.png" alt=""></span>German&nbsp;<span class="caret"></span>
+                            <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
                         </a>
                         <ul id="changeLanguage">
                             <li class="german_drop">
-                                <a href="index.html">
-                                    <span class="english"></span>English
+                                <a href="index_de.html">
+                                    <span class="english"></span>German
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="go_to_shop"><a href="teams_de.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
             </ul>
+        </div>
+
+    </div>
+    <div class="language-selector mobile_hidden">
+        <div class="clearfix secondary-container">
+            <p class="">Your are viewing this page in english, to view it in <a href="index.html">Deutsch, click here.</a></p>
+            <div class="image-wrapper close-lang">
+                <img src="img/nav_close.png" alt="" class="img-responsive">
+            </div>
         </div>
     </div>
 </nav>
@@ -400,14 +395,14 @@
             <div class="social">
                 <div class="hiring">
                     <p>info@Tracktics.zone</p>
-                    <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                    <a href="openPos.html" class="btn myBtn">We are hiring!</a>
                 </div>
                 <div class="social-icons">
                     <p>Follow us!</p>
                     <ul class="list-inline">
                         <li><a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://twitter.com/TrackticsZone" class="twitter"><i class="fa fa-twitter"></i></a></li>
                     </ul>
                 </div>
                 <div class="contact">
@@ -417,18 +412,40 @@
             </div>
 
             <div class="info-list clearfix">
-                <div class="number" >
-                    <p>+49 123 45 67</p>
-                </div>
-                <ul class="address list-inline">
-                    <li><p>TRACKTICS GmbH</p></li>
-                    <li><p>Elisabethenstrasse 105</p></li>
-                    <li><p>719 Hofheim a.T.</p></li>
-                    <li><p>Germany</p></li>
+
+                <ul class="list-inline">
+                    <li class="pull">
+                        <ul>
+                            <li>+49 123 45 67</li>
+                            <li>Impressum</li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <ul class="second-list list-inline">
+                            <li>TRACKTICS GmbH</li>
+                            <li>Elisabethenstrasse 105</li>
+                            <li>719 Hofheim a.T.</li>
+                            <li>Germany</li>
+                        </ul>
+                    </li>
+                    <li class="language push">
+                        <div class="toggle_language">
+                            <a href="#" class="english_toggle">
+                                <span class="english add_margin"><img src="img/german.png" alt="" class="img-responsive"></span><span class="language-text">German</span><span class="caret"></span>
+                            </a>
+                            <ul id="changeLanguage">
+                                <li class="german_drop">
+                                    <a href="index.html">
+                                        <span class="english"><img src="img/english.png" alt="" class="img-responsive"></span><span class="language-text">English&nbsp;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
-                <div class="impressum">
-                    <p>Impressum</p>
-                </div>
+
             </div>
             <div class="mobile_hiring mobile_visible hidden">
                 <p>+49 123 45 67 - info@Tracktics.zone</p>

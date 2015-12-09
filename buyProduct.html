@@ -48,66 +48,83 @@
 </head>
 <body>
 
-    <nav class="navigation">
-        <div class="main-container">
-            <div class="clearfix">
-                <div class="logo">
-                    <div class="navbar_image_wrapper">
-                        <img src="img/Logo.png" alt="Logo" class="img-responsive">
-                    </div>
+<nav class="navigation">
+    <div class="main-container">
+        <div class="clearfix secondary-container">
+            <div class="logo">
+                <div class="navbar_image_wrapper">
+                    <img src="img/Logo.png" alt="Logo" class="img-responsive">
                 </div>
-                <div class="hidden mobile_visible nav_toggle" onclick="NavigationToggle(this)">
-                    <div class="navbar_image_wrapper closed">
-                        <img src="img/nav_open.png" alt="Logo" class="img-responsive">
-                    </div>
-                    <div class="navbar_image_wrapper opened hidden">
-                        <img src="img/nav_close.png" alt="Logo" class="img-responsive">
-                    </div>
+            </div>
+            <div class="hidden mobile_visible nav_toggle" onclick="NavigationToggle(this)">
+                <div class="navbar_image_wrapper closed">
+                    <img src="img/nav_open.png" alt="Logo" class="img-responsive">
                 </div>
-                <ul class="list-inline mobile_hidden">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="teams.html">Teams</a></li>
-                    <li><a href="players.html">Players</a></li>
-                    <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
-                    <li class="language">
-                        <div class="toggle_language">
-                            <a href="#" class="english_toggle">
-                                <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
-                            </a>
-                            <ul id="changeLanguage">
-                                <li class="german_drop">
-                                    <a href="#">
-                                        <span class="english"><img src="img/german.png" alt=""></span>German
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+                <div class="navbar_image_wrapper opened hidden">
+                    <img src="img/nav_close.png" alt="Logo" class="img-responsive">
+                </div>
+            </div>
+            <ul class="list-inline mobile_hidden">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+            </ul>
 
-                <ul class="list-inline mobile">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="teams.html">Teams</a></li>
-                    <li><a href="players.html">Players</a></li>
-                    <li class="language">
-                        <div class="toggle_language">
-                            <a href="#" class="english_toggle">
-                                <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
-                            </a>
-                            <ul id="changeLanguage">
-                                <li class="german_drop">
-                                    <a href="#">
-                                        <span class="english"></span>German
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
-                </ul>
+            <ul class="list-inline mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li class="language">
+                    <div class="toggle_language">
+                        <a href="#" class="english_toggle">
+                            <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul id="changeLanguage">
+                            <li class="german_drop">
+                                <a href="index_de.html">
+                                    <span class="english"></span>German
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="language-selector mobile_hidden">
+        <div class="clearfix secondary-container">
+            <p class="">Your are viewing this page in english, to view it in <a href="index_de.html">Deutsch, click here.</a></p>
+            <div class="image-wrapper close-lang">
+                <img src="img/nav_close.png" alt="" class="img-responsive">
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
+
+    <section class="team-shop buy" id="buy_section">
+        <div class="main-container">
+            <div class="clearfix">
+                <div class="one-column">
+                    <div class="image_wrapper buy-image">
+                        <img src="img/toolbox.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+                <div class="two-column">
+                    <div class="section-text">
+                        <h2>EARLY BIRD</h2>
+                        <h2 class="starter" >Starter Paket</h2>
+                        <p class="push_bottom">Get a set of 3 Trackers and <br> Belts for the football pitch and unleash your potential.</p>
+                        <p class="price">279. - <i class="fa fa-euro"></i></p>
+                        <a href="buyProduct.html" class=" btn custom-btn">Pay Now</a>
+                        <a href="buyProduct.html" class="littleMargin btn custom-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <section class="buy-first">
     <div class="main-container">
@@ -143,6 +160,8 @@
                         <input type="text" placeholder="Country">
                         <input type="text" placeholder="Address Detail">
                     </div>
+
+                    <a href="buyProduct.html" class=" btn custom-btn">Pay Now</a>
                 </div>
 
             </div>
@@ -151,7 +170,7 @@
     </div>
 </section>
 
-<section class="buy-second">
+<!--<section class="buy-second">
         <div class="main-container">
             <div class="clearfix secondary-container">
                 <h2>You seem to be very close to us!</h2>
@@ -182,22 +201,21 @@
             </div>
         </div>
     </div>
-</section>
-
+</section>-->
 <footer class="footer">
     <div class="main-container">
         <div class="clearfix secondary-container">
             <div class="social">
                 <div class="hiring">
                     <p>info@Tracktics.zone</p>
-                    <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                    <a href="openPos.html" class="btn myBtn">We are hiring!</a>
                 </div>
                 <div class="social-icons">
                     <p>Follow us!</p>
                     <ul class="list-inline">
                         <li><a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://twitter.com/TrackticsZone" class="twitter"><i class="fa fa-twitter"></i></a></li>
                     </ul>
                 </div>
                 <div class="contact">
@@ -207,18 +225,39 @@
             </div>
 
             <div class="info-list clearfix">
-                <div class="number" >
-                    <p>+49 123 45 67</p>
-                </div>
-                <ul class="address list-inline">
-                    <li><p>TRACKTICS GmbH</p></li>
-                    <li><p>Elisabethenstrasse 105</p></li>
-                    <li><p>719 Hofheim a.T.</p></li>
-                    <li><p>Germany</p></li>
+                <ul class="list-inline">
+                    <li class="pull">
+                        <ul>
+                            <li>+49 123 45 67</li>
+                            <li>Impressum</li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <ul class="second-list list-inline">
+                            <li>TRACKTICS GmbH</li>
+                            <li>Elisabethenstrasse 105</li>
+                            <li>719 Hofheim a.T.</li>
+                            <li>Germany</li>
+                        </ul>
+                    </li>
+                    <li class="language push">
+                        <div class="toggle_language">
+                            <a href="#" class="english_toggle">
+                                <span class="english add_margin"><img src="img/english.png" alt="" class="img-responsive"></span><span class="language-text">English&nbsp;</span><span class="caret"></span>
+                            </a>
+                            <ul id="changeLanguage">
+                                <li class="german_drop">
+                                    <a href="index_de.html">
+                                        <span class="english"><img src="img/german.png" alt="" class="img-responsive"></span><span class="language-text">German</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
-                <div class="impressum">
-                    <p>Impressum</p>
-                </div>
+
             </div>
             <div class="mobile_hiring mobile_visible hidden">
                 <p>+49 123 45 67 - info@Tracktics.zone</p>

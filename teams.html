@@ -11,7 +11,7 @@
 
 
 
-    <script src="./js/general.js"></script>
+
 
     <link rel="stylesheet/less" type="text/css" href="css/variables.less" />
 
@@ -24,6 +24,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="./js/general.js"></script>
     <script src="js/teams.js"></script>
 
     <script>
@@ -53,7 +54,7 @@
 <body>
 <nav class="navigation">
     <div class="main-container">
-        <div class="clearfix">
+        <div class="clearfix secondary-container">
             <div class="logo">
                 <div class="navbar_image_wrapper">
                     <img src="img/Logo.png" alt="Logo" class="img-responsive">
@@ -71,21 +72,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="teams.html">Teams</a></li>
                 <li><a href="players.html">Players</a></li>
-                <li class="go_to_shop"><a href="#buy_section" class="btn menu-btn">Go to Shop</a></li>
-                <li class="language">
-                    <div class="toggle_language">
-                        <a href="#" class="english_toggle">
-                            <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
-                        </a>
-                        <ul id="changeLanguage">
-                            <li class="german_drop">
-                                <a href="teams_de.html">
-                                    <span class="english"><img src="img/german.png" alt=""></span>German
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
             </ul>
 
             <ul class="list-inline mobile">
@@ -106,8 +93,17 @@
                         </ul>
                     </div>
                 </li>
-                <li class="go_to_shop"><a href="#buy_section" class="btn menu-btn">Go to Shop</a></li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
             </ul>
+        </div>
+
+    </div>
+    <div class="language-selector mobile_hidden">
+        <div class="clearfix secondary-container">
+            <p class="">Your are viewing this page in english, to view it in <a href="index_de.html">Deutsch, click here.</a></p>
+            <div class="image-wrapper close-lang">
+                <img src="img/nav_close.png" alt="" class="img-responsive">
+            </div>
         </div>
     </div>
 </nav>
@@ -118,7 +114,7 @@
         <div class="clearfix">
             <div class="one-column">
                 <div class="image_wrapper teams_ipad">
-                    <img src="img/teams-ipad.png" class="img-responsive" alt="">
+                    <img src="img/iPad_with_Trackers_Ranking.png" class="img-responsive" alt="">
                 </div>
             </div>
             <div class="two-column">
@@ -185,31 +181,34 @@
 
 <section class="team-third">
 
+        <div class="cover">
+
+        </div>
 
         <div class="your-class">
             <div>
-                <img src="img/carousel-ipad.png" alt="">
+                <img src="img/iPad_App_TopProfile.png" alt="">
                 <div class="hidden-xs">
                     <h3>See what you do in full detail</h3>
                     <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>
                 </div>
             </div>
             <div>
-                <img src="img/carousel-ipad.png" alt="">
+                <img src="img/iPad_App_Ranking.png" alt="">
                 <div class="hidden-xs">
                     <h3>See what you do in full detail</h3>
                     <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>
                 </div>
             </div>
             <div>
-                <img src="img/carousel-ipad.png" alt="">
+                <img src="img/iPad_App_BottomProfile.png" alt="">
                 <div class="hidden-xs">
                     <h3>See what you do in full detail</h3>
                     <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>
                 </div>
             </div>
             <div>
-                <img src="img/carousel-ipad.png" alt="">
+                <img src="img/iPad_App_TopProfile.png" alt="">
                 <div class="hidden-xs">
                     <h3>See what you do in full detail</h3>
                     <p>Rabarerbub buibi bibi bubu biubuibiubdab sbiubiubaai abia ubdib ibd iba ibuidow  oijdowiohdowi ioh oih bu boudoa teggegeare.</p>
@@ -331,18 +330,18 @@
         <div class="clearfix">
             <div class="one-column">
                 <div class="image_wrapper buy-image">
-                    <img src="img/sale.png" alt="" class="img-responsive">
+                    <img src="img/toolbox.png" alt="" class="img-responsive">
                 </div>
             </div>
             <div class="two-column">
                 <div class="section-text">
                     <h2>EARLY BIRD</h2>
-                    <h2 >Starter Paket</h2>
+                    <h2 class="starter" >Starter Paket</h2>
                     <p class="push_bottom">Get a set of 3 Trackers and <br> Belts for the football pitch and unleash your potential.</p>
-                    <div class="clearfix quantity">
+                    <!--<div class="clearfix quantity">
                         <p>Quantity</p>
                         <p  ><span class="plus">+</span><span class="minus">-</span> <span class="increase pull-right">01</span></p>
-                    </div>
+                    </div>-->
                     <p class="price">279. - <i class="fa fa-euro"></i></p>
                     <a href="buyProduct.html" class="btn custom-btn">Buy Now</a>
                 </div>
@@ -351,55 +350,125 @@
     </div>
 </section>
 
-    <footer class="footer">
-        <div class="main-container">
-            <div class="clearfix secondary-container">
-                <div class="social">
-                    <div class="hiring">
-                        <p>info@Tracktics.zone</p>
-                        <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
-                    </div>
-                    <div class="social-icons">
-                        <p>Follow us!</p>
-                        <ul class="list-inline">
-                            <li><a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="contact">
-                        <p>We always write back!</p>
-                        <a href="contact.html" class="btn myBtn">Contact us</a>
-                    </div>
+<section class="team-shop notify">
+    <div class="main-container">
+        <div class="clearfix">
+            <div class="one-column">
+                <div class="image_wrapper buy-image">
+                    <img src="img/Teampackage_Illustration.png" alt="" class="img-responsive">
                 </div>
-
-                <div class="info-list clearfix">
-                    <div class="number" >
-                        <p>+49 123 45 67</p>
-                    </div>
-                    <ul class="address list-inline">
-                        <li><p>TRACKTICS GmbH</p></li>
-                        <li><p>Elisabethenstrasse 105</p></li>
-                        <li><p>719 Hofheim a.T.</p></li>
-                        <li><p>Germany</p></li>
-                    </ul>
-                    <div class="impressum">
-                        <p>Impressum</p>
-                    </div>
+            </div>
+            <div class="two-column">
+                <div class="section-text">
+                    <h2>Get notified as <br> soon as the full team <br>package is out!</h2>
+                    <input type="text" placeholder="Your Email">
+                    <a href="buyProduct.html" class="btn custom-btn">Keep me updated</a>
                 </div>
-                <div class="mobile_hiring mobile_visible hidden">
-                    <p>+49 123 45 67 - info@Tracktics.zone</p>
-                    <div class="mobile_footer_buttons">
-                        <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
-                        <a href="contact.html" class="btn myBtn">Contact us</a>
-                    </div>
-                    <p class="left">TRACKTICS GmbH</p>
-                    <p class="right">Impressum</p>
-                </div>
-
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="main-container">
+        <div class="clearfix secondary-container">
+            <div class="social">
+                <div class="hiring">
+                    <p>info@Tracktics.zone</p>
+                    <a href="openPos.html" class="btn myBtn">We are hiring!</a>
+                </div>
+                <div class="social-icons">
+                    <p>Follow us!</p>
+                    <ul class="list-inline">
+                        <li><a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/TrackticsZone" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <p>We always write back!</p>
+                    <a href="contact.html" class="btn myBtn">Contact us</a>
+                </div>
+            </div>
+
+            <div class="info-list clearfix">
+                <!--<div class="number" >
+                    <p>+49 123 45 67</p>
+                </div>
+                <ul class="address list-inline">
+                    <li><p>TRACKTICS GmbH</p></li>
+                    <li><p>Elisabethenstrasse 105</p></li>
+                    <li><p>719 Hofheim a.T.</p></li>
+                    <li><p>Germany</p></li>
+                </ul>
+                <div class="impressum">
+                    <p>Impressum</p>
+                    <li class="language">
+                       <div class="toggle_language">
+                           <a href="#" class="english_toggle">
+                               <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
+                           </a>
+                           <ul id="changeLanguage">
+                               <li class="german_drop">
+                                   <a href="index_de.html">
+                                       <span class="english"><img src="img/german.png" alt=""></span>German
+                                   </a>
+                               </li>
+                           </ul>
+                       </div>
+                    </li>
+                </div>-->
+
+                <ul class="list-inline">
+                    <li class="pull">
+                        <ul>
+                            <li>+49 123 45 67</li>
+                            <li>Impressum</li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <ul class="second-list list-inline">
+                            <li>TRACKTICS GmbH</li>
+                            <li>Elisabethenstrasse 105</li>
+                            <li>719 Hofheim a.T.</li>
+                            <li>Germany</li>
+                        </ul>
+                    </li>
+                    <li class="language push">
+                        <div class="toggle_language">
+                            <a href="#" class="english_toggle">
+                                <span class="english add_margin"><img src="img/english.png" alt="" class="img-responsive"></span><span class="language-text">English&nbsp;</span><span class="caret"></span>
+                            </a>
+                            <ul id="changeLanguage">
+                                <li class="german_drop">
+                                    <a href="teams_de.html">
+                                        <span class="english"><img src="img/german.png" alt="" class="img-responsive"></span><span class="language-text">German</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="mobile_hiring mobile_visible hidden">
+                <p>+49 123 45 67 - info@Tracktics.zone</p>
+                <div class="mobile_footer_buttons">
+                    <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                    <a href="contact.html" class="btn myBtn">Contact us</a>
+                </div>
+                <p class="left">TRACKTICS GmbH</p>
+                <p class="right">Impressum</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
 
 </body>
 </html>
