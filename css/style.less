@@ -264,7 +264,7 @@ a:hover {
 }
 
 .navbar_image_wrapper{
-    width:203px;
+    width:270px;
     height:auto;
 }
 
@@ -278,7 +278,7 @@ a:hover {
 .menu-btn {
   background: #323232;
   font-weight: normal !important;
-  padding: 7px 32px !important;
+  padding: 6px 32px !important;
   position: relative;
 /*  top: 7px;*/
   -webkit-border-radius: 21px;
@@ -286,8 +286,9 @@ a:hover {
   border-radius: 21px;
   color: #fff !important;
   width: 160px;
-  height: 38px;
+  /*height: 39px;*/
 /*  right: -5px;*/
+  outline:0!important;
 }
 
 /* line 190, ../sass/style.scss */
@@ -394,7 +395,9 @@ button .caret {
 
 .navigation .logo{
   width: 300px;
+  /*
   margin-left: 14%;
+  */
   float: left;
 }
 
@@ -404,7 +407,35 @@ button .caret {
   /*line-height: 33px;*/
 }
 
-.navigation ul.list-inline > li{
+
+.navigation .language-selector{
+  background: #323232;
+  height: 90px;
+  position: absolute;
+  width: 100%;
+  top: 90px;
+  padding: 31px 0;
+}
+
+.navigation .language-selector p{
+  float: left;
+  font-size: 24px;
+}
+
+.navigation .language-selector p a{
+  border-bottom: 3px solid #ccc;
+}
+
+.navigation .language-selector .image-wrapper.close-lang{
+  float: right;
+  width: 16px;
+  height: 16px;
+  margin-right: 30px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.navigation .navigation ul.list-inline > li{
   margin-left: 40px;
   padding: 0;
   line-height: 40px;
@@ -429,23 +460,23 @@ button .caret {
 
 
 
-.toggle_language{
+.navigation .toggle_language{
     width:100%;
     height:auto;
 }
 
-.toggle_language:hover a{
+.navigation .toggle_language:hover a{
     background-color: #323232;
     padding: 9px 0 8px 0;
 }
 
-.language{
+.navigation .language{
   position: relative;
   right:10px;
 }
 
   /* line 211, ../sass/style.scss */
-.language .english{
+.navigation .language .english{
     background: none;
     color: #4B4B4B;
     font-size: 18px;
@@ -457,53 +488,115 @@ button .caret {
     position: relative;
 }
 
-.language .english img {
+.navigation .language .english img {
   width: 20px;
   height: 20px;
 }
 
 /* line 207, ../sass/style.scss */
-.language .english .caret {
+.navigation .language .english .caret {
   margin-left: 5px;
 }
 
 /* line 220, ../sass/style.scss */
-.language .english a:hover {
+.navigation .language .english a:hover {
     color: #fff;
     background-color: #323232;
 }
-.language .add_margin{
+.navigation .language .add_margin{
     margin-left:10px;
 }
-.language .add_margin.german{
+.navigation .language .add_margin.german{
     margin-left:7px;
 }
 
 
-#changeLanguage {
+.navigation #changeLanguage {
     background-color: #323232;
     position: absolute;
     width: 130px;
     margin-top: -3px;
     display:none;
 }
-#changeLanguage li{
+.navigation #changeLanguage li{
     height: 38px;
     line-height: 38px;
 }
 
-.toggle_language:hover > #changeLanguage{
+.navigation .toggle_language:hover > #changeLanguage{
     display:initial;
 }
 
-/*.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
   background: none;
   color: #ff2300;
 }
 
-!* line 171, ../sass/style.scss *!
+/* line 171, ../sass/style.scss */
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   color: #fff;
+}
+
+
+.footer .toggle_language{
+    width:140px;
+    float: right;
+    padding: 5px 10px;
+}
+
+.footer .toggle_language:hover{
+  background: #323232;
+}
+
+.footer .toggle_language:hover > #changeLanguage{
+  display:initial;
+}
+
+.footer .toggle_language .english_toggle{
+  display: block;
+  height:22px;
+  margin-bottom: 10px;
+  color: #4b4b4b;
+}
+
+.footer .toggle_language a span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer .language a span.english{
+  float: left;
+  width: 22px;
+  height: 22px;
+}
+
+
+.footer  #changeLanguage{
+   padding-top: 10px;
+   display: none;
+ }
+
+.footer #changeLanguage a span{
+   display: inline-block;
+ }
+
+.footer #changeLanguage .german_drop a{
+  display: block;
+  height: 22px;
+  font-size: 18px;
+}
+
+.footer #changeLanguage .german_drop a span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer #changeLanguage .german_drop .language-text {
+  margin-right: 5px;
+}
+
+
+/*.toggle_language a:hover  #changeLanguage, .toggle_language a:focus  #changeLanguage{
+  display: block!important;
 }*/
 
 /*END NAVBAR*/
@@ -533,10 +626,9 @@ button .caret {
   height: 870px;
   background: url("../img/HeaderPic%20Landingpage.jpg") no-repeat fixed, url("../img/HeaderPic%20Landingpage.jpg") no-repeat scroll;
   text-align: left;
-  padding: 249px 0 150px 0;
   background-position: 63% 48%;
   text-align: left;
-  padding: 299px 0 150px 0;
+  padding: 229px 0 150px 0;
   background-size: 259% auto;
 }
 
@@ -682,6 +774,23 @@ button .caret {
   border-radius: 100%;
   padding: 33px;
   margin: 0 auto;
+}
+
+
+.features li .circle .deceleration{
+  margin-top: 12px;
+}
+.features li .circle .heatmap{
+  margin-top: 13px;
+}
+.features li .circle .sprints{
+  margin-top: 13px;
+}
+.features li .circle .activity{
+  margin-top: 12px;
+}
+.features li .circle .distance{
+  margin-top: 12px;
 }
 
 /* line 414, ../sass/style.scss */
@@ -841,18 +950,18 @@ button .caret {
 
 /* line 530, ../sass/style.scss */
 .newsletter {
-  background: url("../img/Locker%20Rooms%20Landingpage.jpg") no-repeat center center;
+  background: url("../img/newsletter-lockers.png") no-repeat center center;
   background-size: 100% 100%;
   width: 100%;
   height: 562px;
-  padding: 150px 0;
+  padding: 117px 0 150px 0;
 }
 
 /* line 538, ../sass/style.scss */
 .newsletter h2 {
   font-size: 36px;
   margin-top: 0;
-  margin-bottom: 56px;
+  margin-bottom: 25px;
   font-weight: bold;
 }
 
@@ -881,14 +990,15 @@ button .caret {
 /* line 565, ../sass/style.scss */
 .email .myBtn {
   float: right;
-  background: #fff;
-  color: #ff2300;
+  background: #c81900;
+  color: #fff;
 }
 
 .email .myBtn:hover{
-  background: #fff;
-  color: #ff2300;
+  background: #c81900;
+  color: #fff;
 }
+
 
 /* line 571, ../sass/style.scss */
 .email input::-webkit-input-placeholder {
@@ -923,6 +1033,24 @@ button .caret {
 /* line 595, ../sass/style.scss */
 .newsletter .friend {
   background: #C81900;
+  color: #fff;
+}
+
+.newsletter h3{
+  font-size:24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.newsletter .email.tellfriend input{
+  background: #323232;
+}
+
+.newsletter .email.tellfriend .myBtn{
+  background: #323232;
+}
+
+.newsletter .email.tellfriend .myBtn:hover{
   color: #fff;
 }
 
@@ -973,14 +1101,24 @@ button .caret {
 .sponsor-img .image_wrapper.sponsor-1{
     width:120px;
     height: 76px;
+    margin: 0 auto;
 }
 .sponsor-img .image_wrapper.sponsor-2{
     width:175px;
     height: 79px;
+    margin: 0 auto;
 }
 .sponsor-img .image_wrapper.sponsor-3{
-    width:99px;
-    height: 100px;
+  width: 100px;
+  height: 87px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.sponsor-img .image_wrapper.sponsor-4{
+  width:172px;
+  height: 73px;
+  margin: 0 auto;
 }
 
 /* line 628, ../sass/style.scss */
@@ -1019,28 +1157,30 @@ button .caret {
 .sponsor-container h3 {
   margin: 0 0 34px 0;
   font-size: 24px;
+  font-size: 24px;
 }
 
 /* line 660, ../sass/style.scss */
 .sponsor-div {
-  width: 564px;
+  width: 864px;
   margin: 0 auto;
 }
 
 /* line 665, ../sass/style.scss */
 .sponsor-div .sponsor-img {
   display: inline-block;
+  width: 24%;
 }
 
-/* line 669, ../sass/style.scss */
+/*!* line 669, ../sass/style.scss *!
 .sponsor-div .sponsor-img:nth-child(1) {
   float: left;
 }
 
-/* line 673, ../sass/style.scss */
-.sponsor-div .sponsor-img:nth-child(3) {
+!* line 673, ../sass/style.scss *!
+.sponsor-div .sponsor-img:nth-child(4) {
   float: right;
-}
+}*/
 
 /* line 678, ../sass/style.scss */
 .footer {
@@ -1129,13 +1269,38 @@ button .caret {
 }
 */
 /* line 755, ../sass/style.scss */
-.footer .info-list p {
+.footer .info-list ul li {
   color: #4b4b4b;
   margin: 0;
+  font-size: 14px;
+}
+
+.footer .info-list ul .pull{
+  float: left;
+  width: 224px;
+  margin-top: 5px;
+
+}
+
+.footer .info-list ul .pull li:first-child{
+  float: left;
+}
+
+.footer .info-list ul .pull li:last-child{
+  float: right;
+}
+
+.footer .info-list ul .push{
+  float: right;
+  width: 224px;
+  font-size: 18px;
+}
+.info-list .second-list{
+  margin-top: 5px;
 }
 
 /* line 760, ../sass/style.scss */
-.info-list li {
+.info-list .second-list li {
   border-right: 1px solid #4b4b4b;
 }
 
@@ -1145,7 +1310,7 @@ button .caret {
 }
 
 /* line 768, ../sass/style.scss */
-.info-list li p {
+.info-list .second-list li p {
   padding: 0 5px;
 }
 
@@ -1159,7 +1324,9 @@ button .caret {
 }
 
 .info-list .impressum{
-  display: inline-block;width: 100px; float: right;
+  display: inline-block;
+  width: 100px;
+  float: right;
 }
 
 
@@ -1173,7 +1340,7 @@ button .caret {
   background-position: 50% 90%;
   position: relative;
   height: 870px;
-  padding: 254px 0 150px 0;
+  padding: 210px 0 150px 0;
   text-align: left;
 }
 

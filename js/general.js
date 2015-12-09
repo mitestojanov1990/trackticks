@@ -38,4 +38,10 @@ $(document).ready(function () {
     $('#buy_button').click(function () {
         $('#check').toggle();
     });
+
+    $('.close-lang').click(function () {
+        $('.language-selector').hide();
+    })
+
+
 });
