@@ -284,13 +284,13 @@
     * recomend section start
     */
     .recommend-section {
-        height: 516px;
+        height: 570px;
         padding: 50px 0 0 0;
     }
     .recommend-section h2 {
         margin-top: 0;
         font-size: 23px;
-        padding-bottom: 0;
+        padding-bottom: 35px;
         line-height: 28px;
         font-weight: normal;
     }
@@ -345,6 +345,34 @@
         font-size: 14px;
         line-height: 33px;
     }
+
+    /* line 1062, ../sass/style.scss */
+    .newsletter .email input::-webkit-input-placeholder {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    /* line 1068, ../sass/style.scss */
+    .newsletter .email input:-moz-placeholder {
+        /* Firefox 18- */
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    /* line 1074, ../sass/style.scss */
+    .newsletter .email input::-moz-placeholder {
+        /* Firefox 19+ */
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    /* line 1080, ../sass/style.scss */
+    .newsletter .email input:-ms-input-placeholder {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+
     .newsletter .email .myBtn {
         font-size: 16px;
         width: 133px;
@@ -1917,6 +1945,18 @@
         float: none;
         margin: 0 auto;
     }
+
+
+    .recommend-section .slick-prev{
+        left: 0;
+        z-index: 100;
+    }
+
+    .recommend-section .slick-next{
+        right: 0;
+        z-index: 100;
+    }
+
 
     /*
     *   
