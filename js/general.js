@@ -26,6 +26,27 @@ function ToggleReadMore(t) {
     }
 }
 
+
+
+
+function Pay(t) {
+
+
+
+
+    $(t).parent().find('.pay-section').toggle();
+
+
+    $('#buyButton').hide();
+
+    if ($(t).text() == "Read More") {
+        $(t).text('Close');
+    } else {
+        $(t).text('Read More');
+    }
+}
+
+
 function NavigationToggle(t) {
     $(t).children('.navbar_image_wrapper').toggleClass('hidden');
 
@@ -43,5 +64,7 @@ $(document).ready(function () {
         $('.language-selector').hide();
     })
 
+
+    $('.pay-section').hide();
 
 });

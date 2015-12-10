@@ -1474,18 +1474,29 @@ button .caret {
   font-size: 16px;
 }
 
-
-
-/*
-
-h2[rel="friend"] {
-  !* woohoo! *!
+.slick-slide > .hidden-xs{
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
 }
 
-.your-class .slick-slide[data-slick-index="1"]{
-  display: none;
+.slick-current.slick-active > .hidden-xs{
+  opacity: 1;
 }
-*/
+
+  /*
+
+  h2[rel="friend"] {
+    !* woohoo! *!
+  }
+
+  .your-class .slick-slide[data-slick-index="1"]{
+    display: none;
+  }
+  */
 
 /* line 871, ../sass/style.scss */
 .team-third {
@@ -2018,7 +2029,7 @@ h2[rel="friend"] {
 
 /* line 1147, ../sass/style.scss */
 .buy-first .one-column {
-  margin-left: 146px;
+  margin-left: 106px;
 }
 
 /* line 1151, ../sass/style.scss */
@@ -2028,16 +2039,39 @@ h2[rel="friend"] {
 
 .buy-first .section-text{
   width: 462px;
-  height: 470px;
+  height: 440px;
 
 }
 
 .buy-first .image_wrapper.buy-image-header{
   width: 710px;
   height: 383px;
-  margin-right: -92px;
+  margin-right: -60px;
   margin-top: 44px;
 }
+
+
+.buy-first .pay-section{
+  font-size: 24px;
+}
+
+.buy-first .pay-section .margin-top{
+  margin: 50px 0;
+}
+
+
+.buy-first .pay-section .margin-left{
+  margin-left: 30px;
+  font-size: 20px;
+  color: #000;
+}
+
+.buy-first .pay-section .continue{
+  background: #ff2300!important;
+}
+
+
+
 
 /* line 1156, ../sass/style.scss */
 .buy-second {

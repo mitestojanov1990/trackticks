@@ -11,6 +11,8 @@
     <!--<link rel="stylesheet" href="css/style.css">-->
 
 
+
+
     <link rel="stylesheet/less" type="text/css" href="css/variables.less" />
 
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
@@ -70,7 +72,7 @@
                 <li class="active"><a href="index_de.html">Home</a></li>
                 <li><a href="teams_de.html">Teams</a></li>
                 <li><a href="players_de.html">Players</a></li>
-                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+                <li class="go_to_shop"><a href="buyProduct.html" class="btn menu-btn">Go to Shop</a></li>
             </ul>
 
             <ul class="list-inline mobile">
@@ -80,25 +82,25 @@
                 <li class="language">
                     <div class="toggle_language">
                         <a href="#" class="english_toggle">
-                            <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
+                            <span class="english add_margin"><img src="img/german.png" alt=""></span>German&nbsp;<span class="caret"></span>
                         </a>
                         <ul id="changeLanguage">
                             <li class="german_drop">
                                 <a href="index_de.html">
-                                    <span class="english"></span>German
+                                    <span class="english"></span>English
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+                <li class="go_to_shop"><a href="buyProduct.html" class="btn menu-btn">Go to Shop</a></li>
             </ul>
         </div>
 
     </div>
     <div class="language-selector mobile_hidden">
         <div class="clearfix secondary-container">
-            <p class="">Your are viewing this page in english, to view it in <a href="index.html">Deutsch, click here.</a></p>
+            <p class="">Your are viewing this page in Deutsch, to view it in <a href="index.html">English, click here.</a></p>
             <div class="image-wrapper close-lang">
                 <img src="img/nav_close.png" alt="" class="img-responsive">
             </div>
@@ -136,25 +138,25 @@
                 <ul class="clearfix list-inline">
                     <li class="li_only_right_margin">
                         <div class="circle">
-                            <img src="img/1.png" alt="" class="img-responsive">
+                            <img src="img/1.png" alt="" class="img-responsive acceleration">
                         </div>
                         <p>Antritt</p>
                     </li>
                     <li class="li_margin">
                         <div class="circle">
-                            <img src="img/deceleration.png" alt="" class="img-responsive" style="margin-top: 6px;">
+                            <img src="img/deceleration.png" alt="" class="img-responsive deceleration">
                         </div>
                         <p>Deceleration</p>
                     </li>
                     <li class="li_margin">
                         <div class="circle">
-                            <img src="img/3.png" alt="" class="img-responsive">
+                            <img src="img/3.png" alt="" class="img-responsive topspeed">
                         </div>
                         <p>Topspeed</p>
                     </li>
                     <li class="li_only_left_margin">
                         <div class="circle">
-                            <img src="img/4.png" alt="" class="img-responsive" style="margin-top: 6px;">
+                            <img src="img/4.png" alt="" class="img-responsive heatmap">
                         </div>
                         <p>Heatmap</p>
                     </li>
@@ -162,25 +164,25 @@
                 <ul class="clearfix list-inline" style="margin-top: 62px;">
                     <li class="li_only_right_margin">
                         <div class="circle">
-                            <img src="img/Sprints.png" alt="" class="img-responsive" style="margin-top: 6px;">
+                            <img src="img/Sprints.png" alt="" class="img-responsive sprints">
                         </div>
                         <p>Sprints</p>
                     </li>
                     <li class="li_margin">
                         <div class="circle">
-                            <img src="img/Speed.png" alt="" class="img-responsive">
+                            <img src="img/Speed.png" alt="" class="img-responsive speedzones">
                         </div>
                         <p>Speedzones</p>
                     </li>
                     <li class="li_margin">
                         <div class="circle">
-                            <img src="img/activity.png" alt="" class="img-responsive" style="margin-top: 6px;">
+                            <img src="img/activity.png" alt="" class="img-responsive activity">
                         </div>
                         <p>Activity</p>
                     </li>
                     <li class="li_only_left_margin">
                         <div class="circle">
-                            <img src="img/distance.png" alt="" class="img-responsive" style="margin-top: 6px;">
+                            <img src="img/distance.png" alt="" class="img-responsive distance">
                         </div>
                         <p>Distance</p>
                     </li>
@@ -205,7 +207,7 @@
                     </div>
                 </div>
                 <div class="buy-button">
-                    <a href="teams_de.html#buy_section" class="btn myBtn">Go to Shop</a>
+                    <a href="buyProduct.html" class="btn myBtn">Go to Shop</a>
                 </div>
             </div>
             <div class="two-column">
@@ -219,7 +221,7 @@
                     </div>
                 </div>
                 <div class="buy-button">
-                    <a href="teams_de.html#buy_section" class="btn myBtn">Go to Shop</a>
+                    <a href="buyProduct.html" class="btn myBtn">Go to Shop</a>
                 </div>
             </div>
         </div>
@@ -316,12 +318,18 @@
 <section class="newsletter">
     <div class="main-container">
         <div class="clearfix secondary-container">
-            <h2>Informiere deine Freunde über TRACKTICS</h2>
-            <div class="email clearfix">
+            <h2>Get all the insider Info!</h2>
+            <div class="email clearfix insider">
+                <input type="text" placeholder="Your Email">
+                <a href="#" class="btn myBtn">Let me know</a>
+            </div>
+
+            <h3>Informiere deine Freunde über TRACKTICS</h3>
+            <div class="email clearfix tellfriend">
                 <input type="text" placeholder="Your Friend’s Email">
                 <a href="#" class="btn myBtn">Tell him</a>
             </div>
-            <a href="#" class="btn myBtn friend">+ Add a Friend</a>
+            <!--     <a href="#" class="btn myBtn friend">+ Add a Friend</a>-->
         </div>
     </div>
 </section>
@@ -362,8 +370,8 @@
                     <p>Startupfund by the European Commission</p>
                 </div>
             </div>
-            <div class="sponsor-container">
-                <h3>Trusted and recommended by</h3>
+            <div class="clearfix sponsor-container">
+                <!--<h3>Trusted and recommended by</h3>-->
 
                 <div class="sponsor-div">
                     <div class="sponsor-img">
@@ -379,6 +387,11 @@
                     <div class="sponsor-img">
                         <div class="image_wrapper sponsor-3">
                             <img src="img/INVEST_Badge_no_bg.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="sponsor-img">
+                        <div class="image_wrapper sponsor-4">
+                            <img src="img/EP_large_nobg.png" alt="" class="img-responsive">
                         </div>
                     </div>
                 </div>
@@ -433,12 +446,12 @@
                     <li class="language push">
                         <div class="toggle_language">
                             <a href="#" class="english_toggle">
-                                <span class="english add_margin"><img src="img/german.png" alt="" class="img-responsive"></span><span class="language-text">German</span><span class="caret"></span>
+                                <span class="english add_margin"><img src="img/german.png" alt="" class="img-responsive"></span><span class="language-text">German&nbsp;</span><span class="caret"></span>
                             </a>
                             <ul id="changeLanguage">
                                 <li class="german_drop">
-                                    <a href="index.html">
-                                        <span class="english"><img src="img/english.png" alt="" class="img-responsive"></span><span class="language-text">English&nbsp;</span>
+                                    <a href="index_de.html">
+                                        <span class="english"><img src="img/english.png" alt="" class="img-responsive"></span><span class="language-text">English</span>
                                     </a>
                                 </li>
                             </ul>
