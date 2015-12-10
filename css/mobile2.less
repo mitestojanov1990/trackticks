@@ -72,7 +72,7 @@
 
 
     .navigation .secondary-container{
-        width: 100%;
+        min-width: 100%!important;
     }
 
     /*
@@ -172,6 +172,23 @@
         width:59px !important;
         height:59px !important;
     }
+
+    .features li .circle .deceleration{
+        margin-top: 6.5px;
+    }
+    .features li .circle .heatmap{
+        margin-top: 7px;
+    }
+    .features li .circle .sprints{
+        margin-top: 7px;
+    }
+    .features li .circle .activity{
+        margin-top: 6.5px;
+    }
+    .features li .circle .distance{
+        margin-top: 6.5px;
+    }
+
     .features p {
         text-align: center;
         font-size: 12px;
@@ -964,7 +981,6 @@
         text-align: left;
     }
     .team-head .one-column {
-        margin-top: 0;
         margin: 0;
         width:100%;
         top:120px;
@@ -984,7 +1000,7 @@
 
     .team-head h1 {
         font-size: 26px;
-        font-weight: normal;
+        font-weight: bold;
         margin-bottom: 0;
         line-height: initial;
         text-align: center;
@@ -1064,31 +1080,52 @@
         left: 15px;
         margin-top: -10px;
         top: initial !important;
-        bottom:-60px;
+        bottom:45px;
     }
     .team-third .slick-next {
         right: 15px;
         margin-top: -10px;
         top: initial !important;
-        bottom:-60px;
+        bottom:45px;
     }
     .team-third .slick-dots {
-        bottom: -30px;
+        bottom: 75px;
     }
     .team-third .mobile_visible {
         padding: 20px;
         width: 100%;
         display: block !important;
-        margin-top:20px;
+        margin-top:70px;
     }
     .team-third  .mobile_visible p{
         font-size: 18px;
         font-weight: normal;
+        width: 100%;
+        text-align: center;
     }
     .team-items section {
         height: auto;
         padding: 34px 0 34px 0;
     }
+
+    .team-third .slick-slide  .container-100{
+        opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+    }
+
+    .team-third .slick-current.slick-active  .container-100{
+        opacity: 1;
+        -webkit-transition: opacity 2s;
+        -moz-transition: opacity 2s;
+        -ms-transition: opacity 2s;
+        -o-transition: opacity 2s;
+        transition: opacity 2s;
+    }
+
     .team-performance .one-column {
         right: initial;
         bottom: initial;
@@ -1666,7 +1703,7 @@
     }
     .header-section h1 {
         font-size: 26px;
-        font-weight: normal;
+        font-weight: bold;
         margin-bottom: 0;
         line-height: initial;
     }
@@ -1696,7 +1733,7 @@
     .header-buttons .custom-btn:last-child {
         float: none;
         left: 0 !important;
-        top: 110px !important;
+        top: 150px !important;
         right: initial !important;
         position: absolute;
     }
@@ -1748,6 +1785,23 @@
         width: 90px !important;
         height: 90px !important;
     }
+
+    .features li .circle .deceleration{
+        margin-top: 6.5px;
+    }
+    .features li .circle .heatmap{
+        margin-top: 7px;
+    }
+    .features li .circle .sprints{
+        margin-top: 7px;
+    }
+    .features li .circle .activity{
+        margin-top: 6.5px;
+    }
+    .features li .circle .distance{
+        margin-top: 6.5px;
+    }
+
     .features p {
         text-align: center;
         font-size: 16px;
@@ -2221,7 +2275,7 @@
 
 
     .navigation .secondary-container{
-        width: 100%;
+        min-width: 100%!important;
     }
     .navigation .logo {
         width: 174px;
@@ -2244,7 +2298,7 @@
     .navigation ul {
         position: absolute;
         left: 0;
-        top: 53px;
+        top: 52px;
         background-color:#191919;
     }
     .navigation ul li{
@@ -2324,7 +2378,7 @@
     .team-head .two-column {
         margin:0 !important;
         width:100%;
-        top: -260px;
+        top: -225px;
         text-align:center;
     }
 
@@ -2336,7 +2390,7 @@
 
     .team-head h1 {
         font-size: 30px;
-        font-weight: normal;
+        font-weight: bold;
         margin-bottom: 0;
         line-height: initial;
         text-align: center;
@@ -2360,7 +2414,7 @@
     .team-features {
         clear: both;
         margin-bottom: 0;
-        top:-160px;
+        top:-140px;
         position:relative;
     }
     .team-features .list-inline {
@@ -2416,29 +2470,54 @@
         left: 15px;
         margin-top: -10px;
         top: initial !important;
-        bottom:-60px;
+        bottom:45px;
     }
     .team-third .slick-next {
         right: 15px;
         margin-top: -10px;
         top: initial !important;
-        bottom:-60px;
+        bottom:45px;
     }
     .team-third .slick-dots {
-        bottom: -30px;
+        bottom: 75px;
     }
     .team-third .mobile_visible {
         padding: 20px;
         width: 100%;
         display: block !important;
-        margin-top:20px;
+        margin-top:50px;
     }
     .team-third .hidden-xs{
         display:none;
     }
+
+    .team-third .slick-slide  .container-100{
+        opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+    }
+
+    .team-third .slick-current.slick-active  .container-100{
+        opacity: 1;
+        -webkit-transition: opacity 2s;
+        -moz-transition: opacity 2s;
+        -ms-transition: opacity 2s;
+        -o-transition: opacity 2s;
+        transition: opacity 2s;
+    }
+
+    .cover{
+        display: none;
+    }
+
     .team-third  .mobile_visible p{
         font-size: 18px;
         font-weight: normal;
+        width: 100%;
+        text-align: center;
     }
     .team-items section {
         height: auto;
@@ -3265,7 +3344,7 @@
     }
     .header-section h1 {
         font-size: 50px;
-        font-weight: normal;
+        font-weight: bold;
         margin-bottom: 0;
         line-height: initial;
     }
@@ -3844,7 +3923,7 @@
     }
 
     .navigation .secondary-container{
-        width: 100%;
+        min-width: 100%!important;
     }
 
     .navigation .logo {
@@ -3868,7 +3947,7 @@
     .navigation ul {
         position: absolute;
         left: 0;
-        top: 53px;
+        top: 52px;
         background-color:#191919;
     }
     .navigation ul li{
@@ -3935,11 +4014,10 @@
     .team-head {
         position: relative;
         height: 800px;
-        padding: 100px 0 0 0;
+        padding: 130px 0 0 0;
         text-align: left;
     }
     .team-head .one-column {
-        margin-top: 0;
         margin: 0;
         width:100%;
         top:120px;
@@ -3959,7 +4037,7 @@
 
     .team-head h1 {
         font-size: 40px;
-        font-weight: normal;
+        font-weight: bold;
         margin-bottom: 0;
         line-height: initial;
         text-align: center;
@@ -4041,29 +4119,59 @@
         left: 15px;
         margin-top: -10px;
         top: initial !important;
-        bottom:-60px;
+        bottom:45px;
     }
     .team-third .slick-next {
         right: 15px;
         margin-top: -10px;
         top: initial !important;
-        bottom:-60px;
+        bottom:45px;
     }
     .team-third .slick-dots {
-        bottom: -30px;
+        bottom: 75px;
     }
+
+    .team-third .container-100{
+        width: 100%;
+    }
+
+    .team-third .slick-slide  .container-100{
+        opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+    }
+
+    .team-third .slick-current.slick-active  .container-100{
+        opacity: 1;
+        -webkit-transition: opacity 2s;
+        -moz-transition: opacity 2s;
+        -ms-transition: opacity 2s;
+        -o-transition: opacity 2s;
+        transition: opacity 2s;
+    }
+
     .team-third .mobile_visible {
         padding: 20px;
         width: 100%;
         display: block !important;
-        margin-top:20px;
+        margin-top:50px;
     }
     .team-third .hidden-xs{
         display:none;
     }
+
+    .your-class .slick-slide p{
+        width: 100%;
+    }
+
     .team-third .mobile_visible p{
         font-size: 24px;
         font-weight: normal;
+        text-align: center;
+        width: 100%;
     }
     .team-items section {
         height: auto;
