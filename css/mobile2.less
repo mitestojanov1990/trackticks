@@ -36,6 +36,10 @@
     .slick-dots li.slick-active button:before{
         color:#ff2300 !important;
     }
+
+    body{
+        padding-top: 53px;
+    }
 }
 
 
@@ -80,9 +84,9 @@
     */
     .header-section {
         width: 320px;
-        height: 515px;
+        height: 100%;
         background-position: 70% 43%;
-        padding: 188px 0 0 0;
+        /*padding: 140px 0 0 0;*/
         background-size: 600% auto;
     }
     .header-section h1 {
@@ -573,7 +577,7 @@
     .player{
         text-align: center;
         height: 783px;
-        padding-top: 106px;
+        padding-top: 50px;
     }
 
     .player .one-column{
@@ -1005,7 +1009,7 @@
     .team-head {
         position: relative;
         height: 613px;
-        padding: 110px 0 0 0;
+        padding: 70px 0 0 0;
         text-align: left;
     }
     .team-head .one-column {
@@ -1052,7 +1056,7 @@
     .team-features {
         clear: both;
         margin-bottom: 0;
-        top:-110px;
+        top:-75px;
         position:relative;
     }
     .team-features .list-inline {
@@ -1383,8 +1387,8 @@
     }
 
     .contact-header {
-        height: 370px;
-        padding: 135px 0 0 0;
+        height: 100%;
+        padding: 0;
         text-align: center;
     }
     .contact-header .one-column {
@@ -1398,9 +1402,9 @@
     }
 
     .contact-forms {
-        height: auto;
+        height: 100%;
         background: #4B4B4B;
-        padding: 44px 0 50px 0;
+        padding: 11px 0;
         text-align: center;
     }
 
@@ -1457,7 +1461,7 @@
     .contact-forms textarea {
         display: block;
         width: 86%;
-        height: 270px;
+        height: 150px;
         background: #646464;
         font-size: 16px;
         -webkit-box-shadow: none;
@@ -1467,21 +1471,21 @@
         outline: none;
         resize: none;
         padding: 20px;
-        margin: 0 7% 6px 7%;
+        margin: 0 7% 20px 7%;
         left:0;
         float: none !important;
     }
     .contact-forms .clearfix{
         width:100%;
-        margin-top:30px;
+        /*margin-top:30px;*/
     }
 
     .contact-forms .image_wrapper.ball-image{
-        width: 111px;
+        width: 50px;
         height: auto;
         float: right;
         position: relative;
-        margin-top: 46px;
+        margin-top: 25px;
     }
     .contact-forms img {
         position: relative;
@@ -1494,8 +1498,8 @@
     /*OPEN POSITIONS*/
 
     .positions-header{
-        height: 422px;
-        padding: 150px 0 50px 0;
+        height:100%;
+        /*padding: 150px 0 50px 0;*/
     }
 
     .positions h1{
@@ -1505,13 +1509,17 @@
         text-align: center;
     }
 
+    .positions-header h1{
+        text-align: center;
+    }
+
     .positions-header .one-column{
        width: 100%;
     }
 
     .positions{
-        padding: 100px 0 38px 0;
-        height: auto;
+       /* padding: 100px 0 38px 0;*/
+        height: 100%;
     }
 
 
@@ -1519,7 +1527,7 @@
         float: none;
         margin: 0;
         width: 100%;
-        margin-bottom: 100px;
+        margin-bottom: 15px;
     }
 
     .positions p{
@@ -1550,7 +1558,7 @@
 
     .positions .text-info .two-column{
         width: 100%;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .positions .reorder-xs {
@@ -1574,8 +1582,8 @@
     }
 
     .positions .image_wrapper.open-pos-image{
-        width: 139px;
-        height: 162px;
+        width: 99px;
+        /*height: 162px;*/
         margin: 0 auto;
     }
 
@@ -1586,7 +1594,7 @@
     }
 
     .positions .secondary-container {
-        margin-bottom: 60px;
+        margin-bottom: 10px;
     }
 
     .positions .myBtn{
@@ -1597,7 +1605,7 @@
     }
 
     .positions .one-column{
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
 
     .positions .underline{
@@ -1610,7 +1618,8 @@
     /*NO POSITION PAGE*/
 
     .noPos{
-        height: auto;
+        height: 100%;
+        padding: 20px 0;
     }
 
 
@@ -1618,7 +1627,11 @@
         font-size: 26px;
         font-weight: normal;
         text-align: center;
-        margin-bottom: 50px;
+        /*margin-bottom: 50px;*/
+    }
+
+    .positions-header h1{
+        font-size: 24px;
     }
 
     .noPos .one-column{
@@ -1639,17 +1652,18 @@
     .noPos h3{
         font-size: 15px;
         font-weight: normal;
+        margin-bottom: 35px;
     }
 
     .noPos .image-wrapper.shoes-image{
-        width: 139px;
-        height: 162px;
-        margin: 0 auto;
+        width: 100px;
+        /*height: 162px;*/
+        margin: 0 auto 25px auto;
     }
 
     .noPos .text-info .one-column{
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     .noPos .text-info .two-column{
@@ -1658,7 +1672,7 @@
     }
 
     .noPos p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
 
@@ -1677,6 +1691,10 @@
 
     .noPos .underline{
         text-decoration: underline;
+    }
+
+    .noPos .text-info .margin-bottom{
+        margin-bottom: 25px;
     }
 
 }
@@ -1726,7 +1744,7 @@
         width: 600px;
         height: 515px;
         background-position: 70% 43%;
-        padding: 188px 0 0 0;
+        padding: 140px 0 0 0;
         background-size: 200% auto;
     }
     .header-section h1 {
@@ -3146,13 +3164,20 @@
 
     .positions-header{
         height: 422px;
-        padding: 150px 0 50px 0;
+        /*padding: 150px 0 50px 0;*/
+        padding: 0;
     }
 
-    .positions h1{
+/*    .positions h1{
 
         font-size: 26px;
         font-weight: normal;
+        text-align: center;
+    }*/
+
+    .positions-header h1{
+        font-size: 26px;
+        font-weight: bold;
         text-align: center;
     }
 
@@ -3161,8 +3186,8 @@
     }
 
     .positions{
-        padding: 65px 0 50px 0;
-        height: auto;
+       /* padding: 65px 0 50px 0;*/
+        height: 100%;
     }
 
 
@@ -3170,11 +3195,11 @@
         float: none;
         margin: 0 auto;
         width: 100%;
-        margin-bottom: 100px;
+        /*margin-bottom: 100px;*/
     }
 
     .positions p{
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .positions h3{
@@ -3227,8 +3252,8 @@
     }
 
     .positions .image_wrapper.open-pos-image{
-        width: 209px;
-        height: 243px;
+        width: 123px;
+        /*height: 243px;*/
         margin: 0 auto;
     }
 
@@ -3239,7 +3264,7 @@
     }
 
     .positions .secondary-container {
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
 
     .positions .myBtn{
@@ -3250,7 +3275,7 @@
     }
 
     .positions .one-column{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .positions .underline{
@@ -3263,8 +3288,9 @@
     /*NO POSITION PAGE*/
 
     .noPos{
-        height: auto;
-        padding: 133px 0 126px 0;
+        height: 100%;
+        /*padding: 133px 0 126px 0;*/
+        padding: 15px 0;
     }
 
     .noPos  h1{
@@ -3290,20 +3316,20 @@
     }
 
     .noPos h3{
-        font-size: 22px;
+        font-size: 20px;
         font-weight: normal;
-        margin-bottom:70px;
+        margin-bottom:35px;
     }
 
     .noPos .image-wrapper.shoes-image{
-        width: 260px;
+        width: 150px;
         height: auto;
         margin: 0 auto;
     }
 
     .noPos .text-info .one-column{
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     .noPos .text-info .two-column{
@@ -3312,7 +3338,7 @@
     }
 
     .noPos p {
-        font-size: 18px;
+        font-size: 14px;
     }
 
 
@@ -3331,6 +3357,10 @@
 
     .noPos .underline{
         text-decoration: underline;
+    }
+
+    .noPos .text-info .margin-bottom{
+        margin-bottom: 30px;
     }
 }
 
@@ -3380,7 +3410,7 @@
         width: 1023px;
         height: 515px;
         background-position: 70% 43%;
-        padding: 130px 0 0 0;
+        padding: 99.5px 0 0 0;
     }
     .header-section h1 {
         font-size: 50px;
@@ -4774,10 +4804,10 @@
 
     .positions-header{
         height: 422px;
-        padding: 150px 0 50px 0;
+        /*padding: 150px 0 50px 0;*/
     }
 
-    .positions h1{
+    .positions-header h1{
 
         font-size: 36px;
         font-weight: normal;
@@ -4789,8 +4819,8 @@
     }
 
     .positions {
-        padding: 100px 0 88px 0;
-        height: auto;
+        /*padding: 100px 0 88px 0;*/
+        height: 100%;
     }
 
 
@@ -4853,19 +4883,20 @@
     }
 
     .positions .image_wrapper.open-pos-image{
-        width: 418px;
-        height: 486px;
+        width: 200px;
+        /*height: 486px;*/
         margin: 0 auto;
     }
 
     .positions .open-positions{
-        font-size: 24px;
-        height: 80px;
-        line-height: 80px;
+        font-size: 18px;
+        height: 60px;
+        line-height:60px;
+        width: 100%;
     }
 
     .positions .secondary-container {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
 
     .positions .myBtn{
@@ -4876,7 +4907,7 @@
     }
 
     .positions .one-column{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .positions .underline{
@@ -4889,8 +4920,8 @@
     /*NO POSITION PAGE*/
 
     .noPos{
-        height: auto;
-        padding: 147px 0 150px 0;
+        height: 100%;
+        /*padding: 147px 0 150px 0;*/
     }
 
     .noPos  h1{
@@ -4921,9 +4952,9 @@
     }
 
     .noPos .image-wrapper.shoes-image{
-        width: 400px;
+        width: 250px;
         height: auto;
-        margin: 0 auto;
+        margin: 25px auto;
     }
 
     .noPos .text-info .one-column{

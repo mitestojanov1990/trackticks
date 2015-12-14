@@ -76,7 +76,7 @@ body, html {
   width: 100%;
   height: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, 'Open Sans', sans-serif;
-
+  overflow-x: hidden;
 }
 
 /* line 66, ../sass/style.scss */
@@ -87,6 +87,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
+  padding-top: 80px;
 }
 
 /* line 77, ../sass/style.scss */
@@ -268,11 +269,9 @@ a:hover {
     height:auto;
 }
 
-/*
-.navbar-nav .go_to_shop{
-    padding-top:7px;
+.navigation .go_to_shop .menu-btn{
+  top:-1px;
 }
-*/
 
 /* line 175, ../sass/style.scss */
 .menu-btn {
@@ -384,12 +383,13 @@ button .caret {
 }
 
 .navigation{
-  height: 90px;
+  height: 80px;
   background: #191919;
-  padding: 25px 0;
+  padding: 20px 0;
   position: fixed;
   right: 0;
   left: 0;
+  top:0;
   z-index: 1030;
 }
 
@@ -410,11 +410,11 @@ button .caret {
 
 .navigation .language-selector{
   background: #323232;
-  height: 90px;
+  height: 80px;
   position: absolute;
   width: 100%;
-  top: 90px;
-  padding: 31px 0;
+  top: 79px;
+  padding: 26px 0;
 }
 
 .navigation .language-selector p{
@@ -557,6 +557,11 @@ button .caret {
   height:22px;
   margin-bottom: 10px;
   color: #4b4b4b;
+  cursor: pointer;
+}
+
+.footer .toggle_language:hover .english_toggle{
+  color: #fff;
 }
 
 .footer .toggle_language a span {
@@ -584,6 +589,7 @@ button .caret {
   display: block;
   height: 22px;
   font-size: 18px;
+  color: #4b4b4b;
 }
 
 .footer #changeLanguage .german_drop a span {
@@ -620,15 +626,37 @@ button .caret {
   color: #fff;
 }
 
+
+/*.center-inside{
+  position: relative;
+  top:50%;
+  -webkit-transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  -o-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+}*/
+
+.center-inside-mobile{
+  position: relative;
+  top:50%;
+  -webkit-transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  -o-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+}
+
+
 /* line 290, ../sass/style.scss */
 .header-section {
   width: 100%;
-  height: 870px;
-  background: url("../img/HeaderPic%20Landingpage.jpg") no-repeat fixed, url("../img/HeaderPic%20Landingpage.jpg") no-repeat scroll;
+  height: 100%;
+  background: url("../img/Landingpage_2.jpg") no-repeat fixed, url("../img/HeaderPic%20Landingpage.jpg") no-repeat scroll;
   text-align: left;
   background-position: 63% 48%;
   text-align: left;
-  padding: 229px 0 150px 0;
+ /* padding: 229px 0 150px 0;*/
   background-size: 259% auto;
 }
 
@@ -847,6 +875,9 @@ button .caret {
     width:608px;
     height:413px;
 }
+
+
+
 .align_center_container{
     text-align:center;
     width: 100%;
@@ -1339,8 +1370,8 @@ button .caret {
   background-size: 105% auto;
   background-position: 50% 90%;
   position: relative;
-  height: 870px;
-  padding: 210px 0 150px 0;
+  height: 100%;
+  /*padding: 210px 0 150px 0;*/
   text-align: left;
 }
 
@@ -1391,13 +1422,13 @@ button .caret {
   height: 500px;
   background: #ff2300;
   width: 100%;
-  padding: 70px 0;
+  /*padding: 70px 0;*/
 }
 
 /* line 820, ../sass/style.scss */
 .team-features {
   clear: both;
-  margin-bottom: 93px;
+  /*margin-bottom: 93px;*/
 }
 
 /* line 825, ../sass/style.scss */
@@ -1460,7 +1491,7 @@ button .caret {
 /* line 858, ../sass/style.scss */
 .description {
   width: 337px;
-  padding-top: 93px;
+  padding-top: 50px;
 }
 
 /* line 862, ../sass/style.scss */
@@ -1501,8 +1532,10 @@ button .caret {
 /* line 871, ../sass/style.scss */
 .team-third {
   background: #4b4b4b;
-  height: 1156px;
+  height: 800px;
+  /*
   padding: 227px 0 67px 0;
+  */
   position: relative;
 }
 
@@ -1861,8 +1894,8 @@ button .caret {
   background-size: 105% auto;
   background-position: 50% 90%;
   position: relative;
-  height: 870px;
-  padding: 158px 0 109px 0;
+  height: 100%;
+  /*padding: 158px 0 109px 0;*/
   text-align: left;
 }
 
@@ -1881,7 +1914,7 @@ button .caret {
 
 .player .image_wrapper.player-head{
   width: 517px;
-  height: 648px;
+  /*height: 648px;*/
 }
 
 /*
@@ -2193,18 +2226,18 @@ button .caret {
 
 /* line 1253, ../sass/style.scss */
 .contact-header {
-  /*background: url("../img/Header%20TeamProduct.jpg") no-repeat fixed, url("../img/Header%20TeamProduct.jpg") no-repeat scroll;
+  background: url("../img/Header%20TeamProduct.jpg") no-repeat fixed, url("../img/Header%20TeamProduct.jpg") no-repeat scroll;
   background-size: 164% auto;
   background-position: 37% 73%;
   position: relative;
   height: 720px;
-  padding: 224px 0 250px 0;*/
+  padding: 224px 0 250px 0;
   text-align: left;
 }
 
 /* line 1264, ../sass/style.scss */
 .contact-header .one-column {
-  margin-top: 35px;
+  /*margin-top: 35px;*/
 }
 
 /* line 1268, ../sass/style.scss */
@@ -2215,9 +2248,9 @@ button .caret {
 
 /* line 1273, ../sass/style.scss */
 .contact-forms {
-  height: auto;
+  height: 100%;
   background: #4B4B4B;
-  padding: 188px 0 76px 0;
+ /* padding: 188px 0 76px 0;*/
   text-align: left;
 }
 
@@ -2236,7 +2269,7 @@ button .caret {
 
 /* line 1285, ../sass/style.scss */
 .contact-forms h3 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 25px;
 }
@@ -2245,11 +2278,11 @@ button .caret {
 .contact-forms input {
   display: inline-block;
   width: 400px;
-  height: 60px;
-  line-height: 60px;
+  height: 45px;
+  line-height: 45px;
   padding: 0 20px;
   background: #646464;
-  font-size: 24px;
+  font-size: 18px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -2262,9 +2295,9 @@ button .caret {
 .contact-forms textarea {
   display: block;
   width: 820px;
-  height: 360px;
+  height: 250px;
   background: #646464;
-  font-size: 24px;
+  font-size: 18px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -2275,10 +2308,9 @@ button .caret {
 }
 
 /* line 1323, ../sass/style.scss */
-.contact-forms img {
-  position: relative;
-  top: 20px;
-  width:187px;
+.contact-forms .image_wrapper.ball-image {
+  float: right;
+  width:160px;
   height: 198px;
 }
 
@@ -2289,8 +2321,8 @@ button .caret {
   background: url("../img/Header%20TeamProduct.jpg") no-repeat fixed, url("../img/Header%20TeamProduct.jpg") no-repeat scroll;
   background-size: 164% auto;
   background-position: 37% 73%;
-  height: 720px;
-  padding: 226px 0 262px 0;
+  height: 100%;
+  /*padding: 226px 0 262px 0;*/
   text-align: left;
 }
 
@@ -2298,7 +2330,7 @@ button .caret {
 .positions-header h1 {
   font-size: 72px;
   font-weight: bold;
-  margin-top: 30px;
+ /* margin-top: 30px;*/
 }
 
 /* line 1345, ../sass/style.scss */
@@ -2306,7 +2338,8 @@ button .caret {
   height: auto;
   background: #4B4B4B;
   text-align: left;
-  padding: 178px 0 137px 0;
+ /* padding: 178px 0 137px 0;*/
+  height: 100%;
 }
 
 .positions h1{
@@ -2316,7 +2349,7 @@ button .caret {
 }
 
 .positions .secondary-container{
-  margin-bottom: 89px;
+  margin-bottom: 70px;
 }
 
 .positions .one-column{
@@ -2330,7 +2363,7 @@ button .caret {
   /*
   bottom: 20px;
   */
-  left: 79px;
+/*  left: 79px;*/
 }
 
 .positions .text-info .one-column{
@@ -2347,13 +2380,14 @@ button .caret {
   color: #fff;
 }
 .positions .image_wrapper.open-pos-image{
-  width:388px;
-  height:453px;
+  width:260px;
+  height:auto;
+  margin: 0 auto;
 }
 
 /* line 1352, ../sass/style.scss */
 .positions h3 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -2361,18 +2395,18 @@ button .caret {
 
 /* line 1359, ../sass/style.scss */
 .positions p {
-  font-size: 24px;
+  font-size: 18px;
   margin-bottom: 25px;
 }
 
 /* line 1365, ../sass/style.scss */
 .positions .open-positions {
-  height: 60px;
-  width: 100%;
+  height: 45px;
+  width: 90%;
   background: #646464;
   margin-bottom: 10px;
   color: #A0A0A0;
-  line-height: 60px;
+  line-height: 45px;
   padding: 0 20px;
   font-size: 24px;
 }
@@ -2382,18 +2416,24 @@ button .caret {
   float: right;
 }
 
+.positions .text-info .margin-bottom{
+  margin-bottom: 20px;
+}
+
 /* line 1381, ../sass/style.scss */
 .noPos {
-  height: auto;
   background: #4B4B4B;
   text-align: left;
-  padding: 147px 0 213px 0;
+  /*padding: 147px 0 213px 0;*/
+  height: 100%;
 }
 
 .noPos  h1{
   font-size: 72px;
   font-weight: bold;
-  margin-bottom: 150px;
+  /*
+  margin-bottom: 60px;
+  */
 }
 /* line 1388, ../sass/style.scss */
 .noPos .one-column {
@@ -2401,25 +2441,33 @@ button .caret {
 }
 
 .noPos .secondary-container.noPlace{
-  margin-bottom: 89px;
+  margin-bottom: 60px;
+}
+
+.noPos .text-info .margin-bottom{
+  margin-bottom: 50px;
 }
 
 /* line 1393, ../sass/style.scss */
 .noPos h3 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 109px;
+  margin-bottom: 60px;
 }
 
 /* line 1399, ../sass/style.scss */
 .noPos p {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .noPos .image-wrapper.shoes-image{
-  width: 370px;
-  height: 300px;
+  width: 260px;
+ /* height: 300px;*/
   margin: 0 auto;
+}
+
+.underline{
+  border-bottom: 1px solid #fff;
 }
 
 .noPos .text-info .one-column{
@@ -2431,12 +2479,16 @@ button .caret {
   margin-right: 20px;
 }
 
+.secondary-container.text-info{
+  margin: auto;
+}
+
 
 .your-class .slick-slide {
     display: block;
-    width: 1039px;
+    width: 700px;
     outline: none;
-    margin-right: 79px;
+    margin: 0 100px;
 }
 
 .your-class .slick-slide.slick-cloned {
