@@ -902,6 +902,11 @@ button .caret {
   line-height: 40px;
 }
 
+.product-section .myBtn:hover{
+  background: #ff2300;
+}
+
+
 /* line 462, ../sass/style.scss */
 .myBtn:hover {
   color: #fff;
@@ -985,10 +990,20 @@ button .caret {
   background-size: 100% 100%;
   width: 100%;
   height: 562px;
-  padding: 117px 0 150px 0;
+  /*padding: 117px 0 150px 0;*/
 }
 
-/* line 538, ../sass/style.scss */
+.newsletter .main-container{
+  position: relative;
+  top:50%;
+  -webkit-transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  -o-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+}
+
+  /* line 538, ../sass/style.scss */
 .newsletter h2 {
   font-size: 36px;
   margin-top: 0;
@@ -1077,12 +1092,54 @@ button .caret {
   background: #323232;
 }
 
+.newsletter .email.tellfriend input:first-of-type{
+  width: 20%;
+  margin-right: 10px;
+}
+
+.newsletter .email.tellfriend input:last-of-type{
+  width: 40%;
+}
+
+
 .newsletter .email.tellfriend .myBtn{
   background: #323232;
 }
 
 .newsletter .email.tellfriend .myBtn:hover{
   color: #fff;
+}
+.image_wrapper.newsletter-sent{
+  margin-bottom: 20px;
+}
+
+.image_wrapper.newsletter-sent img{
+  margin: 0 auto;
+}
+
+.request{
+  display: inline-block;
+
+}
+
+.request > div{
+  display: inline-block;
+}
+
+.request .request-friend{
+  margin-left: 155px;
+  margin-right: 30px;
+}
+
+.request .request-sent{
+  width: 120px;
+  position: relative;
+  top:50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 /* line 601, ../sass/style.scss */
@@ -1446,24 +1503,35 @@ button .caret {
 
 /* line 837, ../sass/style.scss */
 .team-features li .circle {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   border: 3px solid #fff;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   margin: 0 auto;
-  padding: 27px;
+  padding: 25px;
+  background: #fff;
+}
+
+.team-features li .circle img{
+  position: relative;
+  top:50%;
+  -webkit-transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  -o-transform: translate(0,-50%);
+  transform: translate(0,-50%);
 }
 
 
-.team-features li .circle.analyse{
+/*.team-features li .circle.analyse{
   padding: 21px;
-}
+}*/
 
-.team-features li .circle.analyse img{
+/*.team-features li .circle.analyse img{
   margin-top: 10px;
-}
+}*/
 
 
   /* line 847, ../sass/style.scss */
@@ -1472,9 +1540,9 @@ button .caret {
 }
 
 .team-features .image_wrapper.arrows{
-  margin-top: 43.5px;
-  width: 80px;
-  height: 33px;
+  margin-top: 64.5px;
+/*  width: 80px;
+  height: 33px;*/
 }
 
 /*.team-features .image_wrapper.arrows.second-arrow{
@@ -1507,11 +1575,11 @@ button .caret {
 
 .slick-slide > .hidden-xs{
   opacity: 0;
-  -webkit-transition: opacity 2s;
-  -moz-transition: opacity 2s;
-  -ms-transition: opacity 2s;
-  -o-transition: opacity 2s;
-  transition: opacity 2s;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
 }
 
 .slick-current.slick-active > .hidden-xs{
@@ -1532,7 +1600,7 @@ button .caret {
 /* line 871, ../sass/style.scss */
 .team-third {
   background: #4b4b4b;
-  height: 800px;
+  height: 100%;
   /*
   padding: 227px 0 67px 0;
   */
@@ -1578,8 +1646,8 @@ button .caret {
 /* line 897, ../sass/style.scss */
 .team-performance {
   background: #323232;
-  height: 762px;
-  padding: 248px 0 200px 0;
+  height: 630px;
+  padding: 165px 0;
 }
 
 /* line 904, ../sass/style.scss */
@@ -1599,11 +1667,12 @@ button .caret {
   height: 252px;
   position: absolute;
   right: -31px;
+  top:70px;
 }
 
 /* line 917, ../sass/style.scss */
 .team-items .section-text p {
-  font-size: 30px;
+  font-size: 18px;
 }
 
 /* line 921, ../sass/style.scss */
@@ -1615,7 +1684,7 @@ button .caret {
 
 .team-motivate .section-text{
   width: 640px;
-  margin-top: 42px;
+  margin-top: 100px;
   margin-left: 35px;
 }
 
@@ -1645,7 +1714,7 @@ button .caret {
 /* line 938, ../sass/style.scss */
 .team-balance .two-column {
   width: 692px;
-  margin-top: 10px;
+  margin-top: 65px;
   left: 60px;
 }
 
@@ -1667,12 +1736,13 @@ button .caret {
 .team-planning .one-column {
   width: 647px;
   margin-left: 10px;
+  top: 70px;
 }
 
 /* line 956, ../sass/style.scss */
 .team-planning .two-column {
   left: 106px;
-  bottom: 246px;
+  bottom: 95px;
 }
 
 .team-planning .image_wrapper.planing-image{
@@ -1700,7 +1770,7 @@ button .caret {
 .team-comparison .two-column {
   width: 686px;
   left: 85px;
-  margin-top: 10px;
+  margin-top: 55px;
 }
 
 .team-comparison .image_wrapper.comparison-image{
@@ -1711,9 +1781,9 @@ button .caret {
 
 /* line 978, ../sass/style.scss */
 .team-shop {
-  height: 1080px;
+  height: 100%;
   background: #dcdcdc;
-  padding: 305px 0 284px 0;
+  padding: 125px 0;
   text-align: left;
   color: #000;
 }
@@ -1735,7 +1805,7 @@ button .caret {
 
 .team-shop .image_wrapper.buy-image{
   width: 652px;
-  height: 491px;
+  height: auto;
 }
 
 .team-shop .image_wrapper.buy-image img{
@@ -1767,7 +1837,16 @@ button .caret {
 /* line 996, ../sass/style.scss */
 .team-shop p {
   font-size: 24px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+}
+
+.team-shop p:last-of-type{
+  margin-bottom: 20px;
+}
+
+.team-shop .one-column p{
+  margin-top: 20px;
+  font-size: 14px;
 }
 
 .team-shop .quantity{
@@ -1902,13 +1981,13 @@ button .caret {
 /* line 1014, ../sass/style.scss */
 .player .one-column {
   margin-left: 71px;
-  margin-top: 59px;
+ /* margin-top: 59px;*/
 }
 
 /* line 1019, ../sass/style.scss */
 .player .two-column {
   width: 673px;
-  top: 171px;
+  top: 100px;
   right: 25px;
 }
 
@@ -1957,6 +2036,8 @@ button .caret {
 .player .myBtn {
   font-size: 21px;
   background: #ff2300;
+  position: relative;
+  bottom:2px;
 }
 
 /* line 1058, ../sass/style.scss */
@@ -2108,9 +2189,63 @@ button .caret {
 }
 
 
+.buy-single{
+  background: #C8C8C8;
+  text-align: left;
+  color: #000;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.buy-single .one-column{
+  width: 50%;
+}
+
+.buy-single .two-column{
+  width: 50%;
+  position: relative;
+  left: 110px;
+}
+
+.buy-single .section-text{
+  margin-top: 20px;
+}
+
+.buy-single .one-column .image_wrapper{
+  float: left;
+  margin-right: 70px;
+}
+
+.buy-single .two-column .image_wrapper{
+  float: left;
+  margin-right: 70px;
+}
+
+.buy-single p{
+  font-size: 18px;
+}
+
+.buy-single h3{
+  font-size: 24px;
+  margin: 10px 0 20px 0;
+  font-weight: bold;
+}
 
 
-/* line 1156, ../sass/style.scss */
+.buy-single .menu-btn{
+  background: #d6d6d6;
+  font-size:18px;
+}
+
+
+  /* line 1156, ../sass/style.scss */
 .buy-second {
   background: url("../img/circleBGD.png") no-repeat center center;
   background-size: cover;
@@ -2314,6 +2449,135 @@ button .caret {
   /*height: 198px;*/
 }
 
+.noPos.contact-thanks h3{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.noPos.contact-thanks p{
+  font-size: 20px;
+}
+
+.noPos.contact-thanks .image-wrapper.shoes-image{
+  margin-bottom: 60px;
+}
+
+.noPos.contact-thanks .second, .noPos.contact-thanks .third{
+ margin-bottom: 60px;
+}
+
+.row-contact a{
+  margin-right: 50px;
+}
+
+.row-contact a:hover{
+  background: #ff2300!important;
+}
+
+.row-contact a.myBtn{
+  width: 192px;
+  height: 46px;
+  line-height: 35px;
+  font-size: 18px;
+}
+
+.row-contact a.custom-btn{
+  width: 288px;
+  height: 69px;
+  line-height: 69px;
+  font-size: 24px;
+}
+
+.row-contact a:last-of-type{
+  margin-right: 0;
+}
+
+.noPos.contact-thanks .secondary-container.noPlace{
+  margin-bottom: 0;
+}
+
+
+.faq{
+  height: 100%;
+  position: relative;
+  background: #4B4B4B;
+}
+
+.tab-menu{
+  width: 100%;
+}
+
+.nav-tabs{
+  width: 20%;
+  float: left;
+  text-align: left;
+  border: none;
+}
+
+.nav-tabs > li{
+  float: none;
+  background: none;
+
+}
+
+.nav-tabs > li a{
+  border: none;
+}
+
+
+.nav-tabs > li.active > a{
+  border: none;
+  border-radius: 0;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+  background: none;
+  color: #ff2300;
+  border: none;
+}
+
+.nav-tabs > li > a:hover{
+  background: none;
+  color: #fff;
+  border: none;
+}
+
+.tab-content{
+  width: 80%;
+  float: left;
+}
+
+.tab-content li{
+  width: 100%;
+  /*
+  padding: 18px 0;
+  */
+  line-height: 60px;
+  font-size: 24px;
+  background: #A0A0A0;
+  margin-bottom: 10px;
+}
+
+.tab-content li a{
+  display: block;
+}
+
+.tab-content li div{
+  font-size: 16px;
+  background: #4B4B4B;
+  text-align: left;
+  padding: 30px 0;
+}
+
+.tab-content li p{
+  margin-bottom: 30px;
+}
+
+.tab-content .myBtn{
+  width: 192px;
+  height: 46px;
+  line-height: 30px;
+}
 
 
 /* line 1330, ../sass/style.scss */
@@ -2553,5 +2817,5 @@ button .caret {
 }
 
 .your-class .slick-dots {
-    bottom: -98px;
+    bottom: -60px;
 }

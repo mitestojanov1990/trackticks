@@ -64,7 +64,29 @@ $(document).ready(function () {
         $('.language-selector').hide();
     })
 
-
     $('.pay-section').hide();
+
+
+
+    //Newsletter
+    $('.newsletter-sent').hide();
+
+    $('#insider').click(function () {
+        $('.newsletter-sent').show();
+        $('.insider').hide();
+        $('.insider-heading').html("Thank you for your interest!");
+    });
+
+    $('.request').hide();
+
+    $('#friend').click(function () {
+        $('.request').show();
+        $('.tellfriend').hide();
+        $('.friend-heading').html("Your friend surely appreciates this!");
+    });
+
+
+
+
 
 });

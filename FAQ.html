@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tracktics | Contact</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet/less" type="text/css" href="css/variables.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/medias.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/mobile2.less" />
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="./js/general.js"></script>
+    <script>
+        var tmpWidth = effectiveDeviceWidth();
+        var tmpHeight = effectiveDeviceHeight();
+
+        //if (tmpWidth < tmpHeight) {
+        //    var tmp = tmpWidth;
+        //    tmpWidth = tmpHeight;
+        //    tmpHeight = tmp;
+        //}
+        less = {
+            env: "development",
+            async: false,
+            fileAsync: false,
+            poll: 1000,
+            functions: {},
+            dumpLineNumbers: "comments",
+            globalVars: {
+                sw: tmpWidth + "px",
+                sh: tmpHeight + "px"
+            },
+        };
+    </script>
+    <script src="js/less.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<nav class="navigation">
+    <div class="main-container">
+        <div class="clearfix secondary-container">
+            <div class="logo">
+                <div class="navbar_image_wrapper">
+                    <img src="img/Logo.png" alt="Logo" class="img-responsive">
+                </div>
+            </div>
+            <div class="hidden mobile_visible nav_toggle" onclick="NavigationToggle(this)">
+                <div class="navbar_image_wrapper closed">
+                    <img src="img/nav_open.png" alt="Logo" class="img-responsive">
+                </div>
+                <div class="navbar_image_wrapper opened hidden">
+                    <img src="img/nav_close.png" alt="Logo" class="img-responsive">
+                </div>
+            </div>
+            <ul class="list-inline mobile_hidden">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+            </ul>
+
+            <ul class="list-inline mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li class="language">
+                    <div class="toggle_language">
+                        <a href="#" class="english_toggle">
+                            <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
+                        </a>
+                        <ul id="changeLanguage">
+                            <li class="german_drop">
+                                <a href="#">
+                                    <span class="english"></span>German
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="go_to_shop"><a href="teams.html#buy_section" class="btn menu-btn">Go to Shop</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- <div class="language-selector mobile_hidden">
+         <div class="main-container">
+             <div class="clearfix secondary-container">
+                 <p class="">Your are viewing this page in English, to view it in <a href="#">Deutsch, click here.</a></p>
+                 <div class="image-wrapper close-lang">
+                     <img src="img/nav_close.png" alt="" class="img-responsive">
+                 </div>
+             </div>
+         </div>
+
+     </div>-->
+</nav>
+
+
+<section class="faq">
+    <div class="main-container center-inside-mobile">
+        <div class="clearfix secondary-container ">
+            <div class="tab-menu">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                        <a href="#home" role="tab" data-toggle="tab">
+                            Tracktics
+                        </a>
+                    </li>
+                    <li><a href="#profile" role="tab" data-toggle="tab">
+                        Hardware
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#messages" role="tab" data-toggle="tab">
+                            Data
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#settings" role="tab" data-toggle="tab">
+                            Software
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#settings" role="tab" data-toggle="tab">
+                            Design
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="home">
+                        <ul>
+                            <li>
+                                <a data-toggle="collapse" href="#waterproof" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
+                                <div class="collapse" id="waterproof">
+                                    <p>
+                                        Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                    </p>
+
+                                    <p>
+                                        Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                    </p>
+                                    <a data-toggle="collapse" href="#waterproof" class="btn myBtn">Close</a>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" href="#memory" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
+                                <p class="collapse" id="memory">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque dignissimos dolorem dolorum inventore ipsa minima nesciunt perspiciatis porro quam quibusdam quis recusandae, sapiente totam ullam ut voluptatum! Doloribus, tempore?
+                                </p>
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" href="#indoors" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
+                                <p class="collapse" id="indoors">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque dignissimos dolorem dolorum inventore ipsa minima nesciunt perspiciatis porro quam quibusdam quis recusandae, sapiente totam ullam ut voluptatum! Doloribus, tempore?
+                                </p>
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" href="#cow" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
+                                <p class="collapse" id="cow">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque dignissimos dolorem dolorum inventore ipsa minima nesciunt perspiciatis porro quam quibusdam quis recusandae, sapiente totam ullam ut voluptatum! Doloribus, tempore?
+                                </p>
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" href="#bluetooth" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
+                                <p class="collapse" id="bluetooth">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque dignissimos dolorem dolorum inventore ipsa minima nesciunt perspiciatis porro quam quibusdam quis recusandae, sapiente totam ullam ut voluptatum! Doloribus, tempore?
+                                </p>
+                            </li>
+                            <li>
+                                <a data-toggle="collapse" href="#sex" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
+                                <p class="collapse" id="sex">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque dignissimos dolorem dolorum inventore ipsa minima nesciunt perspiciatis porro quam quibusdam quis recusandae, sapiente totam ullam ut voluptatum! Doloribus, tempore?
+                                </p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <h2>Profile Content Goes Here</h2>
+                        <img src="http://lorempixel.com/400/400/cats/2" alt="Cats"/>
+                    </div>
+                    <div class="tab-pane fade" id="messages">
+                        <h2>Messages Content Goes Here</h2>
+                        <img src="http://lorempixel.com/400/400/cats/3" alt="Cats"/>
+                    </div>
+                    <div class="tab-pane fade" id="settings">
+                        <h2>Settings Content Goes Here</h2>
+                        <img src="http://lorempixel.com/400/400/cats/4" alt="Cats"/>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer class="footer">
+    <div class="main-container">
+        <div class="clearfix secondary-container">
+            <div class="social">
+                <div class="hiring">
+                    <p><a href="mailto:info@Tracktics.zone">info@Tracktics.zone</a></p>
+                    <a href="openPos.html" class="btn myBtn">We are hiring!</a>
+                </div>
+                <div class="social-icons">
+                    <p>Follow us!</p>
+                    <ul class="list-inline">
+                        <li><a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/TrackticsZone" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <p>We always write back!</p>
+                    <a href="contact.html" class="btn myBtn">Contact us</a>
+                </div>
+            </div>
+
+            <div class="info-list clearfix">
+                <!--<div class="number" >
+                    <p>+49 123 45 67</p>
+                </div>
+                <ul class="address list-inline">
+                    <li><p>TRACKTICS GmbH</p></li>
+                    <li><p>Elisabethenstrasse 105</p></li>
+                    <li><p>719 Hofheim a.T.</p></li>
+                    <li><p>Germany</p></li>
+                </ul>
+                <div class="impressum">
+                    <p>Impressum</p>
+                    <li class="language">
+                       <div class="toggle_language">
+                           <a href="#" class="english_toggle">
+                               <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
+                           </a>
+                           <ul id="changeLanguage">
+                               <li class="german_drop">
+                                   <a href="index_de.html">
+                                       <span class="english"><img src="img/german.png" alt=""></span>German
+                                   </a>
+                               </li>
+                           </ul>
+                       </div>
+                    </li>
+                </div>-->
+
+                <ul class="list-inline">
+                    <li class="pull">
+                        <ul>
+                            <li>+49 123 45 67</li>
+                            <li>Impressum</li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <ul class="second-list list-inline">
+                            <li>TRACKTICS GmbH</li>
+                            <li>Elisabethenstrasse 105</li>
+                            <li>719 Hofheim a.T.</li>
+                            <li>Germany</li>
+                        </ul>
+                    </li>
+                    <li class="language push">
+                        <div class="toggle_language">
+                            <a class="english_toggle">
+                                <span class="english add_margin"><img src="img/english.png" alt="" class="img-responsive"></span><span class="language-text">English&nbsp;</span><span class="caret"></span>
+                            </a>
+                            <ul id="changeLanguage">
+                                <li class="german_drop">
+                                    <a href="#">
+                                        <span class="english"><img src="img/german.png" alt="" class="img-responsive"></span><span class="language-text">German</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="mobile_hiring mobile_visible hidden">
+                <p>+49 123 45 67 - info@Tracktics.zone</p>
+                <div class="mobile_footer_buttons">
+                    <a href="noPosition.html" class="btn myBtn">We are hiring!</a>
+                    <a href="contact.html" class="btn myBtn">Contact us</a>
+                </div>
+                <p class="left">TRACKTICS GmbH</p>
+                <p class="right">Impressum</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
