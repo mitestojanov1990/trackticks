@@ -88,6 +88,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
   padding-top: 80px;
+  overflow-x: hidden;
 }
 
 /* line 77, ../sass/style.scss */
@@ -545,9 +546,9 @@ button .caret {
 
 
 .footer .toggle_language{
-    width:140px;
+    width:160px;
     float: right;
-    padding: 5px 10px;
+    padding: 10px 15px;
 }
 
 .footer .toggle_language:hover{
@@ -583,12 +584,40 @@ button .caret {
   background-size: cover;
 }
 
+.footer .language .english_toggle:hover{
+  color: #fff;
+}
+
+.footer .language .english_toggle:hover span.english{
+  background: url("../img/Language-Icons_english-bright.png") no-repeat center center;
+  background-size: cover;
+}
+
+
+.footer .language .bottom-caret{
+  background: url("../img/Language-Icons_caret.png") no-repeat center center;
+  background-size: cover;
+  width: 11px;
+  height: 7px;
+  float: right;
+  margin-top: 6.5px;
+}
+
 .footer .language a span.english_bottom{
   float: left;
   width: 22px;
   height: 22px;
+  background: url("../img/Language-Icons_German_normal.png") no-repeat center center;
+  background-size: cover;
+}
+
+.footer .german_drop:hover span.english_bottom{
   background: url("../img/german.png") no-repeat center center;
   background-size: cover;
+}
+
+.footer #changeLanguage .german_drop:hover a{
+  color: #fff;
 }
 
 
@@ -605,7 +634,7 @@ button .caret {
   display: block;
   height: 22px;
   font-size: 18px;
-  color: #fff;
+  color: #4b4b4b;
 }
 
 .footer #changeLanguage .german_drop a span {
@@ -613,9 +642,8 @@ button .caret {
   vertical-align: middle;
 }
 .footer #changeLanguage .german_drop .language-text {
-  margin-right: 5px;
+  margin-right: 8px;
 }
-
 
 /*.toggle_language a:hover  #changeLanguage, .toggle_language a:focus  #changeLanguage{
   display: block!important;
@@ -676,6 +704,7 @@ button .caret {
   text-align: left;
  /* padding: 229px 0 150px 0;*/
   background-size: 259% auto;
+  min-height: 612px;
 }
 
 
@@ -757,8 +786,9 @@ button .caret {
   background: url("../img/Metrics%20Background%20Landingpage.jpg") no-repeat fixed, url("../img/Metrics%20Background%20Landingpage.jpg") no-repeat center center scroll;
   background-size: cover;
   width: 100%;
-  height: 1080px;
-  padding: 131px 0 125px 0;
+  height: 100%;
+  padding: 50px 0;
+  min-height: 909px;
 }
 
 .metrics-section .image_wrapper.wrap-phone{
@@ -858,8 +888,10 @@ button .caret {
   background: url("../img/SelectAProduct%20Background%20Landingpage.jpg") no-repeat fixed, url("../img/SelectAProduct%20Background%20Landingpage.jpg") no-repeat scroll;
   background-size: cover;
   width: 100%;
-  height: 1080px;
-  padding: 236px 0 241px 0;
+  height: 100%;
+  /*padding: 236px 0 241px 0;*/
+  padding: 50px 0;
+  min-height: 753px;
 }
 
 /* line 434, ../sass/style.scss */
@@ -891,10 +923,12 @@ button .caret {
 }
 .product-section .image_wrapper.ipad{
     width:608px;
-    height:413px;
+    height:auto;
 }
 
-
+.product-section .image_wrapper.ipad img{
+  margin-top: 46px;
+}
 
 .align_center_container{
     text-align:center;
@@ -1435,6 +1469,8 @@ button .caret {
   float: right;
   width: 224px;
   font-size: 18px;
+  top: -11px;
+  position: relative;
 }
 .info-list .second-list{
   margin-top: 5px;
@@ -1483,6 +1519,8 @@ button .caret {
   height: 100%;
   /*padding: 210px 0 150px 0;*/
   text-align: left;
+  padding: 50px 0;
+  min-height: 647px;
 }
 
 /* line 787, ../sass/style.scss */
@@ -1659,6 +1697,8 @@ button .caret {
   padding: 227px 0 67px 0;
   */
   position: relative;
+  min-height: 715px;
+  padding: 50px 0;
 }
 
 .cover{
@@ -1837,21 +1877,24 @@ button .caret {
 .team-shop {
   height: 100%;
   background: #dcdcdc;
-  padding: 125px 0;
+  padding: 50px 0;
   text-align: left;
   color: #000;
+  min-height: 496px;
 }
 
 .team-shop.buy{
   position: relative;
   padding: 0;
   min-height: 590px;
-  height: 870px;
+  height: 100%;
 }
 
 .team-shop.buy .early-bird{
-  height: 605px;
-  padding-top: 100px;
+  height: 70%;
+ /* padding: 50px 0;*/
+  min-height: 500px;
+  padding: 50px 0;
 }
 
 
@@ -1929,7 +1972,7 @@ button .caret {
 /* line 996, ../sass/style.scss */
 .team-shop p {
   font-size: 24px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team-shop p:last-of-type{
@@ -1977,7 +2020,7 @@ button .caret {
 .team-shop .price{
   font-weight: bold;
   font-size: 30px;
-  margin-bottom: 34px;
+  margin-bottom: 15px;
 }
 
   /* line 1000, ../sass/style.scss */
@@ -2072,6 +2115,8 @@ button .caret {
   height: 100%;
   /*padding: 158px 0 109px 0;*/
   text-align: left;
+  padding: 50px 0;
+  min-height: 693px;
 }
 
 /* line 1014, ../sass/style.scss */
@@ -2269,6 +2314,10 @@ button .caret {
   font-size: 24px;
 }
 
+.buy-first a#buyButton:hover{
+  background: #ff2300!important;
+}
+
 .buy-first .pay-section .margin-top{
   margin: 50px 0;
 }
@@ -2289,7 +2338,7 @@ button .caret {
   background: #C8C8C8;
   text-align: left;
   color: #000;
-  padding: 25px 0;
+  /*padding: 12px 0;*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2302,7 +2351,10 @@ button .caret {
   bottom:0;
   left: 0;
   right: 0;*/
-  height: 265px;
+  height: 30%;
+  width: 100%;
+  min-height: 215px;
+
 }
 
 .team-shop.buy .buy-single .one-column{
@@ -2464,22 +2516,24 @@ button .caret {
 
 
 .buy-thanks{
-  height: 870px;
+  height: 100%;
   text-align: center;
-
+  min-height: 720px;
 }
 
 .thanks-section{
-  height: 558px;
+  height: 60%;
   background: #4B4B4B;
-  padding: 110px 0;
+  padding: 48px 0;
+  min-height: 411px;
 }
 
 
 .share-section{
-  height: 312px;
+  height: 40%;
   background: #646464;
-  padding: 35px 0;
+  /*padding: 35px 0;*/
+  min-height: 271px;
 }
 
 .thanks-section .image_wrapper.stars{
@@ -2590,6 +2644,8 @@ button .caret {
   background: #4B4B4B;
  /* padding: 188px 0 76px 0;*/
   text-align: left;
+  min-height: 638px;
+  padding: 50px 0;
 }
 
 .contact-forms h1{
@@ -2650,6 +2706,10 @@ button .caret {
   float: right;
   width:125px;
   /*height: 198px;*/
+}
+
+.onepage-pagination{
+  display: none;
 }
 
 .noPos.contact-thanks h3{
@@ -2910,11 +2970,12 @@ button .caret {
 
 /* line 1345, ../sass/style.scss */
 .positions {
-  height: auto;
   background: #4B4B4B;
   text-align: left;
  /* padding: 178px 0 137px 0;*/
   height: 100%;
+  min-height: 729px;
+  padding: 50px 0;
 }
 
 .positions h1{
@@ -3001,6 +3062,8 @@ button .caret {
   text-align: left;
   /*padding: 147px 0 213px 0;*/
   height: 100%;
+  min-height: 616px;
+  padding: 50px 0;
 }
 
 .noPos  h1{
@@ -3073,7 +3136,7 @@ button .caret {
 .your-class .slick-slide img {
     display: block;
     margin: 0 auto;
-    width: 100%;
+    /*width: 100%;*/
     display: block;
     max-width: 100%;
 }

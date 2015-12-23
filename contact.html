@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
+    <!--<link rel="stylesheet" href="css/onepage-scroll.css">-->
 
     <link rel="stylesheet/less" type="text/css" href="css/variables.less" />
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
@@ -16,8 +17,10 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!--<script src="js/jquery.onepage-scroll.min.js"></script>-->
 
     <script src="./js/general.js"></script>
+    <!--<script src="js/contact.js"></script>-->
     <script>
         var tmpWidth = effectiveDeviceWidth();
         var tmpHeight = effectiveDeviceHeight();
@@ -107,38 +110,41 @@
 </nav>
 
 
-<section class="contact-header">
-    <div class="main-container center-inside-mobile">
-        <div class="clearfix secondary-container">
-            <div class="one-column">
-                <h1>Talk to us! <br> About Football or <br> everything else.</h1>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section class="contact-forms">
-    <div class="main-container center-inside">
-        <div class="clearfix secondary-container">
-                <!--<div class="one-column">
+    <section class="contact-header">
+        <div class="main-container center-inside-mobile">
+            <div class="clearfix secondary-container">
+                <div class="one-column">
                     <h1>Talk to us! <br> About Football or <br> everything else.</h1>
-                </div>-->
-            <div class="one-column">
-                <h3>We love hearing from you!</h3>
-                <input type="text" class="pull-left" placeholder="Full Name">
-                <input type="text" placeholder="Your Email" class="pull-right">
-                <textarea placeholder="Infinite Space for your personal message..."></textarea>
-            </div>
-
-            <div class="clearfix">
-                <a href="contact_thanks.html" class="btn myBtn">Send</a>
-                <div class="image_wrapper ball-image">
-                    <img src="img/ball.png" class="img-responsive" alt="">
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section class="contact-forms">
+        <div class="main-container center-inside">
+            <div class="clearfix secondary-container">
+                <!--<div class="one-column">
+                    <h1>Talk to us! <br> About Football or <br> everything else.</h1>
+                </div>-->
+                <div class="one-column">
+                    <h3>We love hearing from you!</h3>
+                    <input type="text" class="pull-left" placeholder="Full Name">
+                    <input type="text" placeholder="Your Email" class="pull-right">
+                    <textarea placeholder="Infinite Space for your personal message..."></textarea>
+                </div>
+
+                <div class="clearfix">
+                    <a href="contact_thanks.html" class="btn myBtn">Send</a>
+                    <div class="image_wrapper ball-image">
+                        <img src="img/ball.png" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 <footer class="footer">
     <div class="main-container">
@@ -184,7 +190,7 @@
                     <li class="language push">
                         <div class="toggle_language">
                             <a class="english_toggle">
-                                <span class="english add_margin"></span><span class="language-text">English&nbsp;</span><span class="caret"></span>
+                                <span class="english add_margin"></span><span class="language-text">English&nbsp;</span><span class="bottom-caret"></span>
                             </a>
                             <ul id="changeLanguage">
                                 <li class="german_drop">
@@ -211,6 +217,7 @@
         </div>
     </div>
 </footer>
+
 
 </body>
 </html>

@@ -85,8 +85,4 @@ $(document).ready(function () {
         $('.friend-heading').html("Your friend surely appreciates this!");
     });
 
-
-
-
-
 });

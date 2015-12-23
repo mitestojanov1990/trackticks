@@ -9,18 +9,15 @@ $(document).ready(function(){
             return old=='Read More' ?  'Close' : 'Read More';
         });
     });
-
     $('.your-class').slick({
         dots: true,
-        infinite: true,
+        /*infinite: true,*/
         speed: 300,
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
         arrows: true
     });
-
-
     var count = 1;
 
     /*$(".click").click(function() {
