@@ -56,9 +56,11 @@
     <div class="main-container">
         <div class="clearfix secondary-container">
             <div class="logo">
-                <div class="navbar_image_wrapper">
-                    <img src="img/Logo.png" alt="Logo" class="img-responsive">
-                </div>
+                <a href="index_de.html">
+                    <div class="navbar_image_wrapper">
+                        <img src="img/Logo.png" alt="Logo" class="img-responsive">
+                    </div>
+                </a>
             </div>
             <div class="hidden mobile_visible nav_toggle" onclick="NavigationToggle(this)">
                 <div class="navbar_image_wrapper closed">
@@ -130,7 +132,7 @@
             <div class="custom_row margin_botton_49 clearfix">
                 <div class="one-column">
                     <div class="image_wrapper tracker_landingpage">
-                        <img src="img/Tracker_Metrics_Landingpage.png" alt="" class="img-responsive">
+                        <img src="img/Tracker_Metrics_Landingpage_1.png" alt="" class="img-responsive">
                     </div>
                 </div>
                 <div class="two-column">
@@ -201,7 +203,7 @@
         <div class="clearfix secondary-container">
             <div class="one-column">
                 <div class="image_wrapper ipad">
-                    <img src="img/iPad.png" alt="" class="img-responsive">
+                    <img src="img/iPad_with_Trackers_Ranking_1.png" alt="" class="img-responsive">
                 </div>
                 <div class="align_center_container">
                     <div class="product-title">
@@ -215,7 +217,7 @@
             </div>
             <div class="two-column">
                 <div class="image_wrapper singleProduct1">
-                    <img src="img/singleProduct1.png" alt="" class="img-responsive">
+                    <img src="img/iPhone_6_withTracker_1.png" alt="" class="img-responsive">
                 </div>
                 <div class="align_center_container">
                     <div class="product-title">
@@ -321,21 +323,35 @@
 <section class="newsletter">
     <div class="main-container">
         <div class="clearfix secondary-container">
-            <h2>Get all the insider Info!</h2>
+            <h2 class="insider-heading">Get all the insider Info!</h2>
             <div class="email clearfix insider">
                 <input type="text" placeholder="Your Email">
-                <a href="#" class="btn myBtn">Let me know</a>
+                <a id="insider" class="btn myBtn">Let me know</a>
+            </div>
+            <div class="image_wrapper newsletter-sent">
+                <img src="img/Tracktics-Newsletter-2.png" class="img-responsive" alt="">
             </div>
 
-            <h3>Informiere deine Freunde über TRACKTICS</h3>
+            <h3 class="friend-heading">Informiere deine Freunde über TRACKTICS</h3>
             <div class="email clearfix tellfriend">
+                <input type="text" placeholder="Your Name">
                 <input type="text" placeholder="Your Friend’s Email">
-                <a href="#" class="btn myBtn">Tell him</a>
+                <a id="friend" class="btn myBtn">Tell him</a>
             </div>
             <!--     <a href="#" class="btn myBtn friend">+ Add a Friend</a>-->
+            <div class="request">
+                <div class="image_wrapper request-friend">
+                    <img src="img/Tracktics-Newsletter-1.png" class="img-responsive" alt="">
+                </div>
+                <div class="image_wrapper request-sent">
+                    <!--<img src="img/Tracktics-Newsletter-3.png" class="img-responsive" alt="">-->
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
+
 
 <section class="partners">
 
@@ -449,12 +465,12 @@
                     <li class="language push">
                         <div class="toggle_language">
                             <a class="english_toggle">
-                                <span class="english add_margin"><img src="img/german.png" alt="" class="img-responsive"></span><span class="language-text">German&nbsp;</span><span class="caret"></span>
+                                <span class="english_bottom add_margin"></span><span class="language-text">German&nbsp;</span><span class="caret"></span>
                             </a>
                             <ul id="changeLanguage">
                                 <li class="german_drop">
                                     <a href="index.html">
-                                        <span class="english"><img src="img/english.png" alt="" class="img-responsive"></span><span class="language-text">English</span>
+                                        <span class="english"></span><span class="language-text">English</span>
                                     </a>
                                 </li>
                             </ul>

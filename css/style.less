@@ -96,7 +96,7 @@ a:focus,
 a:hover {
   color: #fff;
   text-decoration: none;
-  outline: 0;
+  outline: 0!important;
 }
 
 .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-header:before, .modal-header:after, .modal-footer:before, .modal-footer:after {
@@ -270,14 +270,18 @@ a:hover {
 }
 
 .navigation .go_to_shop .menu-btn{
-  top:-1px;
+  top:-2px;
+  padding: 0;
+  height: 38px;
+  line-height: 38px;
+  outline:0;
 }
 
 /* line 175, ../sass/style.scss */
 .menu-btn {
   background: #323232;
   font-weight: normal !important;
-  padding: 6px 32px !important;
+  padding: 6px 32px;
   position: relative;
 /*  top: 7px;*/
   -webkit-border-radius: 21px;
@@ -294,6 +298,7 @@ a:hover {
 a.menu-btn:active, a.menu-btn:hover, a.menu-btn:focus {
   background: #ff2300 !important;
   color: #fff !important;
+  outline: 0;
 }
 
 /* line 195, ../sass/style.scss */
@@ -399,6 +404,7 @@ button .caret {
   margin-left: 14%;
   */
   float: left;
+  margin-top: -2px;
 }
 
 .navigation ul{
@@ -410,20 +416,20 @@ button .caret {
 
 .navigation .language-selector{
   background: #323232;
-  height: 80px;
+  height: 50px;
   position: absolute;
   width: 100%;
   top: 79px;
-  padding: 26px 0;
+  padding: 15px 0;
 }
 
 .navigation .language-selector p{
   float: left;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .navigation .language-selector p a{
-  border-bottom: 3px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
 .navigation .language-selector .image-wrapper.close-lang{
@@ -432,7 +438,7 @@ button .caret {
   height: 16px;
   margin-right: 30px;
   cursor: pointer;
-  margin-top: 6px;
+  margin-top: 1px;
 }
 
 .navigation ul.list-inline > li{
@@ -560,9 +566,9 @@ button .caret {
   cursor: pointer;
 }
 
-.footer .toggle_language:hover .english_toggle{
+/*.footer .toggle_language:hover .english_toggle{
   color: #fff;
-}
+}*/
 
 .footer .toggle_language a span {
   display: inline-block;
@@ -573,6 +579,16 @@ button .caret {
   float: left;
   width: 22px;
   height: 22px;
+  background: url("../img/english.png") no-repeat center center;
+  background-size: cover;
+}
+
+.footer .language a span.english_bottom{
+  float: left;
+  width: 22px;
+  height: 22px;
+  background: url("../img/german.png") no-repeat center center;
+  background-size: cover;
 }
 
 
@@ -589,7 +605,7 @@ button .caret {
   display: block;
   height: 22px;
   font-size: 18px;
-  color: #4b4b4b;
+  color: #fff;
 }
 
 .footer #changeLanguage .german_drop a span {
@@ -622,8 +638,10 @@ button .caret {
 }
 
 /* line 286, ../sass/style.scss */
-.custom-btn:hover, .custom-btn:focus {
+.custom-btn:hover {
   color: #fff;
+  background: #ff2300;
+  outline: 0;
 }
 
 
@@ -900,6 +918,11 @@ button .caret {
   -moz-border-radius: 30px;
   border-radius: 30px;
   line-height: 40px;
+  outline:0;
+}
+
+.myBtn:hover{
+  background: #ff2300;
 }
 
 .product-section .myBtn:hover{
@@ -1108,9 +1131,15 @@ button .caret {
 
 .newsletter .email.tellfriend .myBtn:hover{
   color: #fff;
+  background: #323232;
 }
 .image_wrapper.newsletter-sent{
+  /*
   margin-bottom: 20px;
+  */
+  width: 140px;
+  height: 89px;
+  margin: 20px auto;
 }
 
 .image_wrapper.newsletter-sent img{
@@ -1127,20 +1156,40 @@ button .caret {
 }
 
 .request .request-friend{
-  margin-left: 155px;
+  margin-left: 120px;
   margin-right: 30px;
+  width: 140px;
+  height: 89px;
 }
 
 .request .request-sent{
-  width: 120px;
-  position: relative;
+  width: 85px;
+  height: 54px;
+ /* position: relative;
   top:50%;
   -webkit-transform: translate(0, -50%);
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  transform: translate(0, -50%);*/
+  margin-bottom: 17.5px;
+  background: url("../img/Tracktics-Newsletter-3.png") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
 }
+
+.request .request-sent:hover{
+  background: url("../img/Tracktics-Newsletter-4.png") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/*
+.newsletter p{
+  margin-top: 40px;
+}
+*/
+
 
 /* line 601, ../sass/style.scss */
 .partners {
@@ -1317,6 +1366,10 @@ button .caret {
   background: #313131;
 }
 
+.footer .myBtn:hover {
+  background: #ff2300;
+}
+
 /* line 721, ../sass/style.scss */
 .social .social-icons {
   height: 108px;
@@ -1476,7 +1529,7 @@ button .caret {
 
 /* line 813, ../sass/style.scss */
 .team-second {
-  height: 500px;
+  height: 752px;
   background: #ff2300;
   width: 100%;
   /*padding: 70px 0;*/
@@ -1490,7 +1543,7 @@ button .caret {
 
 /* line 825, ../sass/style.scss */
 .team-features li {
-  margin-right: 1.3%;
+  margin-right: 1.9%;
   float: left;
   padding: 0;
 }
@@ -1498,13 +1551,13 @@ button .caret {
 /* line 830, ../sass/style.scss */
 .team-features .list-inline {
   list-style: none;
-  padding-left: 48px;
+  /*padding-left: 48px;*/
 }
 
 /* line 837, ../sass/style.scss */
 .team-features li .circle {
-  width: 200px;
-  height: 200px;
+  width: 269px;
+  height: 269px;
   border: 3px solid #fff;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -1517,11 +1570,12 @@ button .caret {
 .team-features li .circle img{
   position: relative;
   top:50%;
-  -webkit-transform: translate(0,-50%);
-  -moz-transform: translate(0,-50%);
-  -ms-transform: translate(0,-50%);
-  -o-transform: translate(0,-50%);
-  transform: translate(0,-50%);
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 
@@ -1540,7 +1594,7 @@ button .caret {
 }
 
 .team-features .image_wrapper.arrows{
-  margin-top: 64.5px;
+  margin-top: 99px;
 /*  width: 80px;
   height: 33px;*/
 }
@@ -1558,7 +1612,7 @@ button .caret {
 
 /* line 858, ../sass/style.scss */
 .description {
-  width: 337px;
+  /*width: 337px;*/
   padding-top: 50px;
 }
 
@@ -1788,16 +1842,54 @@ button .caret {
   color: #000;
 }
 
+.team-shop.buy{
+  position: relative;
+  padding: 0;
+  min-height: 590px;
+  height: 870px;
+}
+
+.team-shop.buy .early-bird{
+  height: 605px;
+  padding-top: 100px;
+}
+
+
 .team-shop.buy h2.starter{
   margin-bottom: 20px;
 }
 
 .team-shop.buy p{
   margin-bottom: 30px;
+  font-size: 20px;
 }
 
+.team-shop.buy .image_wrapper.buy-image{
+  width: 510px;
+  height: auto;
+}
 
- .team-shop.buy .littleMargin{
+.team-shop.buy .early-bird .two-column{
+  margin: 0;
+  width: 325px;
+  left: 0;
+}
+
+.team-shop.buy p{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.team-shop.buy p.price{
+  margin-bottom: 15px;
+}
+
+.team-shop.buy h2{
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.team-shop.buy .littleMargin{
   margin-top: 20px;
    background: #9f9f9f!important;
  }
@@ -1809,7 +1901,7 @@ button .caret {
 }
 
 .team-shop .image_wrapper.buy-image img{
-  height: 100%;
+ /* height: 100%;*/
 }
 
 .team-shop .two-column{
@@ -1901,6 +1993,10 @@ button .caret {
 
 .team-shop.notify .custom-btn{
   background: #191919!important;
+}
+
+.team-shop.notify .custom-btn:hover{
+  background: #ff2300!important;
 }
 
 .team-shop.notify .two-column{
@@ -2193,7 +2289,7 @@ button .caret {
   background: #C8C8C8;
   text-align: left;
   color: #000;
-  padding: 50px 0;
+  padding: 25px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2202,46 +2298,53 @@ button .caret {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+/*  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;*/
+  height: 265px;
 }
 
-.buy-single .one-column{
+.team-shop.buy .buy-single .one-column{
   width: 50%;
 }
 
-.buy-single .two-column{
+.team-shop.buy .buy-single .two-column{
   width: 50%;
   position: relative;
   left: 110px;
+  margin: 0;
 }
 
-.buy-single .section-text{
+.team-shop.buy .buy-single .section-text{
   margin-top: 20px;
 }
 
-.buy-single .one-column .image_wrapper{
+.team-shop.buy .buy-single .one-column .image_wrapper{
   float: left;
   margin-right: 70px;
 }
 
-.buy-single .two-column .image_wrapper{
+.team-shop.buy .buy-single .two-column .image_wrapper{
   float: left;
   margin-right: 70px;
 }
 
-.buy-single p{
+.team-shop.buy .buy-single p{
   font-size: 18px;
 }
 
-.buy-single h3{
+.team-shop.buy .buy-single h3{
   font-size: 24px;
   margin: 10px 0 20px 0;
   font-weight: bold;
 }
 
 
-.buy-single .menu-btn{
-  background: #d6d6d6;
+.team-shop.buy .buy-single .menu-btn{
+  background: #a0a0a0;
   font-size:18px;
+  outline:0;
 }
 
 
@@ -2277,7 +2380,7 @@ button .caret {
 }
 
 /* line 1184, ../sass/style.scss */
-.buy-second .custom-btn:hover, .buy-second .custom-btn:focus {
+.buy-second .custom-btn:hover {
   background: #fff !important;
   color: #FF2300 !important;
   vertical-align: middle;
@@ -2358,6 +2461,106 @@ button .caret {
   background: #ff2300 !important;
   margin-top: 82px;
 }
+
+
+.buy-thanks{
+  height: 870px;
+  text-align: center;
+
+}
+
+.thanks-section{
+  height: 558px;
+  background: #4B4B4B;
+  padding: 110px 0;
+}
+
+
+.share-section{
+  height: 312px;
+  background: #646464;
+  padding: 35px 0;
+}
+
+.thanks-section .image_wrapper.stars{
+  width: 452px;
+  height: 181px;
+  margin: 0 auto;
+}
+
+.thanks-section .content-description h2{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 25px auto;
+}
+
+.thanks-section .content-description p{
+  font-size: 16px;
+}
+
+.thanks-section .content-description p:first-of-type{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.share-section .share-thanks .one-column {
+  width: 50%;
+  float: left;
+}
+
+.share-section .share-thanks .two-column{
+  width: 43%;
+  float: right;
+  margin-top: 53px;
+}
+
+.share-section .share-thanks .image_wrapper.buy-illustration{
+  width: 360px;
+  height: 243px;
+  margin-left: 80px;
+}
+
+.share-section .share-thanks h3{
+  font-size: 24px;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.share-section .share-thanks .myBtn{
+  width: 192px;
+  height: 46px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.share-section .share-thanks .myBtn:first-of-type{
+  background: #55ACEE;
+  float: left;
+}
+
+.share-section .share-thanks .myBtn:first-of-type:hover{
+  background: #55ACEE;
+}
+
+.share-section .share-thanks .myBtn:last-of-type{
+  background: #3A5795;
+  float: right;
+}
+
+.share-section .share-thanks .myBtn:last-of-type:hover{
+  background: #3A5795;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* line 1253, ../sass/style.scss */
 .contact-header {
@@ -2486,7 +2689,13 @@ button .caret {
   height: 69px;
   line-height: 69px;
   font-size: 24px;
+  border-radius: 40px;
+  background: #ff2300!important;
 }
+
+/*.row-contact a.custom-btn:hover{
+  background: #ff2300;
+}*/
 
 .row-contact a:last-of-type{
   margin-right: 0;
@@ -2498,9 +2707,23 @@ button .caret {
 
 
 .faq{
-  height: 100%;
+  height: 1912px;
   position: relative;
   background: #4B4B4B;
+  padding: 100px 0;
+  position: relative;
+}
+
+.faq h1{
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.faq h3{
+  font-size: 24px;
+  margin-bottom: 125px;
+  font-weight: bold;
 }
 
 .tab-menu{
@@ -2522,6 +2745,8 @@ button .caret {
 
 .nav-tabs > li a{
   border: none;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 
@@ -2545,38 +2770,124 @@ button .caret {
 .tab-content{
   width: 80%;
   float: left;
+  color: #000;
 }
 
-.tab-content li{
+.tab-content .panel{
+  border:0;
+  border-radius: 0;
+  margin-bottom:15px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow:none;
+  box-shadow:none;
+}
+
+.tab-content  .panel-heading{
   width: 100%;
-  /*
-  padding: 18px 0;
-  */
-  line-height: 60px;
-  font-size: 24px;
-  background: #A0A0A0;
-  margin-bottom: 10px;
+/*  line-height: 60px;*/
+  height: 60px;
+  padding: 0;
+  text-align: left;
 }
 
-.tab-content li a{
+.tab-content  .panel-heading a{
+  font-size: 24px;
   display: block;
+  padding: 18px 15px;
+  font-weight: bold;
+  color: #fff;
+  background: #A0A0A0;
 }
+
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group{
+  border: none;
+}
+
+.tab-content .panel-heading .panel-title a[aria-expanded="false"]{
+  background: #A0A0A0;
+}
+
+.tab-content .panel-heading .panel-title a[aria-expanded="true"]{
+  background: #323232;
+}
+
+.tab-content .panel-body{
+  background: #4B4B4B;
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  padding: 50px 15px;
+}
+
+.tab-content .panel-body p{
+  margin-bottom: 30px;
+}
+
+.tab-content li>.panel-heading{
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 18px 20px;
+}
+
+
+
+/*.tab-content li a.collapsed{
+  background: #A0A0A0;
+}*/
 
 .tab-content li div{
   font-size: 16px;
   background: #4B4B4B;
   text-align: left;
-  padding: 30px 0;
+  margin-top: 30px;
 }
 
-.tab-content li p{
-  margin-bottom: 30px;
-}
+
 
 .tab-content .myBtn{
   width: 192px;
   height: 46px;
   line-height: 30px;
+/*  margin-bottom: 30px;*/
+  background: #323232;
+}
+
+.tab-content .myBtn:hover{
+  background: #ff2300;
+}
+
+.faq-bottom{
+  position: absolute;
+  margin: 0 auto;
+  bottom: 100px;
+  width: 100%;
+}
+
+.faq-thanks{
+  height: 328px;
+  background: #323232;
+}
+
+.faq-thanks .myBtn{
+  width: 192px;
+  height: 46px;
+  background: #ff2300;
+  line-height: 32px;
+  margin-top: 50px;
+}
+
+.faq-thanks h2{
+  font-size: 30px;
+}
+
+.faq-thanks .image_wrapper.faq-letter{
+  position: relative;
+  bottom:95px;
+}
+
+.faq-thanks .image_wrapper.faq-letter img{
+  margin: 0 auto;
 }
 
 
@@ -2585,7 +2896,7 @@ button .caret {
   background: url("../img/Header%20TeamProduct.jpg") no-repeat fixed, url("../img/Header%20TeamProduct.jpg") no-repeat scroll;
   background-size: 164% auto;
   background-position: 37% 73%;
-  height: 100%;
+  height: 720px;
   /*padding: 226px 0 262px 0;*/
   text-align: left;
 }
@@ -2665,12 +2976,12 @@ button .caret {
 
 /* line 1365, ../sass/style.scss */
 .positions .open-positions {
-  height: 45px;
+  height: 60px;
   width: 90%;
   background: #646464;
   margin-bottom: 10px;
   color: #A0A0A0;
-  line-height: 45px;
+  line-height: 60px;
   padding: 0 20px;
   font-size: 24px;
 }

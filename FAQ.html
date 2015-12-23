@@ -48,9 +48,11 @@
     <div class="main-container">
         <div class="clearfix secondary-container">
             <div class="logo">
-                <div class="navbar_image_wrapper">
-                    <img src="img/Logo.png" alt="Logo" class="img-responsive">
-                </div>
+                <a href="index.html">
+                    <div class="navbar_image_wrapper">
+                        <img src="img/Logo.png" alt="Logo" class="img-responsive">
+                    </div>
+                </a>
             </div>
             <div class="hidden mobile_visible nav_toggle" onclick="NavigationToggle(this)">
                 <div class="navbar_image_wrapper closed">
@@ -105,32 +107,36 @@
 
 
 <section class="faq">
-    <div class="main-container center-inside-mobile">
+    <div class="main-container">
         <div class="clearfix secondary-container ">
+            <h1>FAQ</h1>
+            <h3>Learn more about Tracktics and our Tracker</h3>
+
+
             <div class="tab-menu">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="active">
-                        <a href="#home" role="tab" data-toggle="tab">
+                        <a href="#tracktics" role="tab" data-toggle="tab">
                             Tracktics
                         </a>
                     </li>
-                    <li><a href="#profile" role="tab" data-toggle="tab">
+                    <li><a href="#hardware" role="tab" data-toggle="tab">
                         Hardware
                     </a>
                     </li>
                     <li>
-                        <a href="#messages" role="tab" data-toggle="tab">
+                        <a href="#data" role="tab" data-toggle="tab">
                             Data
                         </a>
                     </li>
                     <li>
-                        <a href="#settings" role="tab" data-toggle="tab">
+                        <a href="#software" role="tab" data-toggle="tab">
                             Software
                         </a>
                     </li>
                     <li>
-                        <a href="#settings" role="tab" data-toggle="tab">
+                        <a href="#design" role="tab" data-toggle="tab">
                             Design
                         </a>
                     </li>
@@ -138,74 +144,750 @@
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div class="tab-pane fade active in" id="home">
-                        <ul>
-                            <li>
-                                <a data-toggle="collapse" href="#waterproof" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
-                                <div class="collapse" id="waterproof">
-                                    <p>
-                                        Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
-                                    </p>
 
-                                    <p>
-                                        Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
-                                    </p>
-                                    <a data-toggle="collapse" href="#waterproof" class="btn myBtn">Close</a>
+                    <div class="tab-pane fade active in" id="tracktics">
+                        <div class="panel-group" id="accordion"> <!-- accordion 1 -->
+                            <div class="panel">
+
+                                <div class="panel-heading"> <!-- panel-heading -->
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#trackticsOne">
+                                            Is the Tracker waterproof?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- panel body -->
+                                <div id="trackticsOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#trackticsOne" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 2 -->
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 2 -->
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#trackticsTwo">
+                                            How much memory is there on the Tracker?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- panel body -->
+                                <div id="trackticsTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#trackticsTwo" class="btn myBtn">Close</a>
+                                    </div>
                                 </div>
 
-                            </li>
-                            <li>
-                                <a data-toggle="collapse" href="#memory" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
-                                <p class="collapse" id="memory">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque dignissimos dolorem dolorum inventore ipsa minima nesciunt perspiciatis porro quam quibusdam quis recusandae, sapiente totam ullam ut voluptatum! Doloribus, tempore?
-                                </p>
-                            </li>
-                            <li>
-                                <a data-toggle="collapse" href="#indoors" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
-                                <p class="collapse" id="indoors">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque dignissimos dolorem dolorum inventore ipsa minima nesciunt perspiciatis porro quam quibusdam quis recusandae, sapiente totam ullam ut voluptatum! Doloribus, tempore?
-                                </p>
-                            </li>
-                            <li>
-                                <a data-toggle="collapse" href="#cow" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
-                                <p class="collapse" id="cow">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque dignissimos dolorem dolorum inventore ipsa minima nesciunt perspiciatis porro quam quibusdam quis recusandae, sapiente totam ullam ut voluptatum! Doloribus, tempore?
-                                </p>
-                            </li>
-                            <li>
-                                <a data-toggle="collapse" href="#bluetooth" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
-                                <p class="collapse" id="bluetooth">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque dignissimos dolorem dolorum inventore ipsa minima nesciunt perspiciatis porro quam quibusdam quis recusandae, sapiente totam ullam ut voluptatum! Doloribus, tempore?
-                                </p>
-                            </li>
-                            <li>
-                                <a data-toggle="collapse" href="#sex" aria-expanded="false" aria-controls="collapseExample">Is the Tracker waterproof?</a>
-                                <p class="collapse" id="sex">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque dignissimos dolorem dolorum inventore ipsa minima nesciunt perspiciatis porro quam quibusdam quis recusandae, sapiente totam ullam ut voluptatum! Doloribus, tempore?
-                                </p>
-                            </li>
-                        </ul>
+                            </div>
 
+                            <div class="panel">  <!-- accordion 3 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#trackticsThree">
+                                            Why does the Tracker not work indoors?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="trackticsThree" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#trackticsThree" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 4 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#trackticsFour">
+                                            What happens if I strap this Tracker to a cow?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="trackticsFour" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#trackticsFour" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 5 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#trackticsFive">
+                                            Does the Tracker support Bluetooth connections?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="trackticsFive" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#trackticsFive" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 6 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#trackticsSix">
+                                            Can the Tracker improve my sex life?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="trackticsSix" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#trackticsSix" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="profile">
-                        <h2>Profile Content Goes Here</h2>
-                        <img src="http://lorempixel.com/400/400/cats/2" alt="Cats"/>
+
+                    <div class="tab-pane fade" id="hardware">
+                        <div class="panel-group" id="accordion1"> <!-- accordion 1 -->
+                            <div class="panel">
+
+                                <div class="panel-heading"> <!-- panel-heading -->
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#hardwareOne">
+                                            Is the Tracker waterproof?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- panel body -->
+                                <div id="hardwareOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#hardwareOne" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 2 -->
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 2 -->
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#hardwareTwo">
+                                            How much memory is there on the Tracker?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- panel body -->
+                                <div id="hardwareTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#hardwareTwo" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="panel">  <!-- accordion 3 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#hardwareThree">
+                                            Why does the Tracker not work indoors?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="hardwareThree" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#hardwareThree" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 4 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#hardwareFour">
+                                            What happens if I strap this Tracker to a cow?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="hardwareFour" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#hardwareFour" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 5 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#hardwareFive">
+                                            Does the Tracker support Bluetooth connections?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="hardwareFive" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#hardwareFive" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 6 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#hardwareSix">
+                                            Can the Tracker improve my sex life?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="hardwareSix" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#hardwareSix" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="messages">
-                        <h2>Messages Content Goes Here</h2>
-                        <img src="http://lorempixel.com/400/400/cats/3" alt="Cats"/>
+
+                    <div class="tab-pane fade" id="data">
+                        <div class="panel-group" id="accordion2"> <!-- accordion 1 -->
+                            <div class="panel">
+
+                                <div class="panel-heading"> <!-- panel-heading -->
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="#dataOne">
+                                            Is the Tracker waterproof?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- panel body -->
+                                <div id="dataOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#dataOne" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 2 -->
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 2 -->
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="#dataTwo">
+                                            How much memory is there on the Tracker?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- panel body -->
+                                <div id="dataTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#dataTwo" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="panel">  <!-- accordion 3 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="#dataThree">
+                                            Why does the Tracker not work indoors?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="dataThree" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#dataThree" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 4 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="#dataFour">
+                                            What happens if I strap this Tracker to a cow?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="dataFour" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#dataFour" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 5 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="#dataFive">
+                                            Does the Tracker support Bluetooth connections?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="dataFive" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#dataFive" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 6 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="#dataSix">
+                                            Can the Tracker improve my sex life?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="dataSix" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#dataSix" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="settings">
-                        <h2>Settings Content Goes Here</h2>
-                        <img src="http://lorempixel.com/400/400/cats/4" alt="Cats"/>
+
+                    <div class="tab-pane fade" id="software">
+                        <div class="panel-group" id="accordion3"> <!-- accordion 1 -->
+                            <div class="panel">
+
+                                <div class="panel-heading"> <!-- panel-heading -->
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#softwareOne">
+                                            Is the Tracker waterproof?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- panel body -->
+                                <div id="softwareOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#softwareOne" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 2 -->
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 2 -->
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#softwareTwo">
+                                            How much memory is there on the Tracker?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- panel body -->
+                                <div id="softwareTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#softwareTwo" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="panel">  <!-- accordion 3 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#softwareThree">
+                                            Why does the Tracker not work indoors?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="softwareThree" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#softwareThree" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 4 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#softwareFour">
+                                            What happens if I strap this Tracker to a cow?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="softwareFour" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#softwareFour" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 5 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#softwareFive">
+                                            Does the Tracker support Bluetooth connections?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="softwareFive" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#softwareFive" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 6 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion3" href="#softwareSix">
+                                            Can the Tracker improve my sex life?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="softwareSix" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#softwareSix" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="tab-pane fade" id="design">
+                        <div class="panel-group" id="accordion4"> <!-- accordion 1 -->
+                            <div class="panel">
+
+                                <div class="panel-heading"> <!-- panel-heading -->
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion4" href="#designOne">
+                                            Is the Tracker waterproof?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- panel body -->
+                                <div id="designOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#designOne" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 2 -->
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 2 -->
+                                        <a data-toggle="collapse" data-parent="#accordion4" href="#designTwo">
+                                            How much memory is there on the Tracker?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- panel body -->
+                                <div id="designTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#designTwo" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="panel">  <!-- accordion 3 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion4" href="#designThree">
+                                            Why does the Tracker not work indoors?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="designThree" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#designThree" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 4 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion4" href="#designFour">
+                                            What happens if I strap this Tracker to a cow?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="designFour" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#designFour" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 5 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion4" href="#designFive">
+                                            Does the Tracker support Bluetooth connections?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="designFive" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#designFive" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel">  <!-- accordion 6 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"> <!-- title 1 -->
+                                        <a data-toggle="collapse" data-parent="#accordion4" href="#designSix">
+                                            Can the Tracker improve my sex life?
+                                        </a>
+                                    </h4>
+                                </div>
+
+                                <div id="designSix" class="panel-collapse collapse">
+                                    <!-- panel body -->
+                                    <div class="panel-body">
+                                        <p>
+                                            Rhabarber Erkärung GPS Empfang ist nicht wirklich so gut in Hallen. Auch wenn ergänzt durch IMU bekommen wir nicht genug genaue Daten für unseren Standard, wir wollen nur unterstützen wohinter wir komplett stehen können und fantastische Resultate liefern können.
+                                        </p>
+                                        <p>
+                                            Versucht bei jeder Frage herauszustreichen was wir gut machen und warum die Entscheidung die wir getroffen haben Sinn macht.
+                                        </p>
+                                        <a data-toggle="collapse" href="#designSix" class="btn myBtn">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>
 
         </div>
     </div>
+
+    <div class="faq-bottom">
+        <div class="secondary-container">
+            <div class="faq-thanks">
+                <div class="image_wrapper faq-letter">
+                    <img src="img/faq-letter.png" class="img-responsive" alt="">
+                </div>
+                <h2>You didn’t find an answer to a question you have?</h2>
+                <a href="#" class="btn myBtn">Close</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 </section>
+
 
 
 
@@ -233,32 +915,6 @@
             </div>
 
             <div class="info-list clearfix">
-                <!--<div class="number" >
-                    <p>+49 123 45 67</p>
-                </div>
-                <ul class="address list-inline">
-                    <li><p>TRACKTICS GmbH</p></li>
-                    <li><p>Elisabethenstrasse 105</p></li>
-                    <li><p>719 Hofheim a.T.</p></li>
-                    <li><p>Germany</p></li>
-                </ul>
-                <div class="impressum">
-                    <p>Impressum</p>
-                    <li class="language">
-                       <div class="toggle_language">
-                           <a href="#" class="english_toggle">
-                               <span class="english add_margin"><img src="img/english.png" alt=""></span>English&nbsp;<span class="caret"></span>
-                           </a>
-                           <ul id="changeLanguage">
-                               <li class="german_drop">
-                                   <a href="index_de.html">
-                                       <span class="english"><img src="img/german.png" alt=""></span>German
-                                   </a>
-                               </li>
-                           </ul>
-                       </div>
-                    </li>
-                </div>-->
 
                 <ul class="list-inline">
                     <li class="pull">
@@ -280,12 +936,12 @@
                     <li class="language push">
                         <div class="toggle_language">
                             <a class="english_toggle">
-                                <span class="english add_margin"><img src="img/english.png" alt="" class="img-responsive"></span><span class="language-text">English&nbsp;</span><span class="caret"></span>
+                                <span class="english add_margin"></span><span class="language-text">English&nbsp;</span><span class="caret"></span>
                             </a>
                             <ul id="changeLanguage">
                                 <li class="german_drop">
                                     <a href="#">
-                                        <span class="english"><img src="img/german.png" alt="" class="img-responsive"></span><span class="language-text">German</span>
+                                        <span class="english_bottom"></span><span class="language-text">Deutsch</span>
                                     </a>
                                 </li>
                             </ul>

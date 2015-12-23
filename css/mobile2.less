@@ -845,70 +845,7 @@
         display: block;
     }
 
-    .buy-first .custom-btn{
-        margin-bottom: 20px;
-        font-size: 16px;
-        width: 133px;
-        height: 32px;
-        line-height: 32px;
-    }
 
-    .buy-single .one-column{
-        width: 100%!important;
-    }
-
-    .buy-single .two-column{
-        width: 100%!important;
-        position: relative;
-        left: 0;
-    }
-
-    .buy-single .section-text{
-        margin-top: 20px;
-    }
-
-    .buy-single .row-buy{
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        margin-bottom: 50px;
-    }
-
-    .buy-single .one-column .image_wrapper{
-        float: left;
-        margin-right: 0;
-    }
-
-    .buy-single .two-column .image_wrapper{
-        float: left;
-        margin-right: 0;
-    }
-
-    .buy-single p{
-        font-size: 14px;
-    }
-
-    .buy-single h3{
-        font-size: 18px;
-        margin: 10px 0 20px 0;
-        font-weight: bold;
-    }
-
-
-    .buy-single .menu-btn{
-        background: #d6d6d6;
-        font-size:14px;
-    }
 
 
     /*delivery*/
@@ -997,12 +934,90 @@
         margin-top: 30px;
     }
 
+    .buy-thanks{
+        height: auto;
+        text-align: center;
+
+    }
+
+    .thanks-section{
+        height: auto;
+        background: #4B4B4B;
+        padding: 50px 0;
+    }
+
+
+    .share-section{
+        height: auto;
+        background: #646464;
+        padding: 35px 0;
+    }
+
+
+    .share-section .share-thanks .one-column {
+        width: 100%;
+        float: none;
+    }
+
+    .share-section .share-thanks .two-column{
+        width: 100%;
+        float: none;
+        margin-top: 0;
+    }
+
+    .share-section .share-thanks .image_wrapper.buy-illustration{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .thanks-section .image_wrapper.stars{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .thanks-section .content-description h2{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 25px auto;
+    }
+
+    .thanks-section .content-description p{
+        font-size: 14px;
+    }
+
+    .thanks-section .content-description p:first-of-type{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
 
 
+    .share-section .share-thanks h3{
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 35px;
+    }
 
-    
+    .share-section .share-thanks .myBtn{
+        width: 152px;
+        height: 36px;
+        font-size: 15px;
+        line-height: 22px;
+        display: block;
+        margin: 0 auto;
+    }
 
+    .share-section .share-thanks .myBtn:first-of-type{
+        background: #55ACEE;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .share-section .share-thanks .myBtn:last-of-type{
+        background: #3A5795;
+        float: none;
+    }
 
     
     .navigation {
@@ -1390,8 +1405,91 @@
     }
 
     .team-shop.buy{
-        height: 677px;
-        padding: 100px 0;
+        height: auto;
+        /*padding: 100px 0;*/
+    }
+
+    .team-shop.buy .one-column ,.team-shop.buy .two-column{
+       width: 100%;
+    }
+
+    .team-shop.buy .early-bird{
+        height: 800px;
+    }
+
+    .team-shop.buy .image_wrapper.buy-image{
+        width: 100%;
+    }
+
+
+    .buy-first .custom-btn{
+        margin-bottom: 20px;
+        font-size: 16px;
+        width: 133px;
+        height: 32px;
+        line-height: 32px;
+    }
+
+    .team-shop.buy .buy-single{
+        height: auto;
+    }
+
+    .team-shop.buy .buy-single .one-column{
+        width: 100%!important;
+        top:0;
+    }
+
+    .team-shop.buy .buy-single .two-column{
+        width: 100%!important;
+        position: relative;
+        left: 0;
+    }
+
+    .team-shop.buy .buy-single .section-text{
+        margin-top: 20px;
+    }
+
+    .team-shop.buy .buy-single .row-buy{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .team-shop.buy .buy-single .one-column .image_wrapper{
+        float: left;
+        margin-right: 0;
+    }
+
+    .team-shop.buy .buy-single .two-column .image_wrapper{
+        float: left;
+        margin-right: 0;
+    }
+
+    .team-shop.buy .buy-single p{
+        font-size: 14px;
+    }
+
+    .team-shop.buy .buy-single h3{
+        font-size: 18px;
+        margin: 10px 0 20px 0;
+        font-weight: bold;
+    }
+
+
+    .team-shop.buy .buy-single .menu-btn{
+        background: #a0a0a0;
+        font-size:14px;
     }
 
     .team-shop .image_wrapper.buy-image {
@@ -2278,6 +2376,10 @@
         -ms-transform: translate(0, -50%);
         -o-transform: translate(0, -50%);
         transform: translate(0, -50%);
+        margin-bottom: 24.5px;
+        background: url("../img/Tracktics-Newsletter-3.png") no-repeat center center;
+        background-size: cover;
+        cursor: pointer;
     }
 
 
@@ -2943,14 +3045,107 @@
     }
 
     .team-shop {
-        height: 618px;
+        height:auto;
         padding: 54px 0 0 0;
     }
 
 
     .team-shop.buy{
-        height: 677px;
-        padding: 100px 0;
+        height: auto;
+        padding: 0;
+    }
+
+    .team-shop.buy .one-column ,.team-shop.buy .two-column{
+        width: 100%;
+    }
+
+    .team-shop.buy .early-bird{
+        height: 800px;
+        padding: 50px 0;
+    }
+
+    .team-shop.buy .image_wrapper.buy-image{
+        width: 100%;
+    }
+
+    .team-shop.buy .section-text p:nth-child(3) {
+        margin-top: 400px;
+    }
+
+
+    .buy-first .custom-btn{
+        margin-bottom: 20px;
+        font-size: 16px;
+        width: 133px;
+        height: 32px;
+        line-height: 32px;
+    }
+
+    .team-shop.buy .buy-single{
+        height: auto;
+    }
+
+    .team-shop.buy .early-bird .one-column,.team-shop.buy .early-bird .two-column {
+        width: 100%;
+    }
+
+    .team-shop.buy .buy-single .one-column{
+        width: 100%!important;
+        top:0;
+    }
+
+    .team-shop.buy .buy-single .two-column{
+        width: 100%!important;
+        position: relative;
+        left: 0;
+    }
+
+    .team-shop.buy .buy-single .section-text{
+        margin-top: 20px;
+    }
+
+    .team-shop.buy .buy-single .row-buy{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .team-shop.buy .buy-single .one-column .image_wrapper{
+        float: left;
+        margin-right: 0;
+    }
+
+    .team-shop.buy .buy-single .two-column .image_wrapper{
+        float: left;
+        margin-right: 0;
+    }
+
+    .team-shop.buy .buy-single p{
+        font-size: 14px;
+    }
+
+    .team-shop.buy .buy-single h3{
+        font-size: 18px;
+        margin: 10px 0 20px 0;
+        font-weight: bold;
+    }
+
+
+    .team-shop.buy .buy-single .menu-btn{
+        background: #a0a0a0;
+        font-size:14px;
     }
 
     .team-shop .image_wrapper.buy-image {
@@ -3379,7 +3574,7 @@
     }
 
 
-    .buy-single .one-column{
+    /*.buy-single .one-column{
         width: 100%!important;
     }
 
@@ -3434,7 +3629,7 @@
     .buy-single .menu-btn{
         background: #d6d6d6;
         font-size:18px;
-    }
+    }*/
 
 
     /*delivery*/
@@ -3521,6 +3716,96 @@
 
     .buy-third .two-column{
         margin-top: 30px;
+    }
+
+    .buy-thanks{
+        height: auto;
+    }
+
+    .thanks-section{
+        height: auto;
+        background: #4B4B4B;
+        padding: 50px 0;
+    }
+
+
+    .share-section{
+        height: auto;
+        background: #646464;
+        padding: 35px 0;
+    }
+
+
+    .share-section .share-thanks .one-column {
+        width: 100%;
+        float: none;
+    }
+
+    .share-section .share-thanks .two-column{
+        width: 100%;
+        float: none;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .share-section .share-thanks .image_wrapper.buy-illustration{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .share-section .share-thanks .image_wrapper.buy-illustration img{
+        margin: 0 auto;
+    }
+
+    .thanks-section .image_wrapper.stars{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .thanks-section .content-description h2{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 25px auto;
+    }
+
+    .thanks-section .content-description p{
+        font-size: 14px;
+    }
+
+    .thanks-section .content-description p:first-of-type{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+
+
+    .share-section .share-thanks h3{
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 35px;
+        margin-top: 40px;
+    }
+
+    .share-section .share-thanks .myBtn{
+        width: 152px;
+        height: 36px;
+        font-size: 15px;
+        line-height: 22px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .share-section .share-thanks .myBtn:first-of-type{
+        background: #55ACEE;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .share-section .share-thanks .myBtn:last-of-type{
+        background: #3A5795;
+        float: none;
     }
 
     
@@ -4107,13 +4392,18 @@
 
     .request .request-sent{
         width: 60px;
-        position: relative;
+/*        position: relative;
         top:50%;
         -webkit-transform: translate(0, -50%);
         -moz-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
         -o-transform: translate(0, -50%);
-        transform: translate(0, -50%);
+        transform: translate(0, -50%);*/
+
+        margin-bottom: 24.5px;
+        background: url("../img/Tracktics-Newsletter-3.png") no-repeat center center;
+        background-size: cover;
+        cursor: pointer;
     }
 
 
@@ -4910,6 +5200,116 @@
         margin-left: 211px;
     }
 
+    .team-shop.buy{
+        height: auto;
+        padding: 0;
+    }
+
+    .team-shop.buy .one-column ,.team-shop.buy .two-column{
+        width: 100%;
+    }
+
+    .team-shop.buy .early-bird{
+        height: 800px;
+        padding: 50px 0;
+    }
+
+    .team-shop.buy .image_wrapper.buy-image{
+        width: 100%;
+    }
+
+    .team-shop.buy .section-text p:nth-child(3) {
+        margin-top: 400px;
+    }
+
+
+    .buy-first .custom-btn{
+        margin-bottom: 20px;
+        font-size: 16px;
+        width: 133px;
+        height: 32px;
+        line-height: 32px;
+    }
+
+    .team-shop.buy .buy-single{
+        height: auto;
+    }
+
+    .team-shop.buy .early-bird .one-column,.team-shop.buy .early-bird .two-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .team-shop.buy .buy-single .one-column{
+        width: 100%!important;
+        top:0!important;
+        text-align: center;
+    }
+
+    .team-shop.buy .image_wrapper.buy-image{
+        width: 300px;
+    }
+    .team-shop.buy .early-bird .custom-btn{
+        margin-left: 0;
+    }
+
+    .team-shop.buy .buy-single .two-column{
+        width: 100%!important;
+        position: relative;
+        left: 0;
+    }
+
+    .team-shop.buy .buy-single .section-text{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .team-shop.buy .buy-single .row-buy{
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .team-shop.buy .buy-single .one-column .image_wrapper{
+        float: left;
+        margin-right: 0;
+    }
+
+    .team-shop.buy .buy-single .two-column .image_wrapper{
+        float: left;
+        margin-right: 0;
+    }
+
+    .team-shop.buy .buy-single p{
+        font-size: 14px;
+    }
+
+    .team-shop.buy .buy-single h3{
+        font-size: 18px;
+        margin: 10px 0 20px 0;
+        font-weight: bold;
+    }
+
+
+    .team-shop.buy .buy-single .menu-btn{
+        background: #a0a0a0;
+        font-size:14px;
+    }
+
+
+
     .contact-header {
         height: 370px;
         padding: 135px 0 100px 0;
@@ -5332,6 +5732,101 @@
 
     .buy-third .two-column{
         margin-top: 30px;
+    }
+
+    .buy-thanks {
+        height: auto;
+        text-align: center;
+    }
+
+    .thanks-section{
+        height: auto;
+        background: #4B4B4B;
+        padding: 50px 0;
+    }
+
+
+    .share-section{
+        height: auto;
+        background: #646464;
+        padding: 35px 0;
+    }
+
+
+    .share-section .share-thanks .one-column {
+        width: 100%;
+        float: none;
+    }
+
+    .share-section .share-thanks .two-column{
+        width: 100%;
+        float: none;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .share-section .share-thanks .image_wrapper.buy-illustration{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .share-section .share-thanks .image_wrapper.buy-illustration img{
+        margin:  0 auto;
+    }
+
+    .thanks-section .image_wrapper.stars{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .thanks-section .image_wrapper.stars img{
+        margin: 0 auto;
+    }
+
+    .thanks-section .content-description h2{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 25px auto;
+    }
+
+    .thanks-section .content-description p{
+        font-size: 14px;
+    }
+
+    .thanks-section .content-description p:first-of-type{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+
+
+    .share-section .share-thanks h3{
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 35px;
+        margin-top: 40px;
+    }
+
+    .share-section .share-thanks .myBtn{
+        width: 152px;
+        height: 36px;
+        font-size: 15px;
+        line-height: 22px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .share-section .share-thanks .myBtn:first-of-type{
+        background: #55ACEE;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .share-section .share-thanks .myBtn:last-of-type{
+        background: #3A5795;
+        float: none;
     }
 
     
